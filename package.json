@@ -1,0 +1,33 @@
+{
+  "name": "clover",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --ignore-path ./.gitignore --fix \"./**/*.{js,ts}\"",
+    "lint:check": "eslint --ignore-path ./.gitignore --quiet \"./**/*.{js,ts}\"",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "format:check": "prettier ./.gitignore --check \"./**/*.{html,json,js,ts,css}\""
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregsypek/clover.git"
+  },
+  "author": "gregsypek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gregsypek/clover/issues"
+  },
+  "homepage": "https://github.com/gregsypek/clover#readme",
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "install": "^0.13.0",
+    "jest": "^26.0.1",
+    "npm": "^6.14.5",
+    "prettier": "^2.0.5"
+  }
+}
