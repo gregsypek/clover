@@ -6,6 +6,7 @@
     --bg: #FCFCFC;
     --white: #F2F2F2;
     --yellow: #FBD965;
+    --gold: #f2c94c;
     --green-light: #6fcf97;
     --green-dark: #27AE60;
 
@@ -16,8 +17,7 @@
 
     /* FONT VARIABLES */
 
-    --font-primary: font-family: "Open Sans", sans-serif;
-    --font-secondary: font-family: "Patua One", cursive;
+
 
     /* RESPONSIVE  BREAKPOINTS */
 

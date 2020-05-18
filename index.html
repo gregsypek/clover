@@ -11,70 +11,82 @@
     <link rel="stylesheet" href="css/type.css" />
     <script src="https://kit.fontawesome.com/fb7f6f30e4.js"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Patua+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita&display=swap"
       rel="stylesheet"
     />
     <title>Pasieka-koniczynka</title>
   </head>
   <body>
-    <section class="home">
-      <header>
-        <div class="row">
-          <a
-            href="#main-menu"
-            id="main-menu-toggle"
-            class="menu-toggle"
-            aria-label="Open main menu"
-          >
-            <span class="sr-only">Open main menu</span>
-            <span class="fa fa-bars" aria-hidden="true"></span>
-          </a>
-          <div class="logo">
-            <image src="./img/logo.png" alt="logo"> </image>
+    <div class="wrapper">
+      <section class="home">
+        <header>
+          <div class="row">
+            <a
+              href="#main-menu"
+              id="main-menu-toggle"
+              class="menu-toggle"
+              aria-label="Open main menu"
+            >
+              <span class="sr-only">Open main menu</span>
+              <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
+            <div class="logo">
+              <image src="./img/logo.png" alt="logo"> </image>
+            </div>
           </div>
-        </div>
-        <nav id="main-menu" class="main-menu" aria-label="Main menu">
-          <a
-            href="#main-menu-toggle"
-            id="main-menu-close"
-            class="menu-close"
-            aria-label="Close main menu"
-          >
-            <span class="sr-only">Close main menu</span>
-            <span class="fa fa-close" aria-hidden="true"></span>
-          </a>
-          <ul>
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Porady</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Oferta</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
-        </nav>
-        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
-      </header>
-      <main>
-        <h1>Pasieka koniczynka</h1>
-        <aside>
-          <img src="./img/honeycomb.png" alt="honeycomb" />
-          <div class="info">
-            <p>
-              Krzysztof Zaliński Kawęczyn 42 39-308 Wadowice Górne Nr
-              Identyfikacji Weterynaryjnej: 8115630
-            </p>
+          <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a
+              href="#main-menu-toggle"
+              id="main-menu-close"
+              class="menu-close"
+              aria-label="Close main menu"
+            >
+              <span class="sr-only">Close main menu</span>
+              <span class="fa fa-close" aria-hidden="true"></span>
+            </a>
+            <ul>
+              <li><a href="#">O nas</a></li>
+              <li><a href="#">Porady</a></li>
+              <li><a href="#">Galeria</a></li>
+              <li><a href="#">Oferta</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+          <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
+        </header>
+        <main>
+          <h1>Pasieka koniczynka</h1>
+          <aside>
+            <img src="./img/honeycomb.png" alt="" />
+            <div class="info">
+              <p>Krzysztof Zaliński  </p>
+               <p> Kawęczyn 42  </p>
+               <p> 39-308 Wadowice Górne  </p>
+              <p>  Nr Identyfikacji Weterynaryjnej: 8115630 </p>
+             
+            </div>
+          </aside>
+          <div class="introduction">
+            <h4>
+              Witam na stronie mojej pasieki położonej w miejscowości Kawęczyn i
+              zapraszam serdecznie.
+            </h3>
+            <div class="btns">
+              <button class="btn btn-green">kup teraz</button>
+              <button class="btn">zapraszam</button>
+            </div>
+            <div class="hexagon_container">
+              <div class="hexagon-small"></div>
+              <div class="hexagon-small"></div>
+              <div class="hexagon-small"></div>
+            </div>
           </div>
-        </aside>
-        <div class="introduction">
-          <h3>
-            Witam na stronie mojej pasieki położonej w miejscowości Kawęczyn i
-            zapraszam serdecznie.
-          </h3>
-        </div>
-        <div class="btns">
-          <button>kup teraz</button>
-          <button>zapraszam</button>
-        </div>
-      </main>
-    </section>
+        </main>
+      </section>
+    </div>
   </body>
 </html>
