@@ -1,0 +1,226 @@
+header .row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Hamburger button styling */
+.menu-toggle {
+  color: var(--black);
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: var(--green-dark);
+}
+
+/*
+   Mobile first - this is the mobile menu, positioned offscreen to start 
+  */
+
+.main-menu {
+  position: fixed;
+  display: none;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: visible;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+/* Width here and "left" property on main-menu should be the same absolute number */
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 5.5em;
+  min-height: 100%;
+  width: 200px;
+  background-color: var(--black);
+}
+
+/* Make links block to make them fully clickable on mobile */
+.main-menu a {
+  display: block;
+  padding: 0.75rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* first link gets a border on top */
+.main-menu li:first-child a {
+  border-top: 1px solid var(--gray-light);
+  ;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: var(--gray-dark);
+  text-decoration: underline;
+}
+
+/* "close" button */
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 3rem;
+}
+
+/*
+THE MAGIC: When main-menu is targeted, show the menu by displaying it and setting left to 0 instead of -200px
+
+How is it targeted? Follow the HTML, line 18  <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+
+Note the href targets the main menu (both class and ID)
+*/
+.main-menu:target {
+  display: block;
+  left: 0;
+  outline: none;
+}
+
+/* Add a border to all links except button X */
+.main-menu:target a:not(#main-menu-close) {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+/* when main menu is targeted (button is clicked), bring the X to the top so it can be clicked */
+.main-menu:target .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/* The backdrop is the link  with no content and hidden */
+
+.main-menu:target+.backdrop {
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: default;
+}
+
+
+@media (min-width: 800px) {
+
+  /* header and nav borders rearranged for desktop */
+  header,
+  main {
+    border: none;
+    margin: 0;
+  }
+
+  nav {
+    padding: 0.3rem 0;
+  }
+
+  /* fa-bars and fa-close not needed on desktop so hide them */
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+
+  /* Undo positioning of off-canvas menu - hidden by default. */
+  .main-menu {
+    position: static;
+    display: block;
+    height: 5rem;
+  }
+
+  /* Undo off-canvas styling */
+  .main-menu ul {
+    padding: 0;
+    height: auto;
+    width: auto;
+    background: none;
+    overflow: hidden;
+    text-align: center;
+
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  .main-menu li {
+    /* display: inline-block; */
+    flex-basis: 60%;
+  }
+
+  /* add 25% empty space from left */
+  .main-menu li:nth-child(1) {
+    margin-left: 17vw;
+  }
+
+  .main-menu li {
+    position: relative;
+  }
+
+  .main-menu li::before {
+    /* content: url(../img/tiny_hexagon_orange.jpg);
+     */
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: 2.875rem;
+    top: 8px;
+    left: 10px;
+    clip-path: var(--hexagon);
+    /* box-shadow: -5px 10px 20px black; */
+    /* box-shadow: inset 0 0 10px #000000; */
+    background: orange;
+    /* box-shadow: -5px 10px 20px #D19734; */
+    transform: rotate(-90deg);
+    z-index: -1;
+  }
+
+  .main-menu li:nth-of-type(n+3)::before {
+    background: var(--white);
+  }
+
+  /* undo off canvas style */
+  .main-menu li:first-child a {
+    border-top: none;
+  }
+
+  /* desktop assumes a pointer display */
+  .main-menu a {
+    color: var(--black);
+    font-size: var(--h3);
+    border-bottom: none;
+    display: inline-block;
+    /* neccessary for positioning hexagon element to cover the same area of different text length size  */
+    text-align: left;
+    width: 13vw;
+  }
+
+  /* Remove background from off-canvas styling, change colors */
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none;
+    color: var(--gray-dark);
+    text-decoration: none;
+  }
+}

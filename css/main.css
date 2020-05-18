@@ -1,0 +1,38 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Patua One', cursive; */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 1rem;
+  background-color: var(--yellow);
+}
+
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Patua One", cursive;
+  font-weight: 600;
+}
+
+section>h1 {
+  color: #333;
+}
+
+/* header styles */
+header {
+  font-weight: 400;
+}
