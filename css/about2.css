@@ -1,0 +1,13 @@
+.about {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.about .text {
+  width: 200px;
+  height: 200px;
+}
+.about svg {
+  width: 3rem;
+  height: 3rem;
+}

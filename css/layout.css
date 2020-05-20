@@ -1,8 +1,8 @@
 .home main {
-    display: flex;
-    flex-flow: row wrap;
-    /* justify-content: space-between; */
-    --columns: 16;
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  --columns: 16;
 
 }
 
@@ -11,35 +11,35 @@ main aside,
 main .introduction,
 main .btns,
 main .hexagon_container {
-    --width: 16;
-    --gap-constant: 0.3%;
-    --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
-    --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
-    flex-basis: calc(var(--initialbasis) - var(--gap));
+  --width: 16;
+  --gap-constant: 0.3%;
+  --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
+  --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
+  flex-basis: calc(var(--initialbasis) - var(--gap));
 }
 
 @media (min-width: 950px) {}
 
 @media (min-width: 1200px) {
 
-    main h1 {
-        --width: 16;
-    }
+  main h1 {
+      --width: 16;
+  }
 
-    main aside {
-        --width: 6;
-    }
+  main aside {
+      --width: 6;
+  }
 
-    main .introduction {
-        --width: 6;
-    }
+  main .introduction {
+      --width: 6;
+  }
 
-    main .btns {
-        --width: 6;
-    }
+  main .btns {
+      --width: 6;
+  }
 
-    main .hexagon_container {
-        --width: 4;
-    }
+  main .hexagon_container {
+      --width: 4;
+  }
 
 }
