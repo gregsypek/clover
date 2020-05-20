@@ -1,1 +1,25 @@
-.home {}
+/* .hexagon-bg {
+    position: absolute;
+
+
+    z-index: 44;
+} */
+.hexagon-bg::before {
+    content: "";
+
+    position: absolute;
+
+    left: -81.97%;
+    right: 0.95%;
+    top: -65%;
+    bottom: -353.14%;
+    width: 2265.93px;
+    height: 2648.49px;
+    clip-path: var(--hexagon);
+
+    transform: translateX(-922px);
+    background: radial-gradient(50% 50% at 50% 50%, #FBD965 57.81%, #FBD965 97.4%);
+    box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.25);
+    transform: rotate(-90deg);
+    z-index: -1;
+}

@@ -230,5 +230,5 @@ Note the href targets the main menu (both class and ID)
 }
 
 .main-menu li:hover span::before {
-  transform: rotate(60deg);
+  transform: rotate(45deg);
 }

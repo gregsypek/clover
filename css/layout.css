@@ -27,7 +27,7 @@ main .hexagon_container {
     }
 
     main aside {
-        --width: 5;
+        --width: 6;
     }
 
     main .introduction {
@@ -39,7 +39,7 @@ main .hexagon_container {
     }
 
     main .hexagon_container {
-        --width: 5;
+        --width: 4;
     }
 
 }
