@@ -1,9 +1,17 @@
-.home main {
+.home main,
+.about_container {
   display: flex;
   flex-flow: row wrap;
   /* justify-content: space-between; */
-  --columns: 16;
 
+
+}
+.home main {
+  --columns: 16;
+}
+.about_container {
+  --columns: 21;
+  justify-content: space-between;
 }
 
 main h1,
@@ -12,11 +20,29 @@ main .introduction,
 main .btns,
 main .hexagon_container {
   --width: 16;
+}
+
+.about .hexagon-1,
+.about .hexagon-2,
+.about .hexagon-3 {
+  --width: 21;
+}
+
+
+main h1,
+main aside,
+main .introduction,
+main .btns,
+main .hexagon_container,
+.about .hexagon-1,
+.about .hexagon-2,
+.about .hexagon-3 {
   --gap-constant: 0.3%;
   --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
   --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
   flex-basis: calc(var(--initialbasis) - var(--gap));
 }
+
 
 @media (min-width: 950px) {}
 
@@ -40,6 +66,16 @@ main .hexagon_container {
 
   main .hexagon_container {
       --width: 4;
+  }
+
+  .about .hexagon-1 {
+    --width: 7;
+  }
+  .about .hexagon-2 {
+    --width: 7;
+  }
+  .about .hexagon-3 {
+    --width: 7;
   }
 
 }

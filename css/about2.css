@@ -1,13 +1,67 @@
-.about {
+/* .about {
   display: flex;
   flex-flow: row wrap;
+} */
+.about {
+  height: 100vh;
+  border: 1px solid black;
 }
-
+.about_container {
+  height: 100%;
+  align-items: center;
+}
 .about .text {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 .about svg {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+
+
+/* hexagon shadow on the background */
+
+.about_container {
+  filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
+  position: relative;
+  z-index: -1;
+  margin: 0 auto;
+}
+
+.hexagon-1::before,
+.hexagon-2::before,
+.hexagon-3::before {
+  content: "";
+position: absolute;
+
+width: 420px;
+height: 477.744px;
+
+clip-path: var(--hexagon);
+background: var(--white);
+transform: rotate(-90deg);
+z-index: -1;
+}
+
+.hexagon-1::before{
+  transform: translate(3%,10%) rotate(-90deg);
+}
+.hexagon-2::before{
+  transform: translate(0%,-35%) rotate(-90deg);
+}
+.hexagon-3::before{
+  transform: translate(-3%,10%) rotate(-90deg);
+}
+.hexagon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text h3 {
+  text-transform: uppercase;
+  font-family: var(--font-sansita);
 }

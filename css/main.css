@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-sansita);
   margin: 1rem;
   background-color: var(--bg);
   margin: 0;
@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Patua One", cursive;
+  font-family: var(--font-patua);
   font-weight: 600;
 }
 
