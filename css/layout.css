@@ -1,5 +1,6 @@
 .home main,
-.about_container {
+.about_container,
+.gallery {
   display: flex;
   flex-flow: row wrap;
   /* justify-content: space-between; */
@@ -12,6 +13,9 @@
 .about_container {
   --columns: 21;
   justify-content: space-between;
+}
+.gallery {
+  --columns: 12;
 }
 
 main h1,
@@ -36,7 +40,10 @@ main .btns,
 main .hexagon_container,
 .about .hexagon-1,
 .about .hexagon-2,
-.about .hexagon-3 {
+.about .hexagon-3,
+.gallery_icons,
+.gallery_arrow,
+.gallery_bgImage {
   --gap-constant: 0.3%;
   --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
   --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
@@ -78,4 +85,13 @@ main .hexagon_container,
     --width: 7;
   }
 
+  .gallery_icons{
+    --width: 2;
+  }
+  .gallery_arrow {
+    --width: 1;
+  }
+  .gallery_bigImage {
+    --width: 9;
+  }
 }

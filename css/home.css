@@ -106,12 +106,14 @@ main .info p {
 
     position: absolute;
 
-    left: -81.97%;
-    right: 0.95%;
-    top: -65%;
+    left: -50.97%;
+    right: 4.95%;
+    top: -28%;
     bottom: -353.14%;
-    width: 2265.93px;
-    height: 2648.49px;
+    /* width: 2265.93px;
+    height: 2648.49px; */
+    width: 1812.744px;
+    height: 2118.792px;
     clip-path: var(--hexagon);
 
     transform: translateX(-922px);

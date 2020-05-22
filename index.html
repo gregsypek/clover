@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/type.css" />
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/tips.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
   <script src="https://kit.fontawesome.com/fb7f6f30e4.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet" />
@@ -152,7 +153,8 @@
 
 
     <section class="tips">
-      <div class="hexagon-bg-2">
+       <!-- <div class="half"></div> -->
+      <!-- <div class="hexagon-bg-2"> -->
       <div class="beater"></div>     
       
       <div class="tips_box">
@@ -216,11 +218,35 @@
 
       </div>
 
+    <!-- </div> -->
+    </section>
+    <section class="gallery">
+      <div class="hexagon-bg-2"></div>
+      <!-- <div class="half"></div> -->
+    <div class="gallery_icons">
+      <div class="gallery_icon icon1 active-icon"><img src="/img/img1_small.jpg" alt="honey image" class="img"></div>
+      <div class="gallery_icon icon2"><img src="/img/img2_small.jpg" alt="bee image" class="img"></div>
+      <div class="gallery_icon icon3"><img src="/img/img3_small.jpg" alt="honeycomp image" class="img"></div>
+      <div class="gallery_icon icon4"><img src="/img/img4_small.jpg" alt="bee image" class="img"></div>
+      <div class="gallery_icon icon5"><img src="/img/img5_small.jpg" alt="beehives image" class="img"></div>
+      <div class="gallery_icon icon6"><img src="/img/img6_small.jpg" alt="beekeper image" class="img"></div>
+    </div>
+    <div class="gallery_arrow">
+      <svg width="48" height="432" viewBox="0 0 48 432" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+        <rect fill="white" width="0" height="0"/>
+        </mask>
+        <path d="M24 -1.74846e-07L0.905991 40L47.094 40L24 -1.74846e-07ZM24 432L47.094 392L0.906006 392L24 432ZM20 36L20 396L28 396L28 36L20 36Z" fill="#F2994A" mask="url(#)"/>
+        </svg>
+        
+    </div>
+    <div class="gallery_bigImage">
+      <img id="image-chosen" src="/img/img3.jpg" alt="print image">
+    </div>
     </section>
 
 
 
-  </div>
 </body>
 
 </html>

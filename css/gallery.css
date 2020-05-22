@@ -1,0 +1,84 @@
+
+
+/* https://alligator.io/css/cropping-images-object-fit/ */
+
+section.gallery {
+ 
+position: relative;
+}
+
+
+.hexagon-bg-2::before {
+  content: "";
+  position: absolute;
+  left: 31.03%;
+  right: 0.95%;
+  top: -79%;
+  bottom: -353.14%;
+  width: 1812.744px;
+  height: 2118.792px;
+  clip-path: var(--hexagon);
+
+  transform: translateX(-922px);
+  background: radial-gradient(50% 50% at 50% 50%, #FBD965 57.81%, #FBD965 97.4%);
+  box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.25);
+  transform: rotate(-90deg);
+  z-index: -1;
+}
+
+.gallery_icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
+
+
+  /* max-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden; */
+}
+
+.gallery_icon {
+  clip-path: var(--hexagon);
+  width: 6vw;
+  height: 6vw;
+  align-self: ce;
+}
+/* change size the chosen one */
+.active-icon {
+width: 7.5vw;
+height: 7.5vw;
+}
+/* .gallery_icon:not(:last-of-type) {
+  margin-bottom: 1rem;
+  
+} */
+.gallery_icon image{
+  width: 191px;
+  height: 220px;
+fill: cover;
+}
+.gallery_arrow {
+  text-align: center;
+  align-self: center;
+}
+.gallery_bigImage {
+  flex-grow: 1;
+  /* position: relative;
+  overflow: hidden; */
+
+}
+
+#image-chosen {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%,-50%); */
+  min-width: 100%;
+  min-height: 100%; 
+  clip-path: polygon(18.79% -0.12%, 78.79% 0px, 78.79% 99.99%, 19.31% 99.91%, -0.42% 49.79%);
+  
+  /* object-fit: cover; */
+  /* object-position: 20% 0; */
+}
