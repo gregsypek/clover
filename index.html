@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/type.css" />
-  <link rel="stylesheet" href="css/about2.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/tips.css" />
   <script src="https://kit.fontawesome.com/fb7f6f30e4.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet" />
@@ -18,6 +19,7 @@
 </head>
 
 <body>
+
   <div class="wrapper">
     <section class="home">
       <div class="hexagon-bg">
@@ -86,57 +88,138 @@
       </div>
     </section>
     <section class="about">
+      <!-- <div class="half"></div> -->
       <div class="about_container">
         <div class="hexagon hexagon-1">
-          <svg width="100" height="125" viewBox="0 0 100 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M44.9394 27.1923C44.9394 26.1914 45.2362 25.213 45.7922 24.3808C46.3483 23.5486 47.1387 22.8999 48.0634 22.5169C48.988 22.1339 50.0056 22.0337 50.9872 22.2289C51.9689 22.4242 52.8706 22.9062 53.5783 23.6139C54.286 24.3216 54.768 25.2233 54.9633 26.205C55.1585 27.1866 55.0583 28.2042 54.6753 29.1288C54.2923 30.0535 53.6436 30.8439 52.8114 31.4C51.9792 31.956 51.0008 32.2528 49.9999 32.2528C49.3354 32.2528 48.6773 32.1219 48.0634 31.8676C47.4494 31.6133 46.8915 31.2405 46.4216 30.7706C45.9517 30.3007 45.5789 29.7428 45.3246 29.1289C45.0703 28.5149 44.9394 27.8568 44.9394 27.1923ZM55.0606 63.9442V43.3928C55.0606 35.3297 41.9031 40.064 34.6608 46.3729C43.9049 44 44.9394 43.404 44.9394 53.0527V73.6041C44.9394 81.6673 58.0969 76.9329 65.3392 70.6241C56.0951 72.9969 55.0606 73.593 55.0606 63.9442ZM95 50C95 58.9002 92.3608 67.6005 87.4161 75.0007C82.4715 82.4009 75.4434 88.1686 67.2208 91.5746C58.9981 94.9805 49.9501 95.8717 41.2209 94.1353C32.4918 92.399 24.4736 88.1132 18.1802 81.8198C11.8868 75.5264 7.601 67.5082 5.86466 58.7791C4.12833 50.0499 5.01948 41.0019 8.42542 32.7792C11.8314 24.5566 17.5991 17.5285 24.9993 12.5839C32.3996 7.6392 41.0998 5 50 5C61.9347 5 73.3807 9.74106 81.8198 18.1802C90.259 26.6193 95 38.0653 95 50ZM88 50C88 42.4843 85.7713 35.1374 81.5959 28.8883C77.4204 22.6393 71.4856 17.7687 64.542 14.8926C57.5984 12.0164 49.9578 11.2639 42.5866 12.7302C35.2153 14.1964 28.4443 17.8155 23.1299 23.1299C17.8155 28.4443 14.1964 35.2153 12.7302 42.5866C11.2639 49.9578 12.0164 57.5984 14.8926 64.542C17.7687 71.4856 22.6393 77.4204 28.8883 81.5958C35.1374 85.7713 42.4843 88 50 88C60.0747 87.9886 69.7336 83.9814 76.8575 76.8575C83.9814 69.7336 87.9886 60.0747 88 50Z"
-              fill="#F2994A" />
-          </svg>
-          <div class="text">
-            <h3>Kilka słów o nas</h3>
-            <p>Mamy duże doświadczenie w hodowli pszczół. Nasz miód wyróżnia się wysoką jakością i znajduje spore
-              uznanie wsród klientów.</p>
+          <div class="inside_wrapper">
+            <svg width="100" height="125" viewBox="0 0 100 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M44.9394 27.1923C44.9394 26.1914 45.2362 25.213 45.7922 24.3808C46.3483 23.5486 47.1387 22.8999 48.0634 22.5169C48.988 22.1339 50.0056 22.0337 50.9872 22.2289C51.9689 22.4242 52.8706 22.9062 53.5783 23.6139C54.286 24.3216 54.768 25.2233 54.9633 26.205C55.1585 27.1866 55.0583 28.2042 54.6753 29.1288C54.2923 30.0535 53.6436 30.8439 52.8114 31.4C51.9792 31.956 51.0008 32.2528 49.9999 32.2528C49.3354 32.2528 48.6773 32.1219 48.0634 31.8676C47.4494 31.6133 46.8915 31.2405 46.4216 30.7706C45.9517 30.3007 45.5789 29.7428 45.3246 29.1289C45.0703 28.5149 44.9394 27.8568 44.9394 27.1923ZM55.0606 63.9442V43.3928C55.0606 35.3297 41.9031 40.064 34.6608 46.3729C43.9049 44 44.9394 43.404 44.9394 53.0527V73.6041C44.9394 81.6673 58.0969 76.9329 65.3392 70.6241C56.0951 72.9969 55.0606 73.593 55.0606 63.9442ZM95 50C95 58.9002 92.3608 67.6005 87.4161 75.0007C82.4715 82.4009 75.4434 88.1686 67.2208 91.5746C58.9981 94.9805 49.9501 95.8717 41.2209 94.1353C32.4918 92.399 24.4736 88.1132 18.1802 81.8198C11.8868 75.5264 7.601 67.5082 5.86466 58.7791C4.12833 50.0499 5.01948 41.0019 8.42542 32.7792C11.8314 24.5566 17.5991 17.5285 24.9993 12.5839C32.3996 7.6392 41.0998 5 50 5C61.9347 5 73.3807 9.74106 81.8198 18.1802C90.259 26.6193 95 38.0653 95 50ZM88 50C88 42.4843 85.7713 35.1374 81.5959 28.8883C77.4204 22.6393 71.4856 17.7687 64.542 14.8926C57.5984 12.0164 49.9578 11.2639 42.5866 12.7302C35.2153 14.1964 28.4443 17.8155 23.1299 23.1299C17.8155 28.4443 14.1964 35.2153 12.7302 42.5866C11.2639 49.9578 12.0164 57.5984 14.8926 64.542C17.7687 71.4856 22.6393 77.4204 28.8883 81.5958C35.1374 85.7713 42.4843 88 50 88C60.0747 87.9886 69.7336 83.9814 76.8575 76.8575C83.9814 69.7336 87.9886 60.0747 88 50Z"
+                fill="#F2994A" />
+            </svg>
+            <div class="text">
 
+              <h3>Kilka słów o nas</h3>
+
+              <p>Mamy duże doświadczenie w hodowli pszczół. Nasz miód wyróżnia się wysoką jakością i znajduje spore
+                uznanie wsród klientów.
+                uznanie wsród klientów.
+                uznanie wsród klientów.</p>
+            </div>
           </div>
         </div>
         <div class="hexagon hexagon-2">
-          <svg width="101" height="126" viewBox="0 0 101 126" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0)">
-              <path
-                d="M36.144 18.3343C16.258 18.3343 0.139977 34.4533 0.138977 54.3383C0.138977 64.2803 4.56198 72.9123 10.685 79.7983L36.144 108.425L61.603 79.7993C67.724 72.9123 72.148 64.2803 72.148 54.3413C72.148 34.4533 56.028 18.3343 36.144 18.3343ZM57.927 76.1223C52.109 81.9383 44.371 85.1433 36.144 85.1433C27.914 85.1433 20.179 81.9383 14.36 76.1223C8.54198 70.3033 5.33698 62.5683 5.33698 54.3383C5.33698 37.3533 19.157 23.5323 36.144 23.5323C53.129 23.5323 66.95 37.3533 66.95 54.3383C66.95 62.5663 63.747 70.3033 57.927 76.1223Z"
-                fill="black" />
-              <path
-                d="M36.143 25.2893C20.038 25.2893 6.935 38.3923 6.935 54.4973C6.935 62.2983 9.972 69.6333 15.489 75.1503C21.004 80.6683 28.339 83.7073 36.143 83.7073C43.947 83.7073 51.282 80.6683 56.796 75.1503C62.314 69.6363 65.352 62.3003 65.352 54.4973C65.351 38.3923 52.247 25.2893 36.143 25.2893ZM36.143 26.2893C51.697 26.2893 64.351 38.9433 64.352 54.4973C64.352 54.6233 64.344 54.7473 64.343 54.8733H7.944C7.942 54.7483 7.935 54.6233 7.935 54.4973C7.935 38.9433 20.589 26.2893 36.143 26.2893Z"
-                fill="#EC1111" />
-            </g>
-            <defs>
-              <clipPath id="clip0">
-                <rect x="0.138977" y="0.33429" width="100" height="125" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <div class="text">
-            <h3>Produkt polski</h3>
-            <p>Kupując u nas masz pewność, że miód pochodzi z naszych lokalnych, czystych terenów</p>
+          <div class="inside_wrapper">
+            <svg width="101" height="126" viewBox="0 0 101 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M36.144 18.3343C16.258 18.3343 0.139977 34.4533 0.138977 54.3383C0.138977 64.2803 4.56198 72.9123 10.685 79.7983L36.144 108.425L61.603 79.7993C67.724 72.9123 72.148 64.2803 72.148 54.3413C72.148 34.4533 56.028 18.3343 36.144 18.3343ZM57.927 76.1223C52.109 81.9383 44.371 85.1433 36.144 85.1433C27.914 85.1433 20.179 81.9383 14.36 76.1223C8.54198 70.3033 5.33698 62.5683 5.33698 54.3383C5.33698 37.3533 19.157 23.5323 36.144 23.5323C53.129 23.5323 66.95 37.3533 66.95 54.3383C66.95 62.5663 63.747 70.3033 57.927 76.1223Z"
+                  fill="black" />
+                <path
+                  d="M36.143 25.2893C20.038 25.2893 6.935 38.3923 6.935 54.4973C6.935 62.2983 9.972 69.6333 15.489 75.1503C21.004 80.6683 28.339 83.7073 36.143 83.7073C43.947 83.7073 51.282 80.6683 56.796 75.1503C62.314 69.6363 65.352 62.3003 65.352 54.4973C65.351 38.3923 52.247 25.2893 36.143 25.2893ZM36.143 26.2893C51.697 26.2893 64.351 38.9433 64.352 54.4973C64.352 54.6233 64.344 54.7473 64.343 54.8733H7.944C7.942 54.7483 7.935 54.6233 7.935 54.4973C7.935 38.9433 20.589 26.2893 36.143 26.2893Z"
+                  fill="#EC1111" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect x="0.138977" y="0.33429" width="100" height="125" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <div class="text">
+              <h3>Produkt polski</h3>
+              <p>Kupując u nas masz pewność, że miód pochodzi z naszych lokalnych, czystych terenów</p>
+            </div>
           </div>
         </div>
-        <div class="hexagon hexagon-3">
-          <svg width="101" height="126" viewBox="0 0 101 126" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M74.6637 30.0687H70.0637C66.895 30.0771 63.7632 30.7487 60.8698 32.0404C57.9763 33.3321 55.3854 35.2153 53.2636 37.5687V26.7687C53.2372 20.7391 50.8234 14.9655 46.5504 10.7113C42.2775 6.45707 36.4933 4.06867 30.4636 4.06873H25.8636C25.068 4.06873 24.3049 4.3848 23.7423 4.94741C23.1797 5.51001 22.8636 6.27308 22.8636 7.06873V11.6687C22.8636 17.6984 25.252 23.4825 29.5062 27.7555C33.7604 32.0285 39.5341 34.4423 45.5636 34.4687H47.2636V59.4687C45.1443 57.1459 42.5656 55.2887 39.6908 54.0149C36.816 52.741 33.708 52.0783 30.5636 52.0687H25.8636C25.068 52.0687 24.3049 52.3848 23.7423 52.9474C23.1797 53.51 22.8636 54.2731 22.8636 55.0687V59.7687C22.8636 65.7984 25.252 71.5825 29.5062 75.8555C33.7604 80.1285 39.5341 82.5423 45.5636 82.5687H47.2636V91.3687H30.5636V97.3687H69.9636V91.3687H53.2636V60.4687H54.9636C60.976 60.4424 66.7345 58.0424 70.9859 53.791C75.2373 49.5396 77.6373 43.781 77.6637 37.7687V33.0687C77.6637 32.2731 77.3476 31.51 76.785 30.9474C76.2224 30.3848 75.4593 30.0687 74.6637 30.0687Z"
-              fill="#27AE60" fill-opacity="0.84" />
-          </svg>
-          <div class="text">
-            <h3>Sama natura</h3>
-            <p>Nie słodzimy nie poprawiamy nie psujemy. Wszystko odbywa sie w naturalny sposób. Pszczoły wiedzą co
-              dobre!</p>
-          </div>
 
+        <div class="hexagon hexagon-3">
+          <div class="inside_wrapper">
+            <svg width="101" height="126" viewBox="0 0 101 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M74.6637 30.0687H70.0637C66.895 30.0771 63.7632 30.7487 60.8698 32.0404C57.9763 33.3321 55.3854 35.2153 53.2636 37.5687V26.7687C53.2372 20.7391 50.8234 14.9655 46.5504 10.7113C42.2775 6.45707 36.4933 4.06867 30.4636 4.06873H25.8636C25.068 4.06873 24.3049 4.3848 23.7423 4.94741C23.1797 5.51001 22.8636 6.27308 22.8636 7.06873V11.6687C22.8636 17.6984 25.252 23.4825 29.5062 27.7555C33.7604 32.0285 39.5341 34.4423 45.5636 34.4687H47.2636V59.4687C45.1443 57.1459 42.5656 55.2887 39.6908 54.0149C36.816 52.741 33.708 52.0783 30.5636 52.0687H25.8636C25.068 52.0687 24.3049 52.3848 23.7423 52.9474C23.1797 53.51 22.8636 54.2731 22.8636 55.0687V59.7687C22.8636 65.7984 25.252 71.5825 29.5062 75.8555C33.7604 80.1285 39.5341 82.5423 45.5636 82.5687H47.2636V91.3687H30.5636V97.3687H69.9636V91.3687H53.2636V60.4687H54.9636C60.976 60.4424 66.7345 58.0424 70.9859 53.791C75.2373 49.5396 77.6373 43.781 77.6637 37.7687V33.0687C77.6637 32.2731 77.3476 31.51 76.785 30.9474C76.2224 30.3848 75.4593 30.0687 74.6637 30.0687Z"
+                fill="#27AE60" fill-opacity="0.84" />
+            </svg>
+            <div class="text">
+              <h3>Sama natura</h3>
+              <p>Nie słodzimy nie poprawiamy nie psujemy. Wszystko odbywa sie w naturalny sposób. Pszczoły wiedzą co
+                dobre!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="tips">
+      <div class="hexagon-bg-2">
+      <div class="beater"></div>     
+      
+      <div class="tips_box">
+        <h1 class="header">
+          Warto wiedzieć
+        </h1>
+        
+        <div class="slider">
+          <div class="slide active-slide">
+            <p class="quote">
+              Miód wzmacnia serce, koi nerwy, ożywia mózg, goi rany. Ma właściwości antybakteryjne -
+              niektóre bakterie zwalcza lepiej niż antybiotyki.
+            <address>www.poradnikzdrowie.pl</address>
+            </p>
+          </div>
+          <!-- <div class="slide">
+              <p class="quote">
+                  Zawarta w miodzie acetylocholina wzmacnia wydolność mięśnia sercowego. Także obecny w nim
+                  potas zbawiennie działa na serce. <address>www.poradnikzdrowie.pl</address>
+              </p>
+          </div>
+          <div class="slide">
+              <p class="quote">
+                  Miód zawiera duże ilości mikroelementów: potas, chlor, fosfor, magnez, wapń, żelazo,
+                  molibden, mangan i kobalt oraz witamin: A, B1, B2, B6, B12, C, kwas foliowy, pantotenowy i
+                  biotynę. <address>www.poradnikzdrowie.pl</address>
+                  
+              </p>
+          </div>
+          <div class="slide">
+              <p class="quote">
+                  W Polsce najczęściej kupowany jest miód lipowy. Jest produktem bardzo łatwo przyswajalnym,
+                  całkowicie trawi się w ciągu niepełnych 2 godzin (dla porównania: szynka w 4 godziny).
+                  <address>www.poradnikzdrowie.pl</address>
+          </div>
+          <div class="slide">
+              <p class="quote">
+                  Miód od dawna służył pielęgnacji urody. Znane są jego właściwości nawilżające, rozjaśniające
+                  i uelastyczniające skórę. <address>www.poradnikzdrowie.pl</address>
+                 
+              </p>
+          </div>
+          <div class="slide">
+              <p class="quote">
+                  Jeżeli zamknięty słoiczek będziemy przechowywać w chłodnym miejscu (najwłaściwsza jest
+                  temperatura 6-10 st. Celsjusza), nie straci swych wartości przez 23 lata.
+                  <address>www.poradnikzdrowie.pl</address>
+                 
+              </p>
+          </div> -->
+          <!-- https://www.poradnikzdrowie.pl/zdrowie/apteczka/miod-wartosc-odzywcza-i-wlasciwosci-lecznicze-miodu-aa-JStw-TBBJ-hYXV.html -->
+        </div>
+        <div class="slide-dots">
+          <span id="one" class="active-dots"></span>
+          <span id="two"></span>
+          <span id="three"></span>
+          <span id="four"></span>
+          <span id="five"></span>
+          <span id="six"></span>
         </div>
 
       </div>
+
     </section>
+
+
+
   </div>
 </body>
 

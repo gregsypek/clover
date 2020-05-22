@@ -1,67 +1,64 @@
-/* .about {
-  display: flex;
-  flex-flow: row wrap;
-} */
-.about {
-  height: 100vh;
-  border: 1px solid black;
-}
-.about_container {
-  height: 100%;
-  align-items: center;
-}
-.about .text {
-  width: 250px;
-  height: 250px;
-}
-.about svg {
-  width: 4rem;
-  height: 4rem;
-}
 
 
+/* about 
+.hexagon_container {
+  margin: 0 auto;
+}
+.hexagon-shape {   
+  display: grid;
+  display: grid;  
+  grid-gap: 2rem;
 
-/* hexagon shadow on the background */
 
-.about_container {
+  grid-template-columns:  repeat(20, 1rem);
+    grid-template-rows: repeat(20,1rem);
+
+}
+.text {
+  width: 200px;
+  height: 200px;
+}
+
+/* https://css-tricks.com/using-css-to-set-text-inside-a-circle/ */
+
+
+.hexagon-1,
+.hexagon-2,
+.hexagon-3 {
   filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
   position: relative;
   z-index: -1;
-  margin: 0 auto;
 }
 
+.hexagon-1 {
+  grid-column: 1 /10;
+  grid-row: 6/18;
+  
+}
+.hexagon-2 {
+  grid-column: 10 /15;
+  grid-row: 1/7;
+}
+  
+
+.hexagon-3 {
+  grid-column: 19 /24;
+grid-row: 6/10;
+  
+}
 .hexagon-1::before,
 .hexagon-2::before,
 .hexagon-3::before {
   content: "";
 position: absolute;
 
-width: 420px;
-height: 477.744px;
+width: 476.064px;
+height: 533.808px;
 
 clip-path: var(--hexagon);
 background: var(--white);
 transform: rotate(-90deg);
 z-index: -1;
-}
+} */
 
-.hexagon-1::before{
-  transform: translate(3%,10%) rotate(-90deg);
-}
-.hexagon-2::before{
-  transform: translate(0%,-35%) rotate(-90deg);
-}
-.hexagon-3::before{
-  transform: translate(-3%,10%) rotate(-90deg);
-}
-.hexagon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.text h3 {
-  text-transform: uppercase;
-  font-family: var(--font-sansita);
-}

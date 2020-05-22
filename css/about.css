@@ -1,64 +1,100 @@
 
-
-* about */
-.hexagon_container {
-  margin: 0 auto;
+.about {
+  height: 100vh;
+  border: 1px solid black;
 }
-.hexagon-shape {   
-  display: grid;
-  display: grid;  
-  grid-gap: 2rem;
-
-
-  grid-template-columns:  repeat(20, 1rem);
-    grid-template-rows: repeat(20,1rem);
-
+.about_container {
+  height: 100%;
+  align-items: center;
 }
-.text {
-  width: 200px;
-  height: 200px;
+.about .text {
+  width: 250px;
+  height: 250px;
+}
+.about svg {
+  width: 4rem;
+  height: 4rem;
 }
 
-/* https://css-tricks.com/using-css-to-set-text-inside-a-circle/ */
 
+/* hexagon shadow on the background */
 
-.hexagon-1,
-.hexagon-2,
-.hexagon-3 {
+.about_container {
   filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
-  position: relative;
-  z-index: -1;
+   position: relative; 
 }
 
 .hexagon-1 {
-  grid-column: 1 /10;
-  grid-row: 6/18;
-  
-}
-.hexagon-2 {
-  grid-column: 10 /15;
-  grid-row: 1/7;
-}
-  
-
-.hexagon-3 {
-  grid-column: 19 /24;
-grid-row: 6/10;
-  
-}
-.hexagon-1::before,
-.hexagon-2::before,
-.hexagon-3::before {
-  content: "";
-position: absolute;
-
-width: 476.064px;
-height: 533.808px;
+  position: relative;
+  top: 15%;
+  height: 30vw;
 
 clip-path: var(--hexagon);
 background: var(--white);
 transform: rotate(-90deg);
-z-index: -1;
+}
+.hexagon-2 {
+  position: relative;
+  top: -15%; 
+  height: 30vw;
+
+clip-path: var(--hexagon);
+background: var(--white);
+transform: rotate(-90deg);
+}
+.hexagon-3 {
+  position: relative;
+  top: 15%;  
+  height: 30vw;
+
+clip-path: var(--hexagon);
+background: var(--white);
+transform: rotate(-90deg);
+}
+
+.hexagon .inside_wrapper {  
+  transform: rotate(90deg);
+  content: "";
+  position: absolute;
+
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.inside_wrapper h3 {
+  margin: 1rem 0;
+
+}
+.inside_wrapper .text {
+  text-align: center;
+}
+
+.text h3 {
+  text-transform: uppercase;
+  font-family: var(--font-sansita);
 }
 
 
+
+/* .hexagon-1 .text p::before {
+	content: ' ';
+	float: left;
+	width: 360px;
+	height: 360px;
+	margin: -13px 0 0 -249px;
+	shape-outside: content-box polygon( 51% 4.2%, 98.8% 4%, 66% 50.2%, 95.2% 98.2%, 50.3% 96.9% );
+} */
+/* .hexagon-1 .text p:after {
+	content: ' ';
+	float: right;
+	width: 360px;
+	height: 360px;
+	margin: 2px -6px 0 0;
+	shape-outside: content-box polygon( 78.9% 58.7%, 57.1% 5.6%, 95% 5.8%, 95.2% 98.2%, 50.3% 96.9% );
+} */
