@@ -5,7 +5,6 @@
   flex-flow: row wrap;
   /* justify-content: space-between; */
 
-
 }
 .home main {
   --columns: 16;
@@ -86,11 +85,9 @@ main .hexagon_container,
   }
 
   .gallery_icons{
-    --width: 2;
+    --width: 3;
   }
-  .gallery_arrow {
-    --width: 1;
-  }
+  
   .gallery_bigImage {
     --width: 9;
   }

@@ -40,11 +40,32 @@ position: relative;
 }
 
 .gallery_icon {
-  clip-path: var(--hexagon);
+  /* clip-path: var(--hexagon); */
   width: 6vw;
   height: 6vw;
-  align-self: ce;
+  border: 2px solid var(--black);
+  background-position: center;
+  border-radius: 50%;
 }
+.img-1 {
+  background-image: url(/img/img1_small.jpg);
+}
+.img-2 {
+  background-image: url(/img/img2_small.jpg);
+}
+.img-3 {
+  background-image: url(/img/img3_small.jpg);
+}
+.img-4 {
+  background-image: url(/img/img4_small.jpg);
+}
+.img-5 {
+  background-image: url(/img/img5_small.jpg);
+}
+.img-6 {
+  background-image: url(/img/img6_small.jpg);
+}
+
 /* change size the chosen one */
 .active-icon {
 width: 7.5vw;
