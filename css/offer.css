@@ -6,7 +6,7 @@ and Adrian Roselli: http://adrianroselli.com/2017/11/a-responsive-accessible-tab
 section.offer {
   height: 200vh;
  grid-template-columns: 1fr 5fr 1fr;
- grid-template-rows: 15% 85%; 
+ grid-template-rows: 12% 88%; 
   display: grid;
   justify-content: center;  
 
@@ -25,17 +25,21 @@ section.offer {
 table {
   border-collapse: collapse;
   border: 1px solid black;
+  background-color: var(--white);
 }
 
 th {
   text-align: left;
+  font-weight: normal;
 }
+
 
 
 
 /* Force table to not be like tables anymore */
 table, thead, tbody, th, tr,td { 
   display: block; 
+  padding: .3rem;
 }
 
 
@@ -55,7 +59,7 @@ td {
   border: none;
 }
 td:before { 
-  /* this is weird but it works  */
+  /* weird but it works  */
   white-space: nowrap;
   font-weight: bold; 
 
@@ -65,10 +69,19 @@ td:before {
   margin-right: 2rem;
 }
 
-td:nth-of-type(1):before { content: ""; }
-td:nth-of-type(2):before { content: "900 ml"; }
-td:nth-of-type(3):before { content: "720 ml"; }
+/* first table only for small screen */
 
+#table-first td:nth-of-type(1)::before { content: ""; }
+#table-first td:nth-of-type(2)::before { content: "900 ml"; }
+#table-first td:nth-of-type(3)::before { content: "720 ml"; }
+
+/* second table  only for small screen*/
+#table-second td:nth-of-type(1)::before { content: ""; }
+#table-second td:nth-of-type(2)::before { content: "Ilość słoików"; }
+#table-second td:nth-of-type(3)::before { content: "Ekonomiczna"; }
+#table-second td:nth-of-type(4)::before { content: "Priorytet"; }
+
+/* third table is not necessary because of different html structure */
 
 /* let the table scroll as a backup */
 .tablescroll {
@@ -100,11 +113,13 @@ tr:nth-child(even) {
 @media (min-width: 950px) {
 
   section.offer {
-    height: 100vh;
+    height: 150vh;
   }
   /* td:before is not specific enough to override the original declarations, thus this method */
-  td:nth-of-type(odd):before,
-  td:nth-of-type(even):before {
+  #table-first td:nth-of-type(odd):before,
+  #table-first td:nth-of-type(even):before, 
+  #table-second td:nth-of-type(odd):before, 
+  #table-second td:nth-of-type(even):before {
       content: "";
       margin-right: 0;
   }
@@ -116,7 +131,7 @@ tr:nth-child(even) {
   }
   th, td { 
       display: table-cell; 
-      padding: 0.5em;
+      padding: 1em;
   }
   tr {
       display: table-row;
@@ -132,6 +147,7 @@ tr:nth-child(even) {
       text-align: center;
       text-transform: lowercase;
       font-size: var(--h4);
+      line-height: 3rem;
       
   }
   .dark, 
@@ -145,6 +161,11 @@ tr:nth-child(even) {
   .offer_box {
     grid-column: 2/3;
     justify-self: stretch;
+  }
+/* add some width border for visual effect */
+  .table {
+    border: 1.5rem solid var(--white);
+    background-color: var(--white);
   }
  
 
