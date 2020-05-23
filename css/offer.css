@@ -1,0 +1,159 @@
+
+/* round of applause to Chris Coyer: https://css-tricks.com/responsive-data-tables/
+and Adrian Roselli: http://adrianroselli.com/2017/11/a-responsive-accessible-table.html#Responsive
+*/
+
+section.offer {
+  height: 200vh;
+ grid-template-columns: 1fr 5fr 1fr;
+ grid-template-rows: 15% 85%; 
+  display: grid;
+  justify-content: center;  
+
+}
+.offer_header {
+  grid-column:1/-1;
+  justify-self: center;
+}
+.offer_box {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-row-gap: 3rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th {
+  text-align: left;
+}
+
+
+
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, tr,td { 
+  display: block; 
+}
+
+
+/* Hide table headers (but not display: none;, for accessibility -- sighted users will see labels below) */
+thead tr { 
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/* tr {border: 1px solid black;} */
+
+td {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.5rem;
+  border: none;
+}
+td:before { 
+  /* this is weird but it works  */
+  white-space: nowrap;
+  font-weight: bold; 
+
+  /* resize for bigger screen if you want */
+  flex-basis: 30%;
+
+  margin-right: 2rem;
+}
+
+td:nth-of-type(1):before { content: ""; }
+td:nth-of-type(2):before { content: "900 ml"; }
+td:nth-of-type(3):before { content: "720 ml"; }
+
+
+/* let the table scroll as a backup */
+.tablescroll {
+    overflow-x: auto;
+}
+caption {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: var(--h2);
+    padding: 0.5rem;
+    /* display: block; */
+    background-color: var(--white);
+}
+
+th, td {
+  padding: 1rem;
+}
+tr:nth-child(odd) {
+  background-color: var(--gray-light);
+}
+tr:nth-child(even) {
+  background-color: var(--white);
+}
+
+
+/* For wider dimensions, change our layout so the table can take the full width of the screen. */
+/* table MQ's */
+@media (min-width: 950px) {
+
+  section.offer {
+    height: 100vh;
+  }
+  /* td:before is not specific enough to override the original declarations, thus this method */
+  td:nth-of-type(odd):before,
+  td:nth-of-type(even):before {
+      content: "";
+      margin-right: 0;
+  }
+  thead tr { 
+      position: static;
+  }
+  thead, tbody {
+      display: table-row-group;
+  }
+  th, td { 
+      display: table-cell; 
+      padding: 0.5em;
+  }
+  tr {
+      display: table-row;
+  }
+ 
+  table{
+      display: table;
+      width: 100%;   
+      border: none;
+  }
+  caption {
+      font-size: var(--font-size);
+      text-align: center;
+      text-transform: lowercase;
+      font-size: var(--h4);
+      
+  }
+  .dark, 
+  thead tr.dark {
+    background-color: var(--gray-dark);
+    color: var(--white);
+    font-weight: normal;
+  }
+
+
+  .offer_box {
+    grid-column: 2/3;
+    justify-self: stretch;
+  }
+ 
+
+}
+
+@media (min-width: 1100px) {
+
+}
+
+
+
+
