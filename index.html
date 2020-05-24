@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+  <a href="#introduction" id="skip-link">Przejdź do opisu</a>
   <div class="wrapper">
     <section class="home">
       <div class="hexagon-bg">
@@ -71,7 +71,7 @@
 
             </div>
           </aside>
-          <div class="introduction">
+          <div class="introduction" id="introduction">
             <h4>
               Witam na stronie mojej pasieki położonej w miejscowości Kawęczyn i
               zapraszam serdecznie.
@@ -348,12 +348,12 @@
     <section class="contact" id="contact">
       <div class="contact-left">
         <!-- <h2 class="header">Kontakt</h2> -->
-        <!-- <img src="./img/kwiatek_maly.png" alt="flower"> -->
+        <img  tabindex="0" src="./img/kwiatek_maly.png" alt="flower">
+        <p class="contact-header">Napisz do nas <span>wiadomość</span> </p>
       </div>
 
      
 
-        <p class="contact-header">Napisz do nas wiadomość</p>
 
 
         <!-- <?php
@@ -376,6 +376,8 @@
                      ?> -->
 
         <form class="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+          <fieldset>
+            <legend>Napisz czego potrzebujesz?</legend>
           <div class="input-group">
             <label for="name">Imię:</label>
             <input type="text" name="name" id="name" required>
@@ -394,26 +396,27 @@
           </div>
           <div class="input-group">
             <input type="submit" name="submit" class="btn-form btn" value="Wyślij">
+           
           </div>
-            <!-- 
-                    <?php 
-
-                        if(isset($_POST['submit']) && !isset($name_error) && !isset($email_error) && !isset($message_error)){
-                        $to = 'pasieka.koniczynka@gmail.com'; // edit here
-                        $body = " Od: $name\n E-mail: $email\n Wiadomosc:\n $message";
-                        if(mail($to, $message, $body)){
-                            // header("Location: index.php?success=1#contact");
-                            echo '<p class="success">Dziękuje. Twój email został wysłany</p>';
-                        }else{
-                            echo '<p class ="error">Niestety! Coś poszło nie tak! Spróbuj jeszcze raz!</p>';
+        </fieldset>
+      </form>
+                <!-- 
+                        <?php 
+    
+                            if(isset($_POST['submit']) && !isset($name_error) && !isset($email_error) && !isset($message_error)){
+                            $to = 'pasieka.koniczynka@gmail.com'; // edit here
+                            $body = " Od: $name\n E-mail: $email\n Wiadomosc:\n $message";
+                            if(mail($to, $message, $body)){
+                                // header("Location: index.php?success=1#contact");
+                                echo '<p class="success">Dziękuje. Twój email został wysłany</p>';
+                            }else{
+                                echo '<p class ="error">Niestety! Coś poszło nie tak! Spróbuj jeszcze raz!</p>';
+                        }
                     }
-                }
-                   
-                    
-                    
-                ?> -->
-          
-        </form>
+                       
+                        
+                        
+                    ?> -->
 
      
 
