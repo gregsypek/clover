@@ -232,3 +232,16 @@ Note the href targets the main menu (both class and ID)
 .main-menu li:hover span::before {
   transform: rotate(45deg);
 }
+
+#skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  padding: 8px;
+  background: var(--white);
+  color: var(--black);
+  z-index: 999;
+}
+#skip-link:focus {
+  top:0;
+}

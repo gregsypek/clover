@@ -1,0 +1,41 @@
+
+section.map {
+  position:relative;
+}
+
+section.map img {
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  width: 5vw;
+  height: auto;
+  opacity: 50%;
+}
+
+.map-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+section .map a {
+  display: block;
+}
+
+.map-google {
+  width: 70vw;
+  height: 35vw;
+  border: 0;
+  border: 2px solid var(--black);
+  box-shadow: var(--black-shadow);
+  border-radius: 5px;
+}
+
+.phone-btn {
+  margin-top: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
+}
+
