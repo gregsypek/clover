@@ -9,8 +9,10 @@ html {
 }
 
 body {
-  font-family: var(--font-sansita);
-  margin: 1rem;
+  font-family: var(--font-first);
+  margin: 0;
+  padding: 0;
+
   background-color: var(--bg);
   margin: 0;
   padding: 0;
@@ -26,8 +28,8 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: var(--font-patua); */
-  font-family: var(--font-sansita);
+  
+  font-family: var(--font-first);
   font-weight: 600;
 }
 

@@ -95,13 +95,19 @@ caption {
     font-weight: bold;
     font-size: var(--h2);
     padding: 0.5rem;
-    /* display: block; */
+    font-family: var(--font-first);
     background-color: var(--white);
 }
 
 th, td {
   padding: 1rem;
+  font-family: var(--font-third);
 }
+
+th,td {
+  font-family: var(--font-second);
+}
+
 tr:nth-child(odd) {
   background-color: var(--gray-light);
 }

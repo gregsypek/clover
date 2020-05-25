@@ -16,9 +16,15 @@
   <link rel="stylesheet" href="css/offer.css" />
   <link rel="stylesheet" href="css/contact.css" />
   <link rel="stylesheet" href="css/map.css" />
-  <script src="https://kit.fontawesome.com/fb7f6f30e4.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <!-- <script src="https://kit.fontawesome.com/fb7f6f30e4.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" /> -->
+ 
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@400;600&family=Original+Surfer&display=swap" rel="stylesheet">
+
   <title>Pasieka-koniczynka</title>
 </head>
 
@@ -34,7 +40,7 @@
               <span class="fa fa-bars" aria-hidden="true"></span>
             </a>
             <div class="logo">
-              <image src="./img/logo.png" alt="logo"> </image>
+              <image src="./img/logo-green-sm.svg" alt="logo"> </image>
             </div>
           </div>
           <nav id="main-menu" class="main-menu" aria-label="Main menu">
@@ -74,8 +80,7 @@
           </aside>
           <div class="introduction" id="introduction">
             <h4>
-              Witam na stronie mojej pasieki położonej w miejscowości Kawęczyn i
-              zapraszam serdecznie.
+              Witam na stronie naszej pasieki położonej w miejscowości Kawęczyn. Nasze gospodarstwo pszczelarskie prowadzimy od lat wyłącznie w gronie rodzinnym. Wszystkie produkty, które sprzedajemy pochodzą wyłącznie od naszych pszczół, którym zapewniamy szczególne warunki rozwoju oferując im nasz przydomowy ogród drzewek brzoskwiniowych. Obecnie posiadamy około  100 pasiek rozstawionych w kilku miejscach. Jesteśmy dumni z naszych miodów. Zapraszam do zapoznania się z naszą ofertą szczególnie polecam miód wielokwiatowy oraz lipowy.
               </h3>
               <div class="btns">
                 <button class="btn btn-green">kup teraz</button>
@@ -91,6 +96,7 @@
         </main>
       </div>
     </section>
+
     <section class="about">
       <!-- <div class="half"></div> -->
       <div class="about_container">
@@ -103,7 +109,7 @@
             </svg>
             <div class="text">
 
-              <h3>Kilka słów o nas</h3>
+              <h3>O nas</h3>
 
               <p>Mamy duże doświadczenie w hodowli pszczół. Nasz miód wyróżnia się wysoką jakością i znajduje spore
                 uznanie wsród klientów.
@@ -153,7 +159,6 @@
       </div>
 
     </section>
-
 
     <section class="tips">
       <!-- <div class="half"></div> -->
@@ -223,6 +228,7 @@
 
       <!-- </div> -->
     </section>
+
     <section class="gallery">
       <div class="hexagon-bg-2"></div>
       <!-- <div class="half"></div> -->
@@ -343,7 +349,6 @@
       </div>
     </section>
 
-
     <section class="contact" id="contact">
       <div class="contact-left">
         <!-- <h2 class="header">Kontakt</h2> -->
@@ -383,24 +388,24 @@
         <input type="text" name="name" id="name" required>
 
         <p><?php if(isset($name_error)) echo $name_error; ?></p>
-  </div>
-  <div class="input-group">
-    <label for="email">Email:</label>
-    <input type="text" name="email" required>
-    <p><?php if(isset($email_error)) echo $email_error; ?></p>
-  </div>
-  <div class="input-group">
-    <label for="message">Treść wiadomości:</label>
-    <textarea rows="10" name="message"></textarea>
-    <p><?php if(isset($message_error)) echo $message_error; ?></p>
-  </div>
-  <div class="input-group">
-    <input type="submit" name="submit" class="btn-form btn" value="Wyślij">
 
-  </div>
-  </fieldset>
-  </form>
-  <!-- 
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="text" name="email" required>
+          <p><?php if(isset($email_error)) echo $email_error; ?></p>
+        </div>
+        <div class="input-group">
+          <label for="message">Treść wiadomości:</label>
+          <textarea rows="10" name="message"></textarea>
+          <p><?php if(isset($message_error)) echo $message_error; ?></p>
+        </div>
+        <div class="input-group">
+          <input type="submit" name="submit" class="btn-form btn" value="Wyślij">
+
+        </div>
+        </fieldset>
+      </form>
+      <!-- 
                         <?php 
     
                             if(isset($_POST['submit']) && !isset($name_error) && !isset($email_error) && !isset($message_error)){
@@ -417,22 +422,45 @@
                         
                         
                     ?> -->
-  </section>
-  <section class="map">
-    <img  src="./img/bee_real.png" alt="flower" />
-    <div class="map-box">
-      <h2 class="map-header header">Zobacz gdzie jesteśmy</h2>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10194.401362346862!2d21.278227931744798!3d50.2993878033718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d6f2b9e133ccf%3A0x27c3287f1b0186f7!2sKaw%C4%99czyn+42%2C+39-308+Kaw%C4%99czyn!5e0!3m2!1spl!2spl!4v1562575047996!5m2!1spl!2spl"
-          allowfullscreen allowfullscreen class="map-google"></iframe>
+    </section>
+
+    <section class="map">
+      <img src="./img/bee_real.png" alt="flower" />
+      <div class="map-box">
+        <h2 class="map-header header">Zobacz gdzie jesteśmy</h2>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10194.401362346862!2d21.278227931744798!3d50.2993878033718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d6f2b9e133ccf%3A0x27c3287f1b0186f7!2sKaw%C4%99czyn+42%2C+39-308+Kaw%C4%99czyn!5e0!3m2!1spl!2spl!4v1562575047996!5m2!1spl!2spl"
+            allowfullscreen allowfullscreen class="map-google"></iframe>
+        </div>
+        <a href="tel:+48536230915" class="btn-orange btn phone-btn">Zadzwoń</a>
       </div>
-      <a href="tel:+48536230915" class="btn-orange btn phone-btn">Zadzwoń</a>
-    </div>
+    </section>
+
+  </div>
+  <section class="footer">
+    <div class="footer-wrapper">
+    <ul class="footer-nav--left">
+      <img src="img/logo-green-w.svg" alt="logo" class="footer-logo" />
+      <div class="footer-address">
+        <p>Pasieka-Koniczynka, </p>
+        <p>39-308 Wadowice Górne, </p>
+        <p>tel. +48 536230915</p>
+
+      </div>
+
+    </ul>
+    <ul class="footer-nav--right">
+      <li><a href="https://www.facebook.com/katarzyna.zalinska.73">Facebook</a></li>
+      <li><a href="https://www.olx.pl/oferta/pasieka-koniczynka-miod-CID757-IDAJ0BX.html">OLX</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+      <li><a href="#">Strona główna</a></li>
+    </ul>
+
+    <p class="copy">Copyright &copy; 2020 by gregsypek</p>
 
 
-
-
+  </div>
   </section>
 
 

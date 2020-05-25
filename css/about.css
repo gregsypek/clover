@@ -77,7 +77,10 @@ transform: rotate(-90deg);
 
 .text h3 {
   text-transform: uppercase;
-  font-family: var(--font-sansita);
+  font-family: var(--font-first);
+}
+.text p {
+  font-family: var(--font-second);
 }
 
 

@@ -22,7 +22,7 @@ border-radius: 10px;
 
 .tips_box .header {
   text-transform: uppercase;
-  font-family: var(--font-sansita);
+  font-family: var(--font-first);
   font-size: var(--h3);
 }
 
@@ -43,6 +43,7 @@ border-radius: 10px;
 .slide .quote {
   font-size: var(--h4);
   margin: 2rem 2rem;
+  font-family: var(--font-second);
 }
 .slide address {
 align-self: center;

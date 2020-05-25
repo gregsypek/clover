@@ -1,12 +1,13 @@
 .home main,
 .about_container,
-.gallery
+.gallery,
+.footer-wrapper
 {
   display: flex;
   flex-flow: row wrap;
   /* justify-content: space-between; */
-
 }
+
 .home main {
   --columns: 16;
 }
@@ -14,10 +15,11 @@
   --columns: 21;
   justify-content: space-between;
 }
-.gallery {
+.gallery,
+.footer
+{
   --columns: 12;
 }
-
 
 main h1,
 main aside,
@@ -32,10 +34,16 @@ main .hexagon_container {
 .about .hexagon-3 {
   --width: 21;
 }
+.footer-nav--left,
+.footer-nav--right {
+  --width: 6;
+}
+.copy {
+  --width: 12;
+}
 
 
-
-
+/* this is layout for small screen */
 
 main h1,
 main aside,
@@ -47,7 +55,10 @@ main .hexagon_container,
 .about .hexagon-3,
 .gallery_icons,
 .gallery_arrow,
-.gallery_bgImage
+.gallery_bgImage,
+.footer-nav--left,
+.footer-nav--right,
+.copy 
  {
   --gap-constant: 0.3%;
   --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
