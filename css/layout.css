@@ -1,8 +1,7 @@
 .home main,
 .about_container,
 .gallery,
-.footer-wrapper
-{
+.footer-wrapper {
   display: flex;
   flex-flow: row wrap;
   /* justify-content: space-between; */
@@ -11,13 +10,14 @@
 .home main {
   --columns: 16;
 }
+
 .about_container {
   --columns: 21;
   justify-content: space-between;
 }
+
 .gallery,
-.footer
-{
+.footer {
   --columns: 12;
 }
 
@@ -34,10 +34,12 @@ main .hexagon_container {
 .about .hexagon-3 {
   --width: 21;
 }
+
 .footer-nav--left,
 .footer-nav--right {
   --width: 6;
 }
+
 .copy {
   --width: 12;
 }
@@ -58,8 +60,7 @@ main .hexagon_container,
 .gallery_bgImage,
 .footer-nav--left,
 .footer-nav--right,
-.copy 
- {
+.copy {
   --gap-constant: 0.3%;
   --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
   --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
@@ -72,39 +73,41 @@ main .hexagon_container,
 @media (min-width: 1200px) {
 
   main h1 {
-      --width: 16;
+    --width: 16;
   }
 
   main aside {
-      --width: 6;
+    --width: 6;
   }
 
   main .introduction {
-      --width: 6;
+    --width: 6;
   }
 
   main .btns {
-      --width: 6;
+    --width: 6;
   }
 
   main .hexagon_container {
-      --width: 4;
+    --width: 4;
   }
 
   .about .hexagon-1 {
     --width: 7;
   }
+
   .about .hexagon-2 {
     --width: 7;
   }
+
   .about .hexagon-3 {
     --width: 7;
   }
 
-  .gallery_icons{
+  .gallery_icons {
     --width: 3;
   }
-  
+
   .gallery_bigImage {
     --width: 9;
   }

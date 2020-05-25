@@ -1,4 +1,3 @@
-
 aside img {
   width: 240px;
   margin-top: -3rem;
@@ -10,16 +9,26 @@ aside img {
 main h1 {
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
+  font-size: var(--h2);
+}
+
+main .introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  /* font-style: italic; */
+  text-align: center;
 }
 
 main .introduction h4 {
-  /* font-family: Sansita, sans-serif; */
-  font-family: var(--font-second);
+
+  /* height: 44vh; */
+  font-family: var(--font-third);
   height: 20vh;
   font-weight: normal;
   font-size: var(--p)
-
 }
 
 main .info {
@@ -27,7 +36,7 @@ main .info {
 }
 
 main .info p {
-  font-family: var(--font-second);
+  font-family: var(--font-third);
   font-size: var(--base-size);
   margin: 0;
   padding: .1rem;
@@ -39,21 +48,10 @@ main .info p {
 .btns {
   display: flex;
   justify-content: space-between;
-
+  align-items: flex-end;
 }
 
-.btn {
-  width: 10rem;
-  height: 3rem;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-size: var(--h4);
-  border-radius: 30px;
-  border: 3px solid var(--black);
-  padding: .3rem;
-  cursor: pointer;
-  box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.25);
-}
+
 
 .btn-green {
   background-color: var(--green-dark);
@@ -76,6 +74,17 @@ main .info p {
   filter: drop-shadow(-10px 20px 50px rgba(0, 0, 0, 0.25));
 }
 
+.home_container img {
+  position: absolute;
+  top: -3vw;
+  right: -24vw;
+  width: 8rem;
+  height: auto;
+  opacity: 80%;
+
+  transform: rotate(-24deg);
+}
+
 .hexagon-small-1,
 .hexagon-small-2,
 .hexagon-small-3 {
@@ -84,7 +93,7 @@ main .info p {
   height: 21.591rem;
 
   clip-path: var(--hexagon);
-  background: var(--gray-light);
+  background: var(--white);
   transform: rotate(-90deg);
 }
 
@@ -107,23 +116,23 @@ main .info p {
 /* big background hexagon */
 
 .hexagon-bg::before {
-    content: "";
+  content: "";
 
-    position: absolute;
+  position: absolute;
 
-    left: -50.97%;
-    right: 4.95%;
-    top: -28%;
-    bottom: -353.14%;
-    /* width: 2265.93px;
+  left: -50.97%;
+  right: 4.95%;
+  top: -28%;
+  bottom: -353.14%;
+  /* width: 2265.93px;
     height: 2648.49px; */
-    width: 1812.744px;
-    height: 2118.792px;
-    clip-path: var(--hexagon);
+  width: 1812.744px;
+  height: 2118.792px;
+  clip-path: var(--hexagon);
 
-    transform: translateX(-922px);
-    background: radial-gradient(50% 50% at 50% 50%, #FBD965 57.81%, #FBD965 97.4%);
-   
-    transform: rotate(-90deg);
-    z-index: -1;
+  transform: translateX(-922px);
+  background: radial-gradient(50% 50% at 50% 50%, #FBD965 57.81%, #FBD965 97.4%);
+
+  transform: rotate(-90deg);
+  z-index: -1;
 }
