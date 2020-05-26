@@ -1,5 +1,4 @@
 .home main,
-.about_container,
 .gallery,
 .footer-wrapper {
   display: flex;
@@ -7,14 +6,35 @@
   /* justify-content: space-between; */
 }
 
+/* this has to be separate because of row wrap missing */
+.about_container,
+.about_container .hexagon-1,
+.about_container .hexagon-2,
+.about_container .hexagon-3 {
+  display: flex;
+}
+
 .home main {
   --columns: 16;
+}
+
+.about_container .hexagon-1,
+.about_container .hexagon-2,
+.about_container .hexagon-3 {
+  --columns: 8
+}
+
+.about_container .hexagon-1,
+.about_container .hexagon-2,
+.about_container .hexagon-3 {
+  --width: 7
 }
 
 .about_container {
   --columns: 21;
   justify-content: space-between;
 }
+
 
 .gallery,
 .footer {
@@ -29,11 +49,7 @@ main .hexagon_container {
   --width: 16;
 }
 
-.about .hexagon-1,
-.about .hexagon-2,
-.about .hexagon-3 {
-  --width: 21;
-}
+
 
 .footer-nav--left,
 .footer-nav--right {
@@ -52,9 +68,10 @@ main aside,
 main .introduction,
 main .btns,
 main .hexagon_container,
-.about .hexagon-1,
-.about .hexagon-2,
-.about .hexagon-3,
+.about_container,
+.about.hexagon-1,
+.about.hexagon-2,
+.about.hexagon-3,
 .gallery_icons,
 .gallery_arrow,
 .gallery_bgImage,
@@ -92,17 +109,7 @@ main .hexagon_container,
     --width: 4;
   }
 
-  .about .hexagon-1 {
-    --width: 7;
-  }
 
-  .about .hexagon-2 {
-    --width: 7;
-  }
-
-  .about .hexagon-3 {
-    --width: 7;
-  }
 
   .gallery_icons {
     --width: 3;

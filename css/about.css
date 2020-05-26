@@ -1,16 +1,18 @@
-
 .about {
   height: 100vh;
-  border: 1px solid black;
+
 }
+
 .about_container {
   height: 100%;
   align-items: center;
 }
+
 .about .text {
   width: 250px;
   height: 250px;
 }
+
 .about svg {
   width: 4rem;
   height: 4rem;
@@ -21,43 +23,49 @@
 
 .about_container {
   filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
-   position: relative; 
+  position: relative;
 }
 
 .hexagon-1 {
-  position: relative;
-  top: 15%;
-  height: 30vw;
 
-clip-path: var(--hexagon);
-background: var(--white);
-transform: rotate(-90deg);
+  width: 431px;
+  height: 495px;
+  clip-path: var(--hexagon);
+  background: var(--white);
+  transform: translateY(20%) rotate(-90deg);
+
 }
+
 .hexagon-2 {
-  position: relative;
-  top: -15%; 
-  height: 30vw;
 
-clip-path: var(--hexagon);
-background: var(--white);
-transform: rotate(-90deg);
+  width: 431px;
+  height: 495px;
+
+  clip-path: var(--hexagon);
+  background: var(--white);
+
+  background: var(--white);
+  transform: translateY(-20%) rotate(-90deg);
 }
+
 .hexagon-3 {
-  position: relative;
-  top: 15%;  
-  height: 30vw;
 
-clip-path: var(--hexagon);
-background: var(--white);
-transform: rotate(-90deg);
+  width: 431px;
+  height: 495px;
+
+  clip-path: var(--hexagon);
+  background: var(--white);
+
+  background: var(--white);
+  transform: translateY(20%) rotate(-90deg);
 }
 
-.hexagon .inside_wrapper {  
+.hexagon .inside_wrapper {
   transform: rotate(90deg);
   content: "";
   position: absolute;
 
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -65,12 +73,13 @@ transform: rotate(-90deg);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
+
 .inside_wrapper h3 {
   margin: 1rem 0;
 
 }
+
 .inside_wrapper .text {
   text-align: center;
 }
@@ -79,25 +88,7 @@ transform: rotate(-90deg);
   text-transform: uppercase;
   font-family: var(--font-first);
 }
+
 .text p {
   font-family: var(--font-second);
 }
-
-
-
-/* .hexagon-1 .text p::before {
-	content: ' ';
-	float: left;
-	width: 360px;
-	height: 360px;
-	margin: -13px 0 0 -249px;
-	shape-outside: content-box polygon( 51% 4.2%, 98.8% 4%, 66% 50.2%, 95.2% 98.2%, 50.3% 96.9% );
-} */
-/* .hexagon-1 .text p:after {
-	content: ' ';
-	float: right;
-	width: 360px;
-	height: 360px;
-	margin: 2px -6px 0 0;
-	shape-outside: content-box polygon( 78.9% 58.7%, 57.1% 5.6%, 95% 5.8%, 95.2% 98.2%, 50.3% 96.9% );
-} */

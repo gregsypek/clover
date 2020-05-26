@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--black);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  
+
   font-family: var(--font-first);
   font-weight: 600;
 }
@@ -36,8 +36,6 @@ h6 {
 section>h1 {
   color: var(--black);
 }
-
-
 
 /* header styles */
 header {
@@ -51,14 +49,11 @@ header {
 }
 
 section {
-height: 100vh;
+  height: 100vh;
   margin-bottom: 2rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
-body {
-  overflow-x: hidden;
-}
 
 
 /* just for coding delete after! */
