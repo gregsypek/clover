@@ -32,38 +32,53 @@
   --font-third: 'courgette', sans-serif;
 
 
-  /* RESPONSIVE  BREAKPOINTS */
-
-  /* 1440px */
-  --bp-huge: 90em;
-  /* 1200px */
-  --bp-big: 75em;
-  /* 1000px */
-  --bp-large: 62.5em;
-  /* 800px */
-  --bp-medium: 50em;
-  /* 600px */
-  --bp-small: 37.5em;
-  /* 440px */
-  --bp-tiny: 27.5em;
+  /* my screen resolution */
+  /* width */
+  --sw: 1440px;
+  /* heigth */
+  --sh: 825px;
 
   /* HEXAGONS */
 
   --hexagon: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 
 }
+section {
+  border: 1px  solid black;
+}
 
 .btn {
-  width: 10rem;
-  height: 3rem;
+  
   font-family: var(--font-third);
   font-weight: bold;
   text-transform: uppercase;
   font-size: var(--h5);
-  border-radius: 25px;
-  border: 2px solid var(--black);
+  border-radius: 25px;  
   padding: .3rem;
   cursor: pointer;
   box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.25);
 
 }
+@media (min-width: 200px) {
+  
+  .btn {
+    width: 8rem;
+    height: 2.5rem;   
+    border: 1px solid var(--black);
+    padding: .2rem;
+   
+  }
+}
+
+@media (min-width: 480px) {
+  
+}
+
+@media (min-width: 768px) { 
+  .btn {
+    width: 10rem;
+    height: 3rem;
+    border-width: 2px;
+  }
+}
+

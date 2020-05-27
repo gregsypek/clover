@@ -1,15 +1,13 @@
-section.home .logo img {
-
-  width: 180px;
+/* section.home .logo img {
+  width: 160px;
   height: auto;
   padding: .8rem;
-
-}
+} */
 
 header .row {
   display: flex;
   flex-flow: row nowrap;
-  height: 12vh;
+  
 }
 
 .sr-only {
@@ -134,7 +132,28 @@ Note the href targets the main menu (both class and ID)
 }
 
 
-@media (min-width: 800px) {
+
+.main-menu li:hover span::before {
+  transform: rotate(45deg);
+}
+
+#skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  padding: 8px;
+  background: var(--white);
+  color: var(--black);
+  z-index: 999;
+}
+
+#skip-link:focus {
+  top: 0;
+}
+
+
+
+@media (min-width: 768px) {
 
   /* header and nav borders rearranged for desktop */
   header,
@@ -169,14 +188,13 @@ Note the href targets the main menu (both class and ID)
     overflow: hidden;
     text-align: center;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    justify-content: space-evenly;
   }
 
-  .main-menu ul {
-    /* display: inline-block; */
-    flex-basis: 60%;
+  .main-menu ul li:not(:last-of-type) {
+    margin-right: 1rem;
   }
-
   .main-menu li span {
     position: relative;
     z-index: -1;
@@ -233,20 +251,20 @@ Note the href targets the main menu (both class and ID)
   }
 }
 
-.main-menu li:hover span::before {
-  transform: rotate(45deg);
-}
 
-#skip-link {
-  position: absolute;
-  top: -50px;
-  left: 0;
-  padding: 8px;
-  background: var(--white);
-  color: var(--black);
-  z-index: 999;
-}
 
-#skip-link:focus {
-  top: 0;
+
+/* @media(max-width: 768px ){
+  section.home .logo img {
+    height: 100px;  
+  
+  }
+} */
+@media (min-width: 1000px) {
+  .main-menu ul {
+    
+    justify-content: flex-end;
+    
+  }
+
 }

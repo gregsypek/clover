@@ -146,6 +146,26 @@ tr:nth-child(even) {
 }
 
 
+
+.hexagon-bg-3::before {
+  content: "";
+  position: absolute;
+  left: -70.97%;
+  right: 0.95%;
+  top: 192%;
+  width: 1812.744px;
+  height: 2118.792px;
+  clip-path: var(--hexagon);
+
+  transform: translateX(-922px);
+  background: radial-gradient(50% 50% at 50% 50%, #FBD965 57.81%, #FBD965 97.4%);
+
+  transform: rotate(-90deg);
+  z-index: -1;
+}
+
+
+
 /* For wider dimensions, change our layout so the table can take the full width of the screen. */
 /* table MQ's */
 @media (min-width: 950px) {
@@ -220,19 +240,17 @@ tr:nth-child(even) {
 
 }
 
-.hexagon-bg-3::before {
-  content: "";
-  position: absolute;
-  left: -70.97%;
-  right: 0.95%;
-  top: 192%;
-  width: 1812.744px;
-  height: 2118.792px;
-  clip-path: var(--hexagon);
+@media (min-width: 200px) {
+  
+}
 
-  transform: translateX(-922px);
-  background: radial-gradient(50% 50% at 50% 50%, #FBD965 57.81%, #FBD965 97.4%);
+@media (min-width: 480px) {
+ 
+}
 
-  transform: rotate(-90deg);
-  z-index: -1;
+@media (min-width: 768px) {
+ 
+}
+@media (min-width: 1000px) {
+  
 }
