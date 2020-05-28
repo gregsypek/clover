@@ -1,3 +1,4 @@
+/* .about_container { */
 .home main,
 .gallery,
 .footer-wrapper {
@@ -7,33 +8,33 @@
 }
 
 /* this has to be separate because of row wrap missing */
-.about_container,
+/* .about_container,
 .about_container .hexagon-1,
 .about_container .hexagon-2,
 .about_container .hexagon-3 {
   display: flex;
-}
+} */
 
 .home main {
   --columns: 16;
 }
 
-.about_container .hexagon-1,
+/* .about_container .hexagon-1,
 .about_container .hexagon-2,
 .about_container .hexagon-3 {
-  --columns: 8
-}
+  --columns: 21
+} */
 
-.about_container .hexagon-1,
+/* .about_container .hexagon-1,
 .about_container .hexagon-2,
 .about_container .hexagon-3 {
-  --width: 7
-}
+  --width: 21;
+} */
 
-.about_container {
+/* .about_container {
   --columns: 21;
   justify-content: space-between;
-}
+} */
 
 
 .gallery,
@@ -68,10 +69,10 @@ main aside,
 main .introduction,
 main .btns,
 main .hexagon_container,
-.about_container,
+/* .about_container,
 .about.hexagon-1,
 .about.hexagon-2,
-.about.hexagon-3,
+.about.hexagon-3, */
 .gallery_icons,
 .gallery_arrow,
 .gallery_bgImage,
