@@ -198,7 +198,7 @@ main .info p {
     position: absolute;
     width: 19vw;
     height: 22vw;
-    opacity: 80%;
+    /* opacity: 80%; */
     clip-path: var(--hexagon);
     background: var(--white);
     transform: rotate(-90deg);

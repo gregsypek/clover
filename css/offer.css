@@ -236,21 +236,11 @@ tr:nth-child(even) {
     background-color: var(--white);
     box-shadow: var(--black-shadow);
   }
+  .dark {
+    font-weight: bold;
+}
 
 
 }
 
-@media (min-width: 200px) {
-  
-}
 
-@media (min-width: 480px) {
- 
-}
-
-@media (min-width: 768px) {
- 
-}
-@media (min-width: 1000px) {
-  
-}
