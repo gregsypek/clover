@@ -122,16 +122,26 @@ border: 2px solid var(--black);
     padding: 1rem 0;
    
 }
-/* to make space for higher section about */
+
 
 .tips_box {   
-  margin-top: 18rem;
+
   width: 95vw;
   height: 85vw; 
 }
-section.tips {
-  height: 120vh;
-}
+.slide-dots span {
+  width: 1.2rem;
+  height: 1.2rem;
 
 }
-  
+.slide-dots span:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+}@media (max-width: 320px) {
+  .tips_box {   
+
+    width: 95vw;
+    height: 120vw; 
+  }
+}

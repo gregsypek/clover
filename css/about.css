@@ -1,18 +1,5 @@
 
-.hexagon .inside_wrapper {
-  transform: rotate(90deg);
-  content: "";
-  position: absolute;
 
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .inside_wrapper .text {
   text-align: center;
@@ -30,30 +17,53 @@
 @media (min-width: 200px) {
 
   .about_container {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 100%;    
-    display: grid;
-    grid-auto-rows: min-content;
-    grid-auto-columns: 1fr;
+    /* display: grid; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-items: center; */
+    /* grid-auto-rows: min-content;
+    grid-auto-columns: 1fr; */
 
   }
   .hexagon-1,
   .hexagon-2,
   .hexagon-3 { 
-    width: 65vw;
-    height: 75vw;
-    background: var(--white);
-    transform: rotate(-90deg);
+    width: 80vw;
+    height: 32vh;
+    background: var(--white);  
     justify-self: center;
+    margin-top: 1vh;
   }
+  .inside_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
   .hexagon .inside_wrapper svg {   
     display: none;
   }
-  .inside_wrapper h3 {
-    margin: .5rem 0;
+  .inside_wrapper .text {
+    padding: 10px;
   }
+  /* .inside_wrapper h3 {
+    margin: .5rem 0;
+  } */
 }
 @media (min-width: 320px) {
+  /* .about_container {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;     */
+    /* display: grid;
+    grid-auto-rows: min-content;
+    grid-auto-columns: 1fr; */
+
+  
   .hexagon .inside_wrapper svg {
     display: block;
     width: 40px;
@@ -65,6 +75,21 @@
 }
 
 @media (min-width: 480px) {
+  .hexagon .inside_wrapper {
+    transform: rotate(90deg);
+    content: "";
+    position: absolute;
+  
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .hexagon-1,
   .hexagon-2,
   .hexagon-3 { 
@@ -72,6 +97,7 @@
     width: 49vw;
     height: 59vw;
     clip-path: var(--hexagon);
+    transform: rotate(-90deg);
 }
 .inside_wrapper .text {
   text-align: center;
@@ -88,15 +114,18 @@
   .about_container {
     height: 100%;
     align-items: center;
+    flex-direction: row;
   }
   
   .text p {
     font-family: var(--font-second);
     font-size: var(--p);
   }
+  /* .hexagon .inside_wrapper {
+    flex-direction: row;
+  } */
   
   .hexagon .inside_wrapper svg {
- 
     width: 3rem;
     
   }

@@ -13,7 +13,8 @@ position: relative;
   position: absolute;
   left: 31.03%;
   right: 0.95%;
-  top: -79%;
+  /* place in the middle of section gallery */
+  top: -83%;
   bottom: -353.14%;
   width: 1812.744px;
   height: 2118.792px;
@@ -32,15 +33,12 @@ position: relative;
   justify-content: space-evenly;
   align-items: center;
   filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
+  margin-left: 3rem;
 
-
-  /* max-height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden; */
 }
 
 .gallery_icon {
-  /* clip-path: var(--hexagon); */
+
   width: 6vw;
   height: 6vw;
   border: 2px solid var(--black);
@@ -70,51 +68,114 @@ position: relative;
 .active-icon {
 width: 7.5vw;
 height: 7.5vw;
+border-color: var(--gold);
 }
-/* .gallery_icon:not(:last-of-type) {
-  margin-bottom: 1rem;
-  
-} */
+
 .gallery_icon image{
   width: 191px;
   height: 220px;
 fill: cover;
 }
-.gallery_arrow {
-  text-align: center;
-  align-self: center;
-}
+
 .gallery_bigImage {
   flex-grow: 1;
-  /* position: relative;
-  overflow: hidden; */
+
 
 }
 
 #image-chosen {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  /* transform: translate(-50%,-50%); */
+ 
+  position: absolute;
+  top: 0%;
+  left: 0%;
   width: 100%;
-  height: 100%; 
-  clip-path: polygon(25% 1.94%, 90% 15px, 90% 99%, 25.11% 99%, -0.42% 49.79%);
-  /* -webkit-clip-path: polygon(18.79% -0.12%, 78.79% 0px, 78.79% 99.99%, 19.31% 99.91%, -0.42% 49.79%); */
-  
-  /* object-fit: cover; */
-  /* object-position: 20% 0; */
-}
-@media (min-width: 200px) {
-  
+  height: 100%;
+  clip-path: polygon(41% 5%, 95% 35px, 95% 95%, 41% 95%, 23.06% 49.79%);
+
 }
 
-@media (min-width: 480px) {
- 
-}
 
-@media (min-width: 768px) {
+
+@media (max-width: 800px) {
+  section.gallery {
  
+    flex-direction: column;
+    }
+    .gallery_icons {
+ 
+      flex-direction: row;
+     
+      order: 2;
+      margin-bottom: 5%;
+
+  }
+  #image-chosen {
+ 
+    position: absolute;
+    /* the old way to center an image */
+    top:50%;
+    left: 50%;
+    /* -55 because of 5% margin-bottom for gallery-icons */
+    transform: translate(-50%, -55%);
+    margin-bottom: 2rem;
+    width: 80%;
+    height: 60%;
+    clip-path: none;
+  }
+
+  .gallery_icon {
+   
+    width: 60px;
+    height: 60px;
+
 }
-@media (min-width: 1000px) {
+.active-icon {
+  width: calc(60px + 5px);
+  height: calc(60px + 5px);
   
+ 
+  }
+
+  .gallery_icons {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+   margin-left: 0;
+  
+}
+@media (max-width: 480px) {
+  #image-chosen {
+    width: 90%;
+    height: 50%;
+  }
+  .gallery_icons {
+ 
+    display: flex;
+    flex-flow: row wrap;
+    height: 10rem;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+  
+    margin: 10%;
+
+    
+  }
+  .gallery_icon {
+    margin-right: 3rem;
+    width: 50px;
+    height: 50px;
+}
+.active-icon {
+  width: calc(50px + 5px);
+  height: calc(50px + 5px);
+  
+ 
+  }
+
+}
+@media (max-width: 320px) {
+  #image-chosen {
+   
+    height: 40%;
+  }
 }
