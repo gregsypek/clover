@@ -21,13 +21,9 @@
 }
 
 .contact-left svg {
-  /* position: absolute; */
   width: 10vw;
+  margin-bottom: 2rem;
   height: auto;
-  /* bottom: 60%;left: 27%;
-z-index: -1; */
-  transform: rotate(-50deg);
-  /* transform: scaleX(-1) rotate(-45deg); */
   opacity: 80%;
 }
 
@@ -35,13 +31,12 @@ z-index: -1; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* flex-grow: 1; */
 }
 
 .contact-form {
   background-color: var(--green-dark);
-  width: 40vw;
-  max-width: 40vw;
+  width: 500px;
+  max-width: 500px;
   padding: 2rem 4rem;
   border-radius: 5px;
   box-shadow: var(--black-shadow);
@@ -65,7 +60,6 @@ legend {
   border: 0;
 }
 
-
 .input-group {
   margin-bottom: 2rem;
   display: flex;
@@ -78,7 +72,7 @@ legend {
 
 .input-group label {
   font-weight: bold;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-family: var(--font-second);
 }
 
@@ -86,7 +80,7 @@ legend {
   outline: none;
   background: var(--gray-light);
   font-size: 1em;
-  padding: .5em;
+  padding: 0.5em;
   color: inherit;
   border-radius: 5px;
   border: 1px solid var(--green-dark);
@@ -108,7 +102,6 @@ legend {
   border: none;
   font-size: var(--h5);
   border-radius: 5px;
-  ;
 }
 
 .input-group input.btn-form:hover,
@@ -122,7 +115,13 @@ legend {
   border: 1px solid var(--black);
 }
 
-
+@media (max-width: 1100px) {
+  .contact-form {
+    width: 500px;
+    max-width: 500px;
+    padding: 1.5rem 2.5rem;
+  }
+}
 @media (max-width: 900px) {
   .contact {
     flex-direction: column;
@@ -130,22 +129,39 @@ legend {
   }
 
   .contact-form {
-    width: 65vw;
+    width: 60vw;
+    max-width: 60vw;
     max-width: inherit;
     margin: 2rem 0;
   }
-}
-@media (min-width: 200px) {
-  
-}
 
-@media (min-width: 480px) {
- 
+  .contact-left svg {
+    display: none;
+  }
 }
+@media (max-width: 768px) {
+  .contact-form {
+    width: 65vw;
+  }
+}
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 1rem 2rem;
+  }
 
-@media (min-width: 768px) {
- 
+  .input-group {
+    margin-bottom: 0;
+  }
 }
-@media (min-width: 1000px) {
-  
+@media (max-width: 480px) {
+  .contact-form {
+    width: 90vw;
+    max-width: 90vw;
+    padding: 1rem 1rem;
+  }
+
+  .input-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+  }
 }

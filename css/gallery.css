@@ -14,6 +14,8 @@ position: relative;
   left: 31.03%;
   right: 0.95%;
   /* place in the middle of section gallery */
+  /* oblicz top dzielac width/ height a potem na krzyz 1.33 - 15pkt w dol ratio - x  */
+  /* --ratio :  */
   top: -83%;
   bottom: -353.14%;
   width: 1812.744px;
