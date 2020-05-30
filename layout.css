@@ -54,7 +54,7 @@ main .hexagon_container {
 
 .footer-nav--left,
 .footer-nav--right {
-  --width: 6;
+  --width: 12;
 }
 
 .copy {
@@ -86,7 +86,15 @@ main .hexagon_container,
 }
 
 
-@media (min-width: 950px) {}
+/* @media (min-width: 800px) {
+ 
+.footer-nav--right {
+  --width: 6;
+}
+.footer-nav--left {
+  --width: 6;
+}
+} */
 
 @media (min-width: 1200px) {
 
@@ -123,3 +131,5 @@ main .hexagon_container,
 
 
 }
+
+
