@@ -36,6 +36,9 @@ th {
   font-weight: normal;
 }
 
+.dark {
+  font-weight: bold;
+}
 
 
 
@@ -64,7 +67,13 @@ td {
   display: flex;
   flex-flow: row wrap;
   padding: 0.5rem;
-  border: none;
+  border: none; 
+  justify-content: space-between;
+}
+/* long desciption should stay on the right side */
+#table-first tbody tr td:first-of-type,
+#table-second tbody tr td:first-of-type{
+  justify-content: flex-end;
 }
 
 td:before {
@@ -90,6 +99,9 @@ td:before {
 
 #table-first td:nth-of-type(3)::before {
   content: "720 ml";
+}
+#table-first td:nth-of-type(4)::before {
+  content: "320 ml";
 }
 
 /* second table  only for small screen*/
@@ -168,6 +180,15 @@ tr:nth-child(even) {
 
 /* For wider dimensions, change our layout so the table can take the full width of the screen. */
 /* table MQ's */
+@media (min-width: 768px) {
+td {
+ 
+  justify-content: start;
+}
+
+
+
+
 @media (min-width: 950px) {
 
   section.offer {
@@ -236,9 +257,6 @@ tr:nth-child(even) {
     background-color: var(--white);
     box-shadow: var(--black-shadow);
   }
-  .dark {
-    font-weight: bold;
-}
 
 
 }

@@ -7,11 +7,15 @@ main aside img {
 }
 
 main h1 {
+  position:relative;
   text-align: center;
   text-transform: uppercase;
   font-size: var(--h2);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+
+font-family: inherit;
 }
+
 
 main .introduction {
   display: flex;
@@ -46,7 +50,7 @@ main .info p {
 .btns {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
 .btn-green {
@@ -95,10 +99,7 @@ main .info p {
 }
 
 @media (min-width: 200px) {
-  main .introduction {
-    padding: 1rem;
-    height: 60vh;
-  }
+ 
   .home header {
     height: 12vh;
   }
@@ -120,23 +121,38 @@ main .info p {
   }
   
   main .info {
-    padding: 1rem;
+    padding-left: 1rem;
     margin-top: 1rem;
     font-size: var(--text-sm);
   }
 }
+@media (min-width: 320px) {
+      main .info {
+    
+        margin-top: 2.5rem;
+      }
 
+
+main .introduction h4 {
+    
+    padding: 1rem;
+
+}
 @media (min-width: 480px) {
   main .introduction {
 
-    padding: 5rem;
+    padding: 2.5rem;
+  }
+  main .info {
+    
+    margin-top: 0;
   }
 }
 
 @media (min-width: 768px) {
   
   .home header {
-    height: 25vh;
+    height: 20vh;
   }
   
   section.home .logo img {
@@ -170,7 +186,6 @@ main .info p {
   main aside img {
   
     width: 240px;
-
     transform: rotate(65.5deg);
     opacity: 60%;
     margin-top: -4rem;
@@ -182,10 +197,10 @@ main .info p {
 
 
   .home_container {  
-    filter: drop-shadow(-10px 20px 50px rgba(0, 0, 0, 0.25));
+    /* filter: drop-shadow(-10px 20px 50px rgba(0, 0, 0, 0.25)); */
     height: 20vw;
     width: 100%;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
   }
 
   .home_container img {
@@ -229,6 +244,7 @@ main .info p {
   }
   .home_container {
     position: absolute;
+     margin-top: 7rem;
   }
   .home_container img {
     display: block;

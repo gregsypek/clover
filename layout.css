@@ -1,7 +1,8 @@
 /* .about_container { */
 .home main,
 .gallery,
-.footer-wrapper {
+.footer-wrapper,
+.footer {
   display: flex;
   flex-flow: row wrap;
   /* justify-content: space-between; */
@@ -38,7 +39,8 @@
 
 
 .gallery,
-.footer {
+.footer,
+.footer-wrapper {
   --columns: 12;
 }
 
@@ -53,7 +55,8 @@ main .hexagon_container {
 
 
 .footer-nav--left,
-.footer-nav--right {
+.footer-nav--right,
+.footer-wrapper {
   --width: 12;
 }
 
@@ -78,6 +81,7 @@ main .hexagon_container,
 .gallery_bgImage,
 .footer-nav--left,
 .footer-nav--right,
+.footer-wrapper,
 .copy {
   --gap-constant: 0.3%;
   --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
@@ -86,7 +90,7 @@ main .hexagon_container,
 }
 
 
-/* @media (min-width: 800px) {
+@media (min-width: 800px) {
  
 .footer-nav--right {
   --width: 6;
@@ -94,7 +98,7 @@ main .hexagon_container,
 .footer-nav--left {
   --width: 6;
 }
-} */
+}
 
 @media (min-width: 1200px) {
 

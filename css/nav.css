@@ -78,7 +78,7 @@ header .row {
 .main-menu a:hover,
 .main-menu a:focus {
   background: var(--gray-dark);
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /* "close" button */
@@ -86,7 +86,7 @@ header .row {
   position: absolute;
   right: 0;
   top: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 /*
@@ -159,7 +159,7 @@ Note the href targets the main menu (both class and ID)
   header,
   main {
     border: none;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
   }
 
   nav {

@@ -1,6 +1,6 @@
 section.footer {
   background-color: var(--gray-dark);
-  height: 200px;
+  height: 230px;
   /* because each section has 2rem margin-bottom */
 margin-bottom: -2rem;
 
@@ -10,6 +10,7 @@ margin-bottom: -2rem;
   max-width: 1200px;
   margin: 0 auto;
 color: var(--white);
+height: 100%;
 }
 
 .footer-nav--left {
@@ -57,17 +58,38 @@ align-self: flex-end;
   /* padding: 0;
   margin: 0; */
 }
-/* @media (min-width: 200px) {
-  
+@media (min-width: 200px) {
+  section.footer {
+   
+    height: 250px;
+  }
+      .footer-logo {
+        height: 15vw;
+       
+      }
+      .copy {
+       font-size: var(--text-sm);
+}
+.footer-address {
+  font-size: var(--text-sm);
 }
 
 @media (min-width: 480px) {
- 
+  .footer-logo {
+    height: 10vw;
+    max-height: 100px;
+   
+  }
 }
 
 @media (min-width: 768px) {
- 
-} */
+  .footer-address {
+    font-size: var(--p);
+  }
+  .copy {
+    align-self: flex-end;
+  }
+}
 @media (max-width: 1000px) {
   .footer-address p {
     line-height: 80%;

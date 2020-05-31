@@ -121,7 +121,7 @@ fill: cover;
     transform: translate(-50%, -55%);
     margin-bottom: 2rem;
     width: 80%;
-    height: 60%;
+    height: 50%;
     clip-path: none;
   }
 
@@ -147,7 +147,7 @@ fill: cover;
 @media (max-width: 480px) {
   #image-chosen {
     width: 90%;
-    height: 50%;
+    height: 40%;
   }
   .gallery_icons {
  

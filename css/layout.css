@@ -35,6 +35,8 @@
 .about_container {
   --columns: 21;
   justify-content: space-between;
+  /* add shadow */
+  filter: drop-shadow(-3px 5px 4px rgba(50, 50, 0, .5));
 }
 
 
@@ -57,7 +59,7 @@ main .hexagon_container
 
 .footer-nav--left,
 .footer-nav--right {
-  --width: 6;
+  --width: 12;
 }
 
 .copy {
@@ -166,15 +168,12 @@ main .hexagon_container,
     margin: var(--header-margin);
   }
 
-/* 
-
-  .gallery_icons {
-    --width: 3;
+  .footer-nav--left {
+--width: 7;
   }
-
-  .gallery_bigImage {
-    --width: 9;
-  } */
+  .footer-nav--right {
+    --width: 5;
+  }
 }
 
 
@@ -205,6 +204,7 @@ main .hexagon_container,
 
   main .home_container {
     --width: 2;
+    filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
   }
 
 

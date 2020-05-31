@@ -1,5 +1,5 @@
 .contact-header {
-  font-size: var(--h4);
+  /* font-size: var(--h4); */
   color: var(--black);
 }
 
@@ -156,7 +156,7 @@ legend {
 @media (max-width: 480px) {
   .contact-form {
     width: 90vw;
-    max-width: 90vw;
+    max-width: 85vw;
     padding: 1rem 1rem;
   }
 

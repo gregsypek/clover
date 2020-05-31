@@ -12,7 +12,7 @@ section.tips {
   flex-direction: column;
   justify-content: space-between;
   width: 70vw;
-  height: 50vw;
+  height: auto;
   
   padding: 3rem 0;
   background: var(--white);
@@ -124,10 +124,9 @@ border: 2px solid var(--black);
 }
 
 
-.tips_box {   
-
+.tips_box {
   width: 95vw;
-  height: 85vw; 
+  height: 95vw;
 }
 .slide-dots span {
   width: 1.2rem;
