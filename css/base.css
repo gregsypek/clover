@@ -10,6 +10,7 @@
   --orange: #F2994A;
   --green-light: #6fcf97;
   --green-dark: #27AE60;
+  --gradient: radial-gradient( 50% 50% at 50% 50%, #f5de93 57.81%, #e0ca81 97.4% );
 
 
   /* SHADOW VARIABLES */
@@ -91,3 +92,12 @@ section {
   }
 }
 
+.hexagon-bg::before,
+.hexagon-bg-2::before,
+.hexagon-bg-3::before {
+  background: var(--gradient);
+  width: 1812.744px;
+  height: 2118.792px;
+  clip-path: var(--hexagon);
+  transform: rotate(-90deg);
+}

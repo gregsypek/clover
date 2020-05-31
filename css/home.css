@@ -7,15 +7,14 @@ main aside img {
 }
 
 main h1 {
-  position:relative;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
   font-size: var(--h2);
   letter-spacing: 3px;
 
-font-family: inherit;
+  font-family: inherit;
 }
-
 
 main .introduction {
   display: flex;
@@ -26,12 +25,11 @@ main .introduction {
 }
 
 main .introduction h4 {
- 
   font-family: var(--font-third);
   font-weight: normal;
   font-size: var(--p);
-  padding: 1rem; 
-align-self: center;
+  padding: 1rem;
+  align-self: center;
 }
 
 main .info {
@@ -71,10 +69,9 @@ main .info p {
 
 .home_container {
   position: relative;
- 
+
   filter: drop-shadow(-10px 20px 50px rgba(0, 0, 0, 0.25));
 }
-
 
 .hexagon-bg::before {
   content: "";
@@ -84,22 +81,15 @@ main .info p {
   right: 4.95%;
   top: -28%;
   bottom: -353.14%;
-  width: 1812.744px;
-  height: 2118.792px; 
-  clip-path: var(--hexagon);
   transform: translateX(-922px);
-  background: radial-gradient(
+  /* background: radial-gradient(
     50% 50% at 50% 50%,
     #fbd965 57.81%,
-    #fbd965 97.4%
-  );
-
-  transform: rotate(-90deg);
+    #fbd965 97.4% */
   z-index: -1;
 }
 
 @media (min-width: 200px) {
- 
   .home header {
     height: 12vh;
   }
@@ -119,7 +109,7 @@ main .info p {
   main aside img {
     display: none;
   }
-  
+
   main .info {
     padding-left: 1rem;
     margin-top: 1rem;
@@ -127,34 +117,28 @@ main .info p {
   }
 }
 @media (min-width: 320px) {
-      main .info {
-    
-        margin-top: 2.5rem;
-      }
+  main .info {
+    margin-top: 2.5rem;
+  }
 
-
-main .introduction h4 {
-    
+  main .introduction h4 {
     padding: 1rem;
-
+  }
 }
 @media (min-width: 480px) {
   main .introduction {
-
     padding: 2.5rem;
   }
   main .info {
-    
     margin-top: 0;
   }
 }
 
 @media (min-width: 768px) {
-  
   .home header {
     height: 20vh;
   }
-  
+
   section.home .logo img {
     height: 80px;
   }
@@ -163,8 +147,6 @@ main .introduction h4 {
     width: 80vh;
     height: 47vh;
   }
-
-  
 }
 @media (min-width: 1000px) {
   main .introduction {
@@ -184,19 +166,16 @@ main .introduction h4 {
     align-items: flex-end;
   }
   main aside img {
-  
     width: 240px;
     transform: rotate(65.5deg);
     opacity: 60%;
     margin-top: -4rem;
   }
   main .info {
-   
     font-size: var(--p);
   }
 
-
-  .home_container {  
+  .home_container {
     /* filter: drop-shadow(-10px 20px 50px rgba(0, 0, 0, 0.25)); */
     height: 20vw;
     width: 100%;
@@ -221,21 +200,18 @@ main .introduction h4 {
 
   .hexagon-small-1 {
     right: 11.15vw;
-    top: 0.83vw;   
+    top: 0.83vw;
   }
 
   .hexagon-small-2 {
     right: -6.85vw;
-    top: 10.83vw;  
+    top: 10.83vw;
   }
 
   .hexagon-small-3 {
     right: -6.85vw;
-    top: -9.33vw; 
+    top: -9.33vw;
   }
-
-
-
 }
 
 @media (min-width: 1200px) {
@@ -244,7 +220,7 @@ main .introduction h4 {
   }
   .home_container {
     position: absolute;
-     margin-top: 7rem;
+    margin-top: 7rem;  
   }
   .home_container img {
     display: block;
@@ -259,5 +235,4 @@ main .introduction h4 {
     top: 0.83vw;
     z-index: -2;
   }
- 
 }

@@ -13,19 +13,11 @@ position: relative;
   position: absolute;
   left: 31.03%;
   right: 0.95%;
+  top: -83%;
+  bottom: -353.14%; 
   /* place in the middle of section gallery */
   /* oblicz top dzielac width/ height a potem na krzyz 1.33 - 15pkt w dol ratio - x  */
   /* --ratio :  */
-  top: -83%;
-  bottom: -353.14%;
-  width: 1812.744px;
-  height: 2118.792px;
-  clip-path: var(--hexagon);
-
-  transform: translateX(-922px);
-  background: radial-gradient(50% 50% at 50% 50%, #FBD965 57.81%, #FBD965 97.4%);
-
-  transform: rotate(-90deg);
   z-index: -1;
 }
 

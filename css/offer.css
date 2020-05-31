@@ -5,17 +5,17 @@ and Adrian Roselli: http://adrianroselli.com/2017/11/a-responsive-accessible-tab
 /* position: relative is for bg-3 */
 section.offer {
   position: relative;
-  height: 200vh;
+  height: 190vh;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 12% 88%;
+  grid-template-rows: 10% 80% 10%;
   display: grid;
   justify-content: center;
-
 }
 
 .offer_header {
   grid-column: 1/-1;
   justify-self: center;
+  align-self: center;
 }
 
 .offer_box {
@@ -40,8 +40,6 @@ th {
   font-weight: bold;
 }
 
-
-
 /* Force table to not be like tables anymore */
 table,
 thead,
@@ -50,9 +48,8 @@ th,
 tr,
 td {
   display: block;
-  padding: .3rem;
+  padding: 0.3rem;
 }
-
 
 /* Hide table headers (but not display: none;, for accessibility -- sighted users will see labels below) */
 thead tr {
@@ -67,12 +64,12 @@ td {
   display: flex;
   flex-flow: row wrap;
   padding: 0.5rem;
-  border: none; 
+  border: none;
   justify-content: space-between;
 }
 /* long desciption should stay on the right side */
 #table-first tbody tr td:first-of-type,
-#table-second tbody tr td:first-of-type{
+#table-second tbody tr td:first-of-type {
   justify-content: flex-end;
 }
 
@@ -157,43 +154,28 @@ tr:nth-child(even) {
   background-color: var(--white);
 }
 
-
-
 .hexagon-bg-3::before {
   content: "";
   position: absolute;
   left: -70.97%;
   right: 0.95%;
   top: 192%;
-  width: 1812.744px;
-  height: 2118.792px;
-  clip-path: var(--hexagon);
-
-  transform: translateX(-922px);
-  background: radial-gradient(50% 50% at 50% 50%, #FBD965 57.81%, #FBD965 97.4%);
-
-  transform: rotate(-90deg);
+  
   z-index: -1;
 }
-
-
 
 /* For wider dimensions, change our layout so the table can take the full width of the screen. */
 /* table MQ's */
 @media (min-width: 768px) {
-td {
- 
-  justify-content: start;
+  td {
+    justify-content: start;
+  }
 }
 
-
-
-
 @media (min-width: 950px) {
-
-  section.offer {
+  /* section.offer {
     height: 150vh;
-  }
+  } */
 
   /* td:before is not specific enough to override the original declarations, thus this method */
   #table-first td:nth-of-type(odd):before,
@@ -235,7 +217,6 @@ td {
     text-transform: lowercase;
     font-size: var(--h4);
     line-height: 3rem;
-
   }
 
   .dark,
@@ -244,7 +225,6 @@ td {
     color: var(--white);
     font-weight: normal;
   }
-
 
   .offer_box {
     grid-column: 2/3;
@@ -257,8 +237,4 @@ td {
     background-color: var(--white);
     box-shadow: var(--black-shadow);
   }
-
-
 }
-
-

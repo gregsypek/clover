@@ -14,18 +14,13 @@
 }
 
 .contact-left {
+  position:relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contact-left svg {
-  width: 10vw;
-  margin-bottom: 2rem;
-  height: auto;
-  opacity: 80%;
-}
 
 .contact {
   display: flex;
@@ -164,4 +159,44 @@ legend {
     font-weight: normal;
     margin-bottom: 0;
   }
+}
+/* styling background triple hexagons */
+@media (min-width: 1100px) {  
+
+
+  .contact_container {
+    filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
+    width: 100%;
+    height: auto;
+    transform: rotate(5deg);
+  }
+  .hexagon-small-4,
+  .hexagon-small-5,
+  .hexagon-small-6 {
+    position: absolute;
+    width: 19vw;
+    height: 22vw;   
+    clip-path: var(--hexagon);
+    background: var(--white);
+    transform: rotate(-90deg);
+  }
+
+  .hexagon-small-4 {
+    right: 36vw;
+    top: -37vw;
+  }
+
+  .hexagon-small-5 {
+    right: 18vw;
+    top: -27vw;
+} 
+  
+
+  .hexagon-small-6 {
+    right: 36vw;
+    top: -17vw;
+  }
+
+
+
 }
