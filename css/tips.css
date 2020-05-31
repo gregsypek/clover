@@ -12,7 +12,7 @@ section.tips {
   flex-direction: column;
   justify-content: space-between;
   width: 70vw;
-  height: auto;
+  height: 500px;
   
   padding: 3rem 0;
   background: var(--white);
@@ -24,10 +24,11 @@ border-radius: 10px;
   text-transform: uppercase;
   font-family: var(--font-first);
   font-size: var(--h3);
+  margin: 0;
 }
 
 .slider {
-  height: 70%;
+  height: 200px;
   padding: 2rem;
 }
 .slider .slide {
@@ -50,12 +51,16 @@ align-self: center;
 }
 
  .slide-dots {
+   /* add position and z-index to go in front of the beater image */
+   position: relative;
+   z-index: 5;
   display: flex;
   justify-content: center;
 
 }
 
 .slide-dots span {
+  cursor: pointer;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;   
@@ -67,9 +72,10 @@ border: 2px solid var(--black);
 .slide-dots span:not(:last-of-type) {
   margin-right: 2rem;
 }
-.slide-dots span.active-dots {
+.slide-dots span.active-dot {
   background-color: var(--green-dark);
 }
+
 
 .beater {
   position: absolute;
@@ -83,6 +89,7 @@ border: 2px solid var(--black);
   background-repeat: no-repeat;
   transform: rotate(72deg);
   opacity: 30%;
+ 
 }
 
 @media (max-width: 1000px) {
@@ -144,3 +151,4 @@ border: 2px solid var(--black);
     height: 120vw; 
   }
 }
+
