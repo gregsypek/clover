@@ -89,7 +89,5 @@ let active = 0;
 
   window.addEventListener('keydown', keyChangeSlide);
 
-  console.log(dots);
-
 
 dots.forEach(item => item.addEventListener('click', clickChangeSlide));

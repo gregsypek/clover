@@ -1,12 +1,8 @@
-
-
 /* https://alligator.io/css/cropping-images-object-fit/ */
 
 section.gallery {
- 
-position: relative;
+  position: relative;
 }
-
 
 .hexagon-bg-2::before {
   content: "";
@@ -14,7 +10,7 @@ position: relative;
   left: 31.03%;
   right: 0.95%;
   top: -83%;
-  bottom: -353.14%; 
+  bottom: -353.14%;
   /* place in the middle of section gallery */
   /* oblicz top dzielac width/ height a potem na krzyz 1.33 - 15pkt w dol ratio - x  */
   /* --ratio :  */
@@ -25,89 +21,65 @@ position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; d */
   filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
   margin-left: 3rem;
-
 }
 
-.gallery_icon {
-
-  width: 6vw;
-  height: 6vw;
+.gallery_icon a img {
+  width: 65px;
+  height: 65px;
   border: 2px solid var(--black);
   background-position: center;
   border-radius: 50%;
 }
-.img-1 {
-  background-image: url(/img/img1_small.jpg);
-}
-.img-2 {
-  background-image: url(/img/img2_small.jpg);
-}
-.img-3 {
-  background-image: url(/img/img3_small.jpg);
-}
-.img-4 {
-  background-image: url(/img/img4_small.jpg);
-}
-.img-5 {
-  background-image: url(/img/img5_small.jpg);
-}
-.img-6 {
-  background-image: url(/img/img6_small.jpg);
+ul.gallery_icons {
+  list-style: none;
 }
 
 /* change size the chosen one */
-.active-icon {
-width: 7.5vw;
-height: 7.5vw;
-border-color: var(--gold);
+.gallery_icons  img.active-icon {
+  /* width: 7.5vw;
+  height: 7.5vw; */
+  box-shadow: 0 0 0 3px var(--white), 0 0 3px 6px var(--green-dark);
 }
 
-.gallery_icon image{
+.gallery_icon img {
   width: 191px;
   height: 220px;
-fill: cover;
+  fill: cover;
 }
 
-.gallery_bigImage {
-  flex-grow: 1;
 
 
-}
 
 #image-chosen {
- 
   position: absolute;
   top: 0%;
-  left: 0%;
+  left: 12%;
   width: 100%;
   height: 100%;
-  clip-path: polygon(41% 5%, 95% 35px, 95% 95%, 41% 95%, 23.06% 49.79%);
-
+  clip-path: polygon(38% 13.63%, 83.25% 113px, 83.33% 86.33%, 38% 86.2%, 21.48% 50%);
+  object-fit: scale-down;
+  object-position: 50% 113px;
 }
-
 
 
 @media (max-width: 800px) {
   section.gallery {
- 
     flex-direction: column;
-    }
-    .gallery_icons {
- 
-      flex-direction: row;
-     
-      order: 2;
-      margin-bottom: 5%;
+  }
+  .gallery_icons {
+    flex-direction: row;
 
+    order: 2;
+    margin-bottom: 5%;
   }
   #image-chosen {
- 
+
     position: absolute;
     /* the old way to center an image */
-    top:50%;
+    top: 50%;
     left: 50%;
     /* -55 because of 5% margin-bottom for gallery-icons */
     transform: translate(-50%, -55%);
@@ -116,25 +88,25 @@ fill: cover;
     height: 50%;
     clip-path: none;
   }
+  .gallery_bigImage img {
+    filter: drop-shadow(0 0 5px #333);
+    /* filter: drop-shadow(var(--orange-shadow)); */
+  }
 
   .gallery_icon {
-   
     width: 60px;
     height: 60px;
-
-}
-.active-icon {
-  width: calc(60px + 5px);
-  height: calc(60px + 5px);
-  
- 
+  }
+  .active-icon {
+    width: calc(60px + 5px);
+    height: calc(60px + 5px);
   }
 
   .gallery_icons {
     flex-flow: row wrap;
     justify-content: space-evenly;
-   margin-left: 0;
-  
+    margin-left: 0;
+  }
 }
 @media (max-width: 480px) {
   #image-chosen {
@@ -142,34 +114,27 @@ fill: cover;
     height: 40%;
   }
   .gallery_icons {
- 
     display: flex;
     flex-flow: row wrap;
     height: 10rem;
     position: absolute;
     bottom: 0%;
     left: 5%;
-  
-    margin: 10%;
 
-    
+    margin: 10%;
   }
   .gallery_icon {
     margin-right: 3rem;
     width: 50px;
     height: 50px;
-}
-.active-icon {
-  width: calc(50px + 5px);
-  height: calc(50px + 5px);
-  
- 
   }
-
+  .active-icon {
+    width: calc(50px + 5px);
+    height: calc(50px + 5px);
+  }
 }
 @media (max-width: 320px) {
   #image-chosen {
-   
     height: 40%;
   }
 }
