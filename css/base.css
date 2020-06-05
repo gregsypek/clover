@@ -25,9 +25,7 @@
   font-family: 'Open Sans', sans-serif;
   font-family: 'Original Surfer', cursive;
 
-  /* --font-first: "original surfer", cursive;
-    --font-second: 'courgette', sans-serif;
-    --font-third:'Open Sans', sans-serif; */
+ 
   --font-first: "patua one", cursive;
   --font-second: 'sansita', cursive;
   --font-third: 'courgette', sans-serif;
@@ -45,7 +43,8 @@
 
 }
 section {
-  /* border: 1px  solid black; */
+  border: 1px  solid black;
+  min-height: 800px;
 }
 
 .btn {

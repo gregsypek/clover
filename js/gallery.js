@@ -16,6 +16,15 @@ const changeImage =(e)=> {
 const activeDot = gallery.findIndex(img=>img.classList.contains('active-icon'));
     gallery[activeDot].classList.remove('active-icon');
     gallery[index].classList.add('active-icon');
-
+    gallery[activeDot].style.backgroundColor = 'red';
+    
+  gallery[index].style.backgroundColor = "red";
 }
 gallery.forEach(item=>item.addEventListener('click', changeImage));
+
+
+
+
+
+
+

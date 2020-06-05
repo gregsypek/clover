@@ -42,9 +42,7 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    /* align-items: center; */
-    /* grid-auto-rows: min-content;
-    grid-auto-columns: 1fr; */
+
 
   }
   .hexagon-1,
@@ -75,13 +73,7 @@
   } */
 }
 @media (min-width: 320px) {
-  /* .about_container {
-    display: flex;
-    margin: 0 auto;
-    width: 100%;     */
-    /* display: grid;
-    grid-auto-rows: min-content;
-    grid-auto-columns: 1fr; */
+
 
   
   .hexagon .inside_wrapper svg {

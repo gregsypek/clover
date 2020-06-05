@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/layout.css" />
+  <!-- <link rel="stylesheet" href="css/layout.css" /> -->
+  <link rel="stylesheet" href="css/layout2.css" />
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/type.css" />
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/tips.css" />
   <link rel="stylesheet" href="css/gallery.css" />
+  <!-- <link rel="stylesheet" href="css/gallery-old.css" /> -->
   <link rel="stylesheet" href="css/offer.css" />
   <link rel="stylesheet" href="css/contact.css" />
   <link rel="stylesheet" href="css/map.css" />
@@ -206,18 +208,24 @@
     <section class="gallery">
       <div class="hexagon-bg-2"></div>
       <!-- <div class="half"></div> -->
-      <ul class="gallery_icons">
-        <li class="gallery_icon active-icon"><a  href="#"><img class="active-icon" src="./img/img1_small.jpg" data-pic="img1"
-              alt="miniature of picture"></a></li>
-        <li class="gallery_icon"><a  href="#"><img src="./img/img2_small.jpg" data-pic="img2" alt="miniature of picture"></a></li>
-        <li class="gallery_icon"><a href="#"><img src="./img/img3_small.jpg" data-pic="img3" alt="miniature of picture"></a></li>
-        <li class="gallery_icon"><a href="#"><img src="./img/img4_small.jpg" data-pic="img4" alt="miniature of picture"></a></li>
-        <li class="gallery_icon"><a href="#"><img src="./img/img5_small.jpg" data-pic="img5" alt="miniature of picture"></a></li>
-        <li class="gallery_icon"><a href="#"><img src="./img/img6_small.jpg" data-pic="img6" alt="miniature of picture"></a></li>
-      </ul>
-      
-      <div class="gallery_bigImage">
-        <img id="image-chosen" src="/img/img2.jpg" alt="print image">
+      <div class="gallery-wrapper">
+        <div class="gallery_bigImage">
+          <img id="image-chosen" src="/img/img2.jpg" alt="print image">
+        </div>
+        <ul class="gallery_icons">
+          <li class="gallery_icon "><a href="#"><img class="active-icon" src="./img/img1_small.jpg" data-pic="img1"
+                alt="miniature of picture"></a></li>
+          <li class="gallery_icon"><a href="#"><img src="./img/img2_small.jpg" data-pic="img2"
+                alt="miniature of picture"></a></li>
+          <li class="gallery_icon"><a href="#"><img src="./img/img3_small.jpg" data-pic="img3"
+                alt="miniature of picture"></a></li>
+          <li class="gallery_icon"><a href="#"><img src="./img/img4_small.jpg" data-pic="img4"
+                alt="miniature of picture"></a></li>
+          <li class="gallery_icon"><a href="#"><img src="./img/img5_small.jpg" data-pic="img5"
+                alt="miniature of picture"></a></li>
+          <li class="gallery_icon"><a href="#"><img src="./img/img6_small.jpg" data-pic="img6"
+                alt="miniature of picture"></a></li>
+        </ul>
       </div>
       <!-- this background is not in section offer because of grid -->
       <div class="hexagon-bg-3">
@@ -441,6 +449,7 @@
     </div>
   </section>
 
+  <!-- <script src="./js/hexPosition.js"></script> -->
   <script src="./js/slider.js"></script>
   <script src="./js/gallery.js"></script>
 </body>
