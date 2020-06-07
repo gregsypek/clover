@@ -22,13 +22,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Patua+One&family=Sansita&display=swap"
     rel="stylesheet">
 
+   
+
   <title>Pasieka-koniczynka</title>
 </head>
 
 <body>
   <a href="#introduction" id="skip-link">Przejdź do opisu</a>
   <div class="wrapper">
-    <section class="home hexagon-bg">
+    <section id="home" class="home hexagon-bg" >
       <!-- <div class="hexagon-bg">  </div> -->
       <header>
         <div class="row">
@@ -49,16 +51,16 @@
             <li>
               <!-- span is for shadow effect -->
               <span></span>
-              <a href="#">O nas</a>
+              <a href="#about">O nas</a>
             </li>
             <li>
-              <span></span><a href="#">Porady</a></li>
+              <span></span><a href="#tips">Porady</a></li>
             <li>
-              <span></span><a href="#">Galeria</a></li>
+              <span></span><a href="#gallery">Galeria</a></li>
             <li>
-              <span class="orange"></span><a href="#">Oferta</a></li>
+              <span class="orange"></span><a href="#offer">Oferta</a></li>
             <li>
-              <span class="orange"></span><a href="#">Kontakt</a></li>
+              <span class="orange"></span><a href="#contact">Kontakt</a></li>
           </ul>
         </nav>
         <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
@@ -86,8 +88,8 @@
             </p>
             </h3>
             <div class="btns">
-              <button class="btn btn-green">kup teraz</button>
-              <button class="btn btn-orange">zapraszam</button>
+              <a href="#offer" class="btn btn-green">kup teraz</a>
+              <a href="#about"class="btn btn-orange">zapraszam</a>
             </div>
 
         </div>
@@ -101,7 +103,7 @@
 
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <!-- <div class="half"></div> -->
       <div class="about_container">
 
@@ -165,7 +167,7 @@
 
     </section>
 
-    <section class="tips">
+    <section id="tips" class="tips">
       <!-- <div class="half"></div> -->
  
       <div class="beater"></div>
@@ -201,7 +203,7 @@
       <!-- </div> -->
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
       <div class="hexagon-bg-2">
       <!-- <div class="half"></div> -->
       <div class="gallery-wrapper">
@@ -227,7 +229,7 @@
       <!-- this background is not in section offer because of grid -->
     </section>
     
-    <section class="offer">
+    <section id="offer" class="offer">
     
       <h2 class="offer_header">Oferta</h2>
       <div class="offer_box">
@@ -331,7 +333,7 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section id="contact" class="contact" >
       <div class="hexagon-bg-3">
       <div class="contact-left">
         <div class="contact_container">
@@ -407,7 +409,7 @@
                     ?> -->
     </section>
 
-    <section class="map">
+    <section id="map"class="map">
       <img src="./img/bee_real.png" alt="bee" />
       <div class="map-box">
         <h2 class="map-header header">Zobacz <span>gdzie</span> jesteśmy</h2>
@@ -416,13 +418,13 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10194.401362346862!2d21.278227931744798!3d50.2993878033718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d6f2b9e133ccf%3A0x27c3287f1b0186f7!2sKaw%C4%99czyn+42%2C+39-308+Kaw%C4%99czyn!5e0!3m2!1spl!2spl!4v1562575047996!5m2!1spl!2spl"
             allowfullscreen allowfullscreen class="map-google"></iframe>
         </div>
-        <button class="btn-orange btn phone-btn"><a ref="tel:+48536230915">Zadzwoń</a>
-        </button>
+        <a class="btn-orange btn phone-btn" ref="tel:+48536230915">Zadzwoń
+        </a>
       </div>
     </section>
 
   </div>
-  <section class="footer">
+  <section id="footer" class="footer">
     <div class="footer-wrapper">
       <ul class="footer-nav--left">
         <img src="img/logo-green-w.svg" alt="logo" class="footer-logo" />
@@ -447,8 +449,10 @@
     </div>
   </section>
 
-  <!-- <script src="./js/hexPosition.js"></script> -->
-  <script src="./js/slider.js"></script>
+ 
+
+  <!-- <script src="./js/slider.js"></script> -->
+  <script src="./js/tips.js"></script>
   <script src="./js/gallery.js"></script>
 </body>
 

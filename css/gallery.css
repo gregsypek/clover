@@ -23,7 +23,7 @@ section.gallery {
 
 .gallery_icons {
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: space-evenly;
 
   filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));

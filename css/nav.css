@@ -193,7 +193,7 @@ Note the href targets the main menu (both class and ID)
   }
 
   .main-menu ul li:not(:last-of-type) {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
   .main-menu li span {
     position: relative;

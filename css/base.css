@@ -30,13 +30,6 @@
   --font-second: 'sansita', cursive;
   --font-third: 'courgette', sans-serif;
 
-
-  /* my screen resolution */
-  /* width */
-  --sw: 1440px;
-  /* heigth */
-  --sh: 825px;
-
   /* HEXAGONS */
 
   --hexagon: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
@@ -46,8 +39,8 @@
 
 section:not(.footer) {
   /* border: 1px  solid black; */
-  height: 800px;
-  min-height: 100vh;
+  /* height: 800px; */
+  min-height: 800px;
 
 }
 
@@ -57,10 +50,10 @@ section:not(.footer) {
   font-weight: bold;
   text-transform: uppercase;
   font-size: var(--h5);
-  width: 8rem;
-  height: 2.5rem;   
+  /* width: 8rem; */
+  /* height: 2.5rem;    */
   border-radius: 25px;  
-  padding: .3rem;
+  /* padding: .3rem; */
   cursor: pointer;
   box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.25);
 
@@ -68,30 +61,36 @@ section:not(.footer) {
 @media (min-width: 200px) {
   
   .btn {
-    width: 7rem;
-    height: 2rem;   
+  
     border: 1px solid var(--black);
-    padding: .2rem;
+ 
     font-size: var(--text-sm);
    
+  }
+  a {
+    padding: .5rem 1rem;
   }
 }
 
 @media (min-width: 480px) {
   .btn {
-    width: 8rem;
-    height: 2.5rem;   
+ 
     border: 1px solid var(--black);
-    padding: .3rem;
+   
+}
+a {
+  padding: .8rem 1.5rem;
 }
 }
 
 @media (min-width: 768px) { 
   .btn {
-    width: 10rem;
-    height: 3rem;
+   
     border-width: 2px;
     font-size: var(--p);
+  }
+  a {
+    padding: .8rem 1.8rem;
   }
 }
 
@@ -117,4 +116,9 @@ section:not(.footer) {
   clip-path: var(--hexagon);
   transform: rotate(-90deg);
 
+ }
+ @media (min-width: 1000px) { 
+   .btns .btn-green {
+     margin-right: 5rem;
+   }
  }

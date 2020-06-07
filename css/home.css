@@ -45,10 +45,18 @@ main .info p {
 
 /* buttons */
 
-.btns {
-  display: flex;
-  justify-content: space-between;
+/* .btns { */
+  /* display: flex; */
+  /* justify-content: space-between; */
   /* align-items: flex-end; */
+/* } */
+.btns  a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+
+  /* padding: .3rem; */
+
 }
 
 .btn-green {
@@ -104,6 +112,7 @@ main .info p {
   
   }
   .btns {
+    display: flex;
     justify-content: space-evenly;
   }
   main aside img {
@@ -145,7 +154,7 @@ main .info p {
   main .introduction {
     padding: 3rem;
     width: 80vh;
-    height: 47vh;
+    /* height: 47vh; */
   }
 }
 @media (min-width: 1000px) {
