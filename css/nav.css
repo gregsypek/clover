@@ -181,7 +181,7 @@ Note the href targets the main menu (both class and ID)
 
   /* Undo off-canvas styling */
   .main-menu ul {
-    padding: 0;
+    padding: 10px;
     height: auto;
     width: auto;
     background: none;

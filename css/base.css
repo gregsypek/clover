@@ -42,8 +42,8 @@
   --hexagon: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 
 }
-section {
-  border: 1px  solid black;
+section:not(section.footer) {
+  /* border: 1px  solid black; */
   min-height: 800px;
 }
 
@@ -93,10 +93,29 @@ section {
 
 .hexagon-bg::before,
 .hexagon-bg-2::before,
-.hexagon-bg-3::before {
+.hexagon-bg-3::before
+{
+
   background: var(--gradient);
-  width: 1812.744px;
-  height: 2118.792px;
+   width: 1812.744px;
+  height: 2118.792px; 
   clip-path: var(--hexagon);
   transform: rotate(-90deg);
 }
+.gallery_bigImage::after
+ {
+  background: var(--gradient);
+  /* width: 1812.744px;
+  height: 2118.792px; */
+  --difference: 14.55%;
+  /* --height: 264.849vh;
+  height: var(--height);
+  width: calc(var(--height) - var(--difference)); */
+
+  --width: 125.855vw;
+ width: var(--width);
+ height: calc(var(--width) + var(--difference)); 
+  clip-path: var(--hexagon);
+  transform: rotate(-90deg);
+
+ }

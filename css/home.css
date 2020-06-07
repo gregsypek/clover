@@ -101,7 +101,7 @@ main .info p {
     padding: 0.5rem;
     align-items: center;
     justify-content: space-between;
-    align-self: baseline;
+  
   }
   .btns {
     justify-content: space-evenly;

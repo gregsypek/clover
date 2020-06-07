@@ -19,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 }
 
 
@@ -166,8 +167,8 @@ legend {
 
   .contact_container {
     filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     transform: rotate(5deg);
   }
   .hexagon-small-4,
@@ -183,18 +184,18 @@ legend {
 
   .hexagon-small-4 {
     right: 36vw;
-    top: -37vw;
+top: -21vw;
   }
 
   .hexagon-small-5 {
     right: 18vw;
-    top: -27vw;
+    top: -11vw;
 } 
   
 
   .hexagon-small-6 {
     right: 36vw;
-    top: -17vw;
+top: -1vw;
   }
 
 
