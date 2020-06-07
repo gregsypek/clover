@@ -16,7 +16,6 @@ section.gallery {
   z-index: -1;
 }
 
-
 .gallery-wrapper {
   justify-content: center;
   align-items: center;
@@ -76,8 +75,6 @@ ul.gallery_icons {
 }
 
 @media (min-width: 768px) {
-
-
   section.gallery {
     position: static;
   }
@@ -96,7 +93,7 @@ ul.gallery_icons {
 
   .gallery_icon a img {
     width: 65px;
-    height: 65px;   
+    height: 65px;
   }
 
   .gallery_bigImage {
@@ -108,26 +105,15 @@ ul.gallery_icons {
   }
 
   .hexagon-bg-2::before {
-   display: none;
+    display: none;
   }
 
-
   .gallery_bigImage::after {
-    /* content: "";
-    position: absolute;
-    right: -106%;
-    top: -73%;
-    z-index: -2; */
-
-
-
     content: "";
-position: absolute;
-/* left: 109px;
-top: -650px; */
-left: 5vw;
-top: -37vw;
-z-index: -2;
-transform:rotate(90deg);
+    position: absolute;   
+    left: 5vw;
+    top: -37vw;
+    z-index: -2;
+    transform: rotate(90deg);
   }
 }

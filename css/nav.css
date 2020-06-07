@@ -176,7 +176,7 @@ Note the href targets the main menu (both class and ID)
   .main-menu {
     position: static;
     display: block;
-    height: 5rem;
+    /* height: 5rem; */
   }
 
   /* Undo off-canvas styling */

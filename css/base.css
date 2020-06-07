@@ -42,9 +42,13 @@
   --hexagon: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 
 }
-section:not(section.footer) {
+
+
+section:not(.footer) {
   /* border: 1px  solid black; */
-  min-height: 800px;
+  height: 800px;
+  min-height: 100vh;
+
 }
 
 .btn {
@@ -105,14 +109,9 @@ section:not(section.footer) {
 .gallery_bigImage::after
  {
   background: var(--gradient);
-  /* width: 1812.744px;
-  height: 2118.792px; */
+  
   --difference: 14.55%;
-  /* --height: 264.849vh;
-  height: var(--height);
-  width: calc(var(--height) - var(--difference)); */
-
-  --width: 125.855vw;
+    --width: 125.855vw;
  width: var(--width);
  height: calc(var(--width) + var(--difference)); 
   clip-path: var(--hexagon);
