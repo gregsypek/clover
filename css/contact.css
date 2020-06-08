@@ -149,7 +149,7 @@ legend {
   }
 
   .input-group {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 480px) {

@@ -108,6 +108,9 @@ a {
   clip-path: var(--hexagon);
   transform: rotate(-90deg);
 }
+
+
+/* this has to be in the middle of the section gallery */
 .gallery_bigImage::after
  {
   background: var(--gradient);

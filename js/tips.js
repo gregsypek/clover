@@ -80,8 +80,8 @@ let active = 0;
     const activeDot = dots.findIndex(dot=>dot.classList.contains('active-dot'));
 
     dots[activeDot].classList.remove('active-dot');
-    dots[clicked].classList.add('active-dot');
-
+    dots[clicked].classList.add('active-dot');   
+    active = clicked;
     quote.textContent = slideList[clicked].text;
     indexInterval = setInterval(changeSlide, time);
     }

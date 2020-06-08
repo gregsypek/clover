@@ -1,4 +1,4 @@
-const gallery = [...document.querySelectorAll('.gallery_icons li a img')];
+const gallery = [...document.querySelectorAll('.gallery_icons div a img')];
 const bigImg = document.querySelector('.gallery_bigImage img');
 
 

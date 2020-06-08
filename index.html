@@ -104,7 +104,7 @@
     </section>
 
     <section id="about" class="about">
-      <h2 class="about_header header">O nas</h2>
+      <!-- <h2 class="about_header header">O nas</h2> -->
       <div class="about_container">
 
         <div class="hexagon hexagon-1">
@@ -168,7 +168,7 @@
     </section>
 
     <section id="tips" class="tips">
-      <h2 class="tips_header header">Porady</h2>
+      <!-- <h2 class="tips_header header">Porady</h2> -->
  
       <div class="beater"></div>
 
@@ -204,7 +204,7 @@
     </section>
 
     <section id="gallery" class="gallery">
-      <h2 class="gallery_header header">Galeria</h2>
+      <!-- <h2 class="gallery_header header">Galeria</h2> -->
       <div class="hexagon-bg-2">
       <!-- <div class="half"></div> -->
       <div class="gallery-wrapper">
@@ -212,20 +212,25 @@
           <!-- <div class="hexagon-bg-2"></div> -->
           <img id="image-chosen" src="/img/img1.jpg" alt="print image">
         </div>
-        <ul class="gallery_icons">
-          <li class="gallery_icon " tabindex="0" role="option"><a href="#"><img class="active-icon" src="./img/img1_small.jpg" data-pic="img1"
-                alt="miniature of picture"></a></li>
-          <li class="gallery_icon" tabindex="0" role="option"><a href="#"><img src="./img/img2_small.jpg" data-pic="img2"
-                alt="miniature of picture"></a></li>
-          <li class="gallery_icon"><a href="#"><img src="./img/img3_small.jpg" data-pic="img3"
-                alt="miniature of picture"></a></li>
-          <li class="gallery_icon"><a href="#"><img src="./img/img4_small.jpg" data-pic="img4"
-                alt="miniature of picture"></a></li>
-          <li class="gallery_icon"><a href="#"><img src="./img/img5_small.jpg" data-pic="img5"
-                alt="miniature of picture"></a></li>
-          <li class="gallery_icon"><a href="#"><img src="./img/img6_small.jpg" data-pic="img6"
-                alt="miniature of picture"></a></li>
-        </ul>
+        <div class="gallery_icons">
+          <div class="gallery_icon " tabindex="0" role="option">
+            <a href="#img1">
+              <img id="img1" class="active-icon" src="./img/img1_small.jpg" data-pic="img1"
+                alt="miniature-1">
+              <span class="overlay"></span>
+            </a>
+          </div>
+          <div class="gallery_icon" tabindex="0" role="option"><a href="#img2"><img src="./img/img2_small.jpg" data-pic="img2"
+                alt="miniature-2"></a></div>
+          <div class="gallery_icon"><a href="#img3"><img src="./img/img3_small.jpg" data-pic="img3"
+                alt="miniature-3"></a></div>
+          <div class="gallery_icon"><a href="#img4"><img src="./img/img4_small.jpg" data-pic="img4"
+                alt="miniature-4"></a></div>
+          <div class="gallery_icon"><a href="#img5"><img src="./img/img5_small.jpg" data-pic="img5"
+                alt="miniature-5"></a></div>
+          <div class="gallery_icon"><a href="#img6"><img src="./img/img6_small.jpg" data-pic="img6"
+                alt="miniature-6"></a></div>
+        </div>
       </div>
       <!-- this background is not in section offer because of grid -->
     </section>
