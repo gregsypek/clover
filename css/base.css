@@ -8,8 +8,9 @@
   --yellow: #FBD965;
   --gold: #f2c94c;
   --orange: #F2994A;
-  --green-light: #6fcf97;
-  --green-dark: #27AE60;
+  --cream: #e0ca81;
+  /* --green-light: #4f4f4f; */
+  /* --green-dark: #333333; */
   --gradient: radial-gradient( 50% 50% at 50% 50%, #f5de93 57.81%, #e0ca81 97.4% );
 
 
@@ -42,6 +43,9 @@ section:not(.footer) {
   /* height: 800px; */
   min-height: 800px;
 
+}
+.header {
+  text-align: center;
 }
 
 .btn {
@@ -118,7 +122,7 @@ a {
 
  }
  @media (min-width: 1000px) { 
-   .btns .btn-green {
+   .btns .btn-dark {
      margin-right: 5rem;
    }
  }

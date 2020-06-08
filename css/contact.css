@@ -4,7 +4,7 @@
 }
 
 .contact-header span {
-  color: var(--green-dark);
+  color: var(--black);
   font-weight: bold;
   font-family: var(--font-second);
 }
@@ -30,7 +30,7 @@
 }
 
 .contact-form {
-  background-color: var(--green-dark);
+  background-color: var(--gray-dark);
   width: 500px;
   max-width: 500px;
   padding: 2rem 4rem;
@@ -52,7 +52,7 @@ legend {
   margin-bottom: 1.5rem;
   font-size: 19.5px;
   line-height: inherit;
-  color: var(--black);
+  color: var(--white);
   border: 0;
 }
 
@@ -67,9 +67,10 @@ legend {
 }
 
 .input-group label {
-  font-weight: bold;
+  
   margin-bottom: 0.5rem;
   font-family: var(--font-second);
+  color: var(--white);
 }
 
 .input-group input {
@@ -79,7 +80,7 @@ legend {
   padding: 0.5em;
   color: inherit;
   border-radius: 5px;
-  border: 1px solid var(--green-dark);
+  border: 1px solid var(--black);
 }
 
 .input-group textarea {
@@ -88,12 +89,12 @@ legend {
   color: inherit;
   font-size: var(--p);
   border-radius: 5px;
-  border: 1px solid var(--green-dark);
+  border: 1px solid var(--black);
 }
 
 .input-group input.btn-form {
-  background: var(--gray-dark);
-  color: var(--white);
+  background: var(--cream);
+  color: var(--black);
   width: 100%;
   border: none;
   font-size: var(--h5);
@@ -102,13 +103,14 @@ legend {
 
 .input-group input.btn-form:hover,
 .input-group input.btn-form:focus {
-  background: var(--black);
+  background: var(--gray-light);
+ 
 }
 
 .input-group input:focus,
 .input-group textarea:focus,
 .input-group input.btn-form:focus {
-  border: 1px solid var(--black);
+  background-color: var(--cream);
 }
 
 @media (max-width: 1100px) {

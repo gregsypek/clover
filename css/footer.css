@@ -22,7 +22,7 @@ justify-content: flex-start;
 .footer-address {
   align-self: center;
   margin-left: 8vw;
-  color: var(--green-light)
+  color: var(--white)
 }
 
 .footer-nav--left li:nth-of-type(2) {

@@ -52,7 +52,7 @@ ul.gallery_icons {
 }
 
 .gallery_icons img.active-icon {
-  box-shadow: 0 0 0 3px var(--white), 0 0 3px 6px var(--green-dark);
+  box-shadow: 0 0 0 3px var(--white), 0 0 3px 6px var(--black);
 }
 
 .gallery_icon img {

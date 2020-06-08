@@ -68,7 +68,7 @@ align-self: center;
 
 
 
-.slide-dots span {
+.slide-dots button {
   cursor: pointer;
   width: 2rem;
   height: 2rem;
@@ -78,15 +78,15 @@ border: 2px solid var(--black);
 transition: all .3s ease-in-out;
 }
 
-.slide-dots span:hover,
-.slide-dots span:active {
-  box-shadow: 0 0 0 3px var(--white), 0 0 3px 6px var(--green-dark);
+.slide-dots button:hover,
+.slide-dots button:active {
+  box-shadow: 0 0 0 3px var(--white), 0 0 3px 6px var(--black);
 }
-.slide-dots span:not(:last-of-type) {
+.slide-dots button:not(:last-of-type) {
   margin-right: 2rem;
 }
-.slide-dots span.active-dot {
-  background-color: var(--green-dark);
+.slide-dots button.active-dot {
+  background-color: var(--black);
 }
 
 
@@ -102,11 +102,12 @@ transition: all .3s ease-in-out;
   background-repeat: no-repeat;
   transform: rotate(72deg);
   opacity: 30%;
+  z-index: -1;
  
 }
 
 @media (max-width: 1000px) {
-  .slide-dots span {
+  .slide-dots button {
     width: 1.7rem;
 height: 1.7rem;
  
@@ -148,12 +149,12 @@ height: 1.7rem;
   width: 95vw;
   height: 80vw;
 }
-.slide-dots span {
+.slide-dots button {
   width: 1.5rem;
 height: 1.5rem;
 
 }
-.slide-dots span:not(:last-of-type) {
+.slide-dots button:not(:last-of-type) {
   margin-right: 1rem;
 }
 

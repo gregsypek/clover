@@ -29,7 +29,7 @@ const slideList = [
 
 
 const quote = document.querySelector('p.quote');
-const dots = [...document.querySelectorAll('.slide-dots span')];
+const dots = [...document.querySelectorAll('.slide-dots button')];
 
 // Interface
 

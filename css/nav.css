@@ -30,7 +30,7 @@ header .row {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  color: var(--green-dark);
+  color: var(--gray-dark);
 }
 
 /*
@@ -145,6 +145,7 @@ Note the href targets the main menu (both class and ID)
   background: var(--white);
   color: var(--black);
   z-index: 999;
+  font-family: var(--font-second);
 }
 
 #skip-link:focus {
