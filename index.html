@@ -366,24 +366,25 @@
                     } 
                      ?> -->
 
-      <form class="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+      <!-- <form class="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> -->
+        <form  class ="contact-form" action="index.html" method="POST">
           <fieldset>
             <legend>Masz pytanie?</legend>
           <div class=" input-group">
         <label for="name">Imię:</label>
         <input type="text" name="name" id="name" required>
 
-        <p><?php if(isset($name_error)) echo $name_error; ?></p>
+        <!-- <p><?php if(isset($name_error)) echo $name_error; ?></p> -->
 
         <div class="input-group">
           <label for="email">Email:</label>
-          <input type="text" name="email" required>
-          <p><?php if(isset($email_error)) echo $email_error; ?></p>
+          <input type="text" name="email" id="email" required>
+          <!-- <p><?php if(isset($email_error)) echo $email_error; ?></p> -->
         </div>
         <div class="input-group">
           <label for="message">Treść wiadomości:</label>
-          <textarea rows="10" name="message"></textarea>
-          <p><?php if(isset($message_error)) echo $message_error; ?></p>
+          <textarea rows="10" name="message" id="message"></textarea>
+          <!-- <p><?php if(isset($message_error)) echo $message_error; ?></p> -->
         </div>
         <div class="input-group">
           <input type="submit" name="submit" class="btn-form btn" value="Wyślij">

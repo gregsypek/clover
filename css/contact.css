@@ -103,13 +103,14 @@ legend {
 
 .input-group input.btn-form:hover,
 .input-group input.btn-form:focus {
-  background: var(--gray-light);
+  background: var(--black);
+  color: var(--white);
  
 }
 
 .input-group input:focus,
-.input-group textarea:focus,
-.input-group input.btn-form:focus {
+.input-group textarea:focus
+ {
   background-color: var(--cream);
 }
 

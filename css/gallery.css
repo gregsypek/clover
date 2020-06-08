@@ -40,7 +40,7 @@ ul.gallery_icons {
   height: 60vw;
 }
 
-.gallery_icon a img {
+.gallery_icon img {
   width: 45px;
   height: 45px;
   border: 2px solid var(--black);
