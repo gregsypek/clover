@@ -117,11 +117,8 @@ main .hexagon_container,
   main h1 {
     margin: var(--header-margin);
   }
-
-
-
-  
 }
+
 
 @media (min-width: 480px) {
 

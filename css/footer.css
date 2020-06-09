@@ -73,6 +73,7 @@ align-self: flex-end;
 .footer-address {
   font-size: var(--text-sm);
 }
+}
 
 @media (min-width: 480px) {
   .footer-logo {

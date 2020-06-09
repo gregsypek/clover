@@ -83,12 +83,16 @@ transition: all .3s ease-in-out;
   box-shadow: 0 0 0 3px var(--white), 0 0 3px 6px var(--black);
 }
 .slide-dots button:not(:last-of-type) {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 .slide-dots button.active-dot {
   background-color: var(--black);
 }
+.slide-dots button {
+  width: 2.5rem;
+height: 2.5rem;
 
+}
 
 .beater {
   position: absolute;
@@ -107,11 +111,7 @@ transition: all .3s ease-in-out;
 }
 
 @media (max-width: 1000px) {
-  .slide-dots button {
-    width: 1.7rem;
-height: 1.7rem;
- 
-  }
+
   .beater {
     display: none;
   }
@@ -136,6 +136,14 @@ height: 1.7rem;
   font-size: var(--text-sm);
 }
 }
+@media (max-width: 600px) {
+  .tips_box {    
+   
+    height: 90vw;  
+   
+}
+
+}
 @media (max-width: 480px) {
 
   .tips_box {  
@@ -147,15 +155,15 @@ height: 1.7rem;
 
 .tips_box {
   width: 95vw;
-  height: 80vw;
+  height: 100vw;
 }
 .slide-dots button {
-  width: 1.5rem;
-height: 1.5rem;
+  width: 2rem;
+height: 2rem;
 
 }
 .slide-dots button:not(:last-of-type) {
-  margin-right: 1rem;
+  margin-right: .5rem;
 }
 
 }@media (max-width: 320px) {

@@ -189,8 +189,8 @@ Note the href targets the main menu (both class and ID)
     overflow: hidden;
     text-align: center;
     display: flex;
-    /* justify-content: flex-end; */
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    /* justify-content: space-evenly; */
   }
 
   .main-menu ul li:not(:last-of-type) {

@@ -37,12 +37,18 @@
 }
 
 
-section:not(.footer) {
+section:not(.footer)
+ {
   /* border: 1px  solid black; */
   /* height: 800px; */
   min-height: 800px;
+  position: relative;
+  overflow: hidden;
+
 
 }
+
+
 .header {
   text-align: center;
 }
@@ -73,6 +79,8 @@ section:not(.footer) {
   a {
     padding: .5rem 1rem;
   }
+
+ 
 }
 
 @media (min-width: 480px) {
@@ -127,4 +135,8 @@ a {
    .btns .btn-dark {
      margin-right: 5rem;
    }
+ }
+ @media (min-width: 1200px) {  
+ 
+
  }

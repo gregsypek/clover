@@ -7,7 +7,7 @@ section.offer {
   position: relative;
   height: 190vh;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 5% 90% 5%;
   display: grid;
   justify-content: center;
 }
@@ -236,5 +236,6 @@ tr:nth-child(even) {
     border: 1.5rem solid var(--white);
     background-color: var(--white);
     box-shadow: var(--black-shadow);
+
   }
 }
