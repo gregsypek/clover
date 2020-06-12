@@ -1,5 +1,5 @@
 section.tips {
-  position: relative;
+  /* position: relative; */
   display: flex;
   
   justify-content: center;
@@ -7,6 +7,8 @@ section.tips {
 
 }
 .tips_box {
+  /* position for beater img */
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -62,6 +64,7 @@ align-self: center;
    position: relative;
    z-index: 5;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
 }
@@ -96,17 +99,16 @@ height: 2.5rem;
 
 .beater {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 30%;
-  bottom: -73%;
-  background: url(../img/beater.png);
-      background-repeat: repeat;
-  background-repeat: repeat;
-  background-repeat: no-repeat;
-  transform: rotate(72deg);
-  opacity: 30%;
-  z-index: -1;
+    width: 303px;
+    height: 300px;
+    right: -5vw;
+    bottom: -10%;
+    background: url(../img/beater.png);
+    /* background-repeat: repeat; */
+    /* background-repeat: repeat; */
+    background-repeat: no-repeat;
+    transform: rotate(72deg);
+    opacity: 30%;
  
 }
 

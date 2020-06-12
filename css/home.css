@@ -1,4 +1,4 @@
-section .home {
+section#home {
   position: relative;
 }
 
@@ -40,7 +40,7 @@ main .info p {
   font-family: var(--font-second);
   font-size: var(--base-size);
   margin: 0;
-  line-height: 90%;
+  line-height: .9;
 }
 
 /* buttons */

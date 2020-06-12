@@ -175,6 +175,12 @@ main .hexagon_container,
 
   main .home_container {
     display: flex;
+
+/* delete after fix overlay */
+
+display: none;
+
+
     flex: 1;
     order: 4;
   }

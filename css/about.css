@@ -35,7 +35,7 @@
 
 @media (min-width: 200px) {
 
-  .about_container {
+  #about container {
     /* margin: 0 auto; */
     width: 100%;    
     /* display: grid; */
@@ -131,10 +131,15 @@
 }
 
 @media (min-width: 768px) {
-  .about_container {
+  #about container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
     height: 100%;
     align-items: center;
-    flex-direction: row;
+    /* hexagon shadow on the background */
+    filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
   }
   
   .text p {
@@ -155,13 +160,8 @@
   }
   
   
-  /* hexagon shadow on the background */
   
-  .about_container {
-    display: flex;
-    filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
-    position: relative;
-  }
+  
   
   .hexagon-1,
   .hexagon-2,

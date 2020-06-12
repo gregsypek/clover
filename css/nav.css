@@ -7,9 +7,18 @@
 header .row {
   display: flex;
   flex-flow: row nowrap;
-  
+  justify-content: space-between;
 }
 
+.logo {
+  height: 100%;
+  align-self: center;
+  margin:  0 2rem;
+  
+}
+.logo img {
+  height: 80px;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -88,6 +97,8 @@ header .row {
   top: 0;
   font-size: 2.5rem;
 }
+
+
 
 /*
 THE MAGIC: When main-menu is targeted, show the menu by displaying it and setting left to 0 instead of -200px

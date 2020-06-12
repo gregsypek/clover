@@ -91,3 +91,5 @@ let active = 0;
 
 
 dots.forEach(item => item.addEventListener('click', clickChangeSlide));
+
+
