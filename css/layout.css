@@ -1,4 +1,4 @@
-.home main,
+.home .bottom,
 .gallery-wrapper,
 .footer-wrapper{
   display: flex;
@@ -10,7 +10,7 @@
 .gallery-wrapper {
   justify-content: center;
 }
-.home_container 
+
 .about_container,
 .about_container .hexagon-1,
 .about_container .hexagon-2,
@@ -18,7 +18,8 @@
   display: flex;
 }
 
-.home main {
+.home .bottom
+ {
   --columns: 16;
 }
 
@@ -49,12 +50,11 @@
   --columns: 12;
 }
 
-main h1,
-main aside,
-main .introduction,
-main .btns,
-main .home_container,
-main .hexagon_container
+.bottom aside,
+.bottom main,
+.bottom .home_container, 
+#about aside
+
   {
   --width: 16;
 }
@@ -74,13 +74,13 @@ main .hexagon_container
 
 /* this is layout for small screen */
 
+.bottom aside,
+.bottom main,
+.bottom .home_container, 
 main h1,
-main aside,
 main .introduction,
 main .btns,
-main .home_container,
-main .hexagon_container,
-.home_container 
+#about aside,
 .about_container,
 .about.hexagon-1,
 .about.hexagon-2,
@@ -97,42 +97,28 @@ main .hexagon_container,
 }
 
 @media (min-width: 200px) {
-  main aside {
-    --width: 12;
-    order: 3;
-
-  }
-
-  main .introduction {
-    --width: 16;
-  }
-
-  main .btns {
-    --width: 16;
-  }
-
-  main .home_container {
-    display: none;
-  }
+ .home aside {  
+   order: 3;
+   margin-top: 3rem;
+ }
+ 
   main h1 {
     margin: var(--header-margin);
   }
 }
 
-
 @media (min-width: 480px) {
-
-
 
   main h1 {
     margin: var(--header-margin);
+    margin-bottom: 0;
   }
  
 }
 
 @media (min-width: 768px) {
 
-  main aside {
+  #about aside {
     --width: 12;
     order: 3;
 
@@ -140,15 +126,6 @@ main .hexagon_container,
   .gallery-wrapper {
     --columns: 12;
   }
-
-  /* main .introduction {
-    --width: 12;
-  } */
-
-  main .btns {
-    --width: 16;
-  }
-
   
   main h1 {
     margin: var(--header-margin);
@@ -172,69 +149,30 @@ main .hexagon_container,
 
 
  @media (min-width: 1000px) {
+   .home main {
+     --width: 10;
+     order: 2;
+   }  
 
-  main .home_container {
-    display: flex;
-
-/* delete after fix overlay */
-
-display: none;
-
-
-    flex: 1;
-    order: 4;
-  }
-
-  main aside {
-    --width: 4;
-    order: 1;
-  }
-  main aside img {
-    display: block;
-  }
-
-  main .introduction {
-    --width: 10;
-    order: 2;
-  }
-
-  main .btns {
-    display: block;
-    --width: 6;
-  }
-
-  main .home_container {
-    --width: 2;
-    filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
-  }
+   .home aside {
+      --width: 3;
+      order: 1;
+    }
+    .home .home_container {
+      --width: 3;
+      order:3;
+    }
+    
+    #about aside {
+     --width: 4;
+  
+     order: 2;
+    }
+    #about aside img {
+      display: block;
+    }
 
 
 } 
 
 
-
-
-@media (min-width: 1200px) {
-
- 
-  main aside {
-    --width: 6;
-  }
-
-  
-
-  main .btns {
-  
-    --width: 6;
-  }
-
-  main .home_container {
-    --width: 4;
-  } */
-
-  main .hexagon_container {
-    --width: 4;
-  }
-
-
-}

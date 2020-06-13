@@ -1,8 +1,4 @@
-/* section.home .logo img {
-  width: 160px;
-  height: auto;
-  padding: .8rem;
-} */
+
 
 header .row {
   display: flex;
@@ -13,12 +9,13 @@ header .row {
 .logo {
   height: 100%;
   align-self: center;
-  margin:  0 2rem;
+  /* margin:  0 1rem; */
   
 }
 .logo img {
-  height: 80px;
+  height: 60px;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -62,10 +59,10 @@ header .row {
 .main-menu ul {
   list-style: none;
   margin: 0;
-  padding-top: 5.5em;
+   padding-top: 5.5em;
   min-height: 100%;
-  width: 200px;
-  background-color: var(--black);
+   width: 200px; 
+  background-color: var(--black); 
 }
 
 /* Make links block to make them fully clickable on mobile */
@@ -167,6 +164,11 @@ Note the href targets the main menu (both class and ID)
 
 @media (min-width: 768px) {
 
+  .logo img {
+    height: 80px;
+  }
+
+
   /* header and nav borders rearranged for desktop */
   header,
   main {
@@ -197,15 +199,15 @@ Note the href targets the main menu (both class and ID)
     height: auto;
     width: auto;
     background: none;
-    overflow: hidden;
-    text-align: center;
+    /* overflow: hidden; */
+    /* text-align: center; */
     display: flex;
     justify-content: flex-end;
     /* justify-content: space-evenly; */
   }
 
   .main-menu ul li:not(:last-of-type) {
-    margin-right: 2rem;
+    margin-left: 1rem;
   }
   .main-menu li span {
     position: relative;
@@ -275,7 +277,19 @@ Note the href targets the main menu (both class and ID)
 @media (min-width: 1000px) {
   .main-menu ul {
     
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    
+  }
+  .main-menu a {
+   
+    width: 100%;
+}
+
+}
+@media (min-width: 1200px) {
+  .main-menu  {
+    
+    width: 1170px;
     
   }
 
