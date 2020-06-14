@@ -55,8 +55,14 @@ header .row {
   z-index: 999;
 }
 
+
+
+
+
 /* Width here and "left" property on main-menu should be the same absolute number */
 .main-menu ul {
+  position: relative;
+  z-index: 3;
   list-style: none;
   margin: 0;
    padding-top: 5.5em;
@@ -275,10 +281,9 @@ Note the href targets the main menu (both class and ID)
   }
 } */
 @media (min-width: 1000px) {
-  .main-menu ul {
-    
+  .main-menu ul {    
     justify-content: space-evenly;
-    
+
   }
   .main-menu a {
    
