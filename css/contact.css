@@ -1,16 +1,20 @@
 .contact {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
+.contact.container {
+  position: relative;
+}
 .contact-left {
-  position:relative;
-  display: flex;
+  position: relative;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: -1;
+  z-index: -1; */
 }
 
 .contact-right {
@@ -27,8 +31,6 @@
   font-weight: bold;
   font-family: var(--font-second);
 }
-
-
 
 .contact-form {
   background-color: var(--gray-dark);
@@ -68,7 +70,6 @@ legend {
 }
 
 .input-group label {
-  
   margin-bottom: 0.5rem;
   font-family: var(--font-second);
   color: var(--white);
@@ -106,12 +107,10 @@ legend {
 .input-group input.btn-form:focus {
   background: var(--black);
   color: var(--white);
- 
 }
 
 .input-group input:focus,
-.input-group textarea:focus
- {
+.input-group textarea:focus {
   background-color: var(--cream-light);
 }
 
@@ -166,42 +165,39 @@ legend {
   }
 }
 /* styling background triple hexagons */
-@media (min-width: 1100px) {  
-
-
+@media (min-width: 1100px) {
   .contact_container {
     filter: drop-shadow(-3px 5px 4px rgba(156, 106, 41, 0.5));
     /* width: 100%;
     height: auto; */
     transform: rotate(5deg);
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .hexagon-small-4,
   .hexagon-small-5,
   .hexagon-small-6 {
     position: absolute;
-    width: 19vw;
-    height: 22vw;   
+    width: 250px;
+    height: 300px;
     clip-path: var(--hexagon);
     background: var(--white);
     transform: rotate(-90deg);
+    z-index: -1;
   }
 
   .hexagon-small-4 {
-    right: 36vw;
-top: -21vw;
+    left: -267px;
+    top: -228px;
   }
-
   .hexagon-small-5 {
-    right: 18vw;
-    top: -11vw;
-} 
-  
+    left: -265px;
+    top: 36px;
+  }
 
   .hexagon-small-6 {
-    right: 36vw;
-top: -1vw;
+    left: -32px;
+    top: -95px;
   }
-
-
-
 }
