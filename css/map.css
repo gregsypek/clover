@@ -1,6 +1,6 @@
 
 section.map {
-  position:relative;
+  /* position:relative; */
     display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,20 +9,25 @@ section.map {
 
 section.map img {
   position: absolute;
-  top: 8%;
-  left: 6%;
-  width: 10vw;
+  top: -8%;
+  left: -7%;
+  width: 80px;
   height: auto;
   opacity: 50%;
+  z-index: -1;
 }
 
-.map-box {
+.map-box {  
+ 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
 }
+.map-inside {
+  position: relative;
+}
+
 
 
 .map-box span {
@@ -50,13 +55,9 @@ section .map a {
 }
 
 .phone-btn {
- 
   margin: var(--header-margin);
  
 }
-
-
-
 
 @media (max-width: 768px) {
   .map-google {
@@ -72,6 +73,9 @@ section .map a {
     align-items: center;
   }
 
+  section.map img {
+    display:none;
+  }
 }
 
 @media (max-width: 480px) {
