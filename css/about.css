@@ -134,7 +134,7 @@
 @media (min-width: 1000px) {
   .about_container {
     flex-direction: row;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
     align-items: center;
     /* hexagon shadow on the background */
