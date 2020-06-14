@@ -12,6 +12,8 @@
   --cream-light: #f7e5a7;  
  
   --gradient: radial-gradient( 50% 50% at 50% 50%, #f5de93 57.81%, #e0ca81 97.4% );
+  --gradient-black: linear-gradient(to right, #1e130c, #9a8478);
+  
 
 
   /* SHADOW VARIABLES */
@@ -72,8 +74,7 @@ section:not(.footer)
   
   .btn {
   
-    border: 1px solid var(--black);
- 
+    border: 1px solid var(--black); 
     font-size: var(--text-sm);
    
   }
@@ -120,9 +121,9 @@ a {
 
 
 /* this has to be in the middle of the section gallery */
-/* .gallery_bigImage::after
+ .gallery_bigImage::after
  {
-  background: var(--gradient);
+  background: var(--gradient-black);
   
   --difference: 14.55%;
     --width: 125.855vw;
@@ -132,44 +133,49 @@ a {
   transform: rotate(-90deg);
 
  }
- @media (min-width: 1000px) { 
-   .btns .btn-dark {
-     margin-right: 5rem;
-   }
- }
- @media (min-width: 1200px) {  
  
-
- } */
+  
 
 
 
   /* svg:not(:root) {
-  } */
-  
+    overflow: hidden;
+  }
+   */
     /* position: relative;
     overflow: hidden; */
 
 /* body {
   background: linear-gradient(142.1deg, #FFFFFF 27.8%, #EECF90 51.84%);
 } */
- .background {
+ /* .background {
   position: absolute;
   width: 149%;
   height: 207%;
   transform: translate(-33%,-1%);
   z-index: -1;
-} 
+}  */
 
 /* add position: relative to #home */
-.background {
+.background,
+.background-2,
+.background-3 {
   position: absolute;
   width: 149%;
   height: 199%;
   top: 0;
-  transform: translate(-36%,0%);
+  /* transform: translate(-40%,0%); */
   z-index: -1;
   left: 0;
+}
+.background { 
+  transform: translate(-40%,0%);
+}
+.background-2 {
+  transform: translate(-40%,114%);
+}
+.background-3 {
+    transform: translate(-40%,237%);
 }
 
 

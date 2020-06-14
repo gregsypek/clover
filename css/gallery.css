@@ -5,7 +5,11 @@ section.gallery {
   display: flex;
   justify-content: center;
   align-items: center;
+   /* for black hexagon to not overlay */
+  overflow: hidden;
 }
+
+
 .hexagon-bg-2::before {
   content: "";
   position: absolute;
@@ -19,6 +23,8 @@ section.gallery {
 .gallery-wrapper {
   justify-content: center;
   align-items: center;
+   /* for black hexagon to not overlay */
+  overflow: hidden;
 }
 
 .gallery_icons {
@@ -95,6 +101,8 @@ section.gallery {
 @media (min-width: 768px) {
   section.gallery {
     position: static;
+    /* for black hexagon to not overlay */
+    max-height: 1000px;
   }
   #image-chosen {
     /* for positioning hexagon-bg-2 */
@@ -103,6 +111,7 @@ section.gallery {
 
     object-fit: scale-down;
     object-position: 50% 50%;
+    z-index: 3;
   }
   .gallery_icons {
     flex-direction: column;
@@ -118,6 +127,7 @@ section.gallery {
   .gallery_bigImage {
     position: relative;
     order: 2;
+   
   }
   .gallery_bigImage img {
     width: 100%;
@@ -132,7 +142,7 @@ section.gallery {
     position: absolute;   
     left: 5vw;
     top: -37vw;
-    z-index: -2;
+    z-index: 2;
     transform: rotate(90deg);
   }
 }

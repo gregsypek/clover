@@ -5,11 +5,11 @@ and Adrian Roselli: http://adrianroselli.com/2017/11/a-responsive-accessible-tab
 /* position: relative is for bg-3 */
 section.offer {
   position: relative;
-  /* height: 190vh;
-  grid-template-columns: 1fr 5fr 1fr;
+  height: 190vh;
+  grid-template-columns: 1fr 7fr 1fr;
   grid-template-rows: 5% 90% 5%;
   display: grid;
-  justify-content: center; */
+  justify-content: center;
 }
 
 .offer_header {
