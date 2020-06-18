@@ -3,3 +3,4 @@ node_modules/
 dist/
 notes.md
 about2.css
+.DS_Store

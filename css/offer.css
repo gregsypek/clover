@@ -2,10 +2,10 @@
 and Adrian Roselli: http://adrianroselli.com/2017/11/a-responsive-accessible-table.html#Responsive
 */
 
-/* position: relative is for bg-3 */
+
 section.offer {
   position: relative;
-  height: 190vh;
+ height: auto;
   grid-template-columns: 1fr 7fr 1fr;
   grid-template-rows: 5% 90% 5%;
   display: grid;
@@ -123,6 +123,7 @@ td:before {
 /* let the table scroll as a backup */
 .tablescroll {
   overflow-x: auto;
+  max-height: 500px;
 }
 
 caption {
@@ -163,6 +164,19 @@ tr:nth-child(even) {
   top: -113%;
   z-index: -1;
 }
+
+
+/* @media (min-width: 300px) {
+section.offer {
+  position: relative;
+  height: 190vh;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-rows: 5% 90% 5%;
+  display: grid;
+  justify-content: center;
+}
+} */
+
 
 /* For wider dimensions, change our layout so the table can take the full width of the screen. */
 /* table MQ's */
@@ -238,4 +252,20 @@ tr:nth-child(even) {
     box-shadow: var(--black-shadow);
 
   }
+}
+
+
+@media (min-width: 1200px) {
+section.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+ 
+  height: auto;
+
+
+}
+.table-third {
+  margin-bottom: 4rem;
+}
 }

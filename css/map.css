@@ -47,8 +47,8 @@ section .map a {
 .map-google {
   width: 70vw;
   max-width: 800px;
-  height: 60vh;
-
+  height: 50vw;
+max-height: 600px;
   border: 2px solid var(--black);
   box-shadow: var(--black-shadow);
   border-radius: 5px;
@@ -62,7 +62,7 @@ section .map a {
 @media (max-width: 768px) {
   .map-google {
     width: 70vw;
-    height: 40vh; 
+  
   }
 
   section.map {
@@ -81,6 +81,6 @@ section .map a {
 @media (max-width: 480px) {
   .map-google {
     width: 90vw;
-    height: 40vh; 
+   
   }
 }
