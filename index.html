@@ -211,9 +211,10 @@
   <section id="gallery" class="gallery">
     <!-- <h2 class="gallery_header header">Galeria</h2> -->  
     <div class="container gallery-wrapper">
-      <div class="gallery_bigImage">   
-        <img id="image-chosen" src="/img/img1.jpg" alt="print image">
-      </div>
+      <picture class="gallery_bigImage"> 
+        <source id ="default" srcset="/img/img1.jpg" alt="default image from gallery" media="(min-width: 768px)">        
+        <img id="image-chosen" src="/img/img1_small.jpg" alt="default image from gallery">
+        </picture>
       <div class="gallery_icons">
         <div class="gallery_icon " tabindex="0" role="option">
           <a href="#img1">
@@ -239,7 +240,7 @@
   <section id="offer" class="offer container">    
     <!-- <div class="container"> -->      
     <h2 class="offer_header header">Oferta</h2>
-    <div class="  offer_box">
+    <div class="offer_box">
       <div class="table-first tablescroll table" role="region" aria-labelledby="honey" tabindex="0">
         <table id="table-first">
           <caption id="honey">Miody</caption>
