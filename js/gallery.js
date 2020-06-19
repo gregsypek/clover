@@ -1,5 +1,6 @@
 const gallery = [...document.querySelectorAll('.gallery_icons div a img')];
 let bigImg = document.querySelector('.gallery_bigImage img');
+let x = document.getElementById('default');
 
 
 const handleClick =(e)=> {
@@ -16,11 +17,11 @@ const handleClick =(e)=> {
     bigImg.src = `./img/${selected}.jpg`;
 
     // change default source picture in DOM
-    let x = document.getElementById('default');
     x.srcset = `./img/${selected}.jpg`;
-
+    
   } else {
-  bigImg.src = `./img/${selected}_small.jpg`;
+    bigImg.src = `./img/${selected}_small.jpg`;
+    x.srcset = `./img/${selected}_small.jpg`;
   
 }    
 const activeDot = gallery.findIndex(img=>img.classList.contains('active-icon'));

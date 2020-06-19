@@ -79,6 +79,8 @@ section.gallery {
 #image-chosen {
   object-fit: scale-down;
   border-radius: 5px;
+  position: relative;
+  z-index: 33;
 }
 
     

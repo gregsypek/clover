@@ -28,7 +28,8 @@
   <div class="backgroundSvg">
   <a href="#about" id="skip-link">Przejdź do opisu</a>
 
-  <section id="home" class="home">   
+  <section id="home" class="home" aria-labelledby="home-id"> 
+    <div hidden id="home-id">Strona główna</div>  
     <div class="container">     
       <header>
         <div class="row">
@@ -103,8 +104,8 @@
     </div>
   </section>
 
-  <section id="about" class="about">
-    <!-- <h2 class="about_header header">O nas</h2> -->
+  <section id="about" class="about" aria-labelledby="section-about">
+ <div id="section-about" hidden>Co nas wyróźnia?</div>
   
     <div class="container about_container">
       <div class="hexagon hexagon-1">
@@ -171,8 +172,8 @@
 
   </section>
 
-  <section id="tips" class="tips">
-    <!-- <h2 class="tips_header header">Porady</h2> -->   
+  <section id="tips" class="tips" aria-labelledby="tips-section">
+<div id="tips-section" hidden>Zalety i walory miodu</div>
      
     <div class="container">
 
@@ -208,7 +209,8 @@
     </div>
   </section>
 
-  <section id="gallery" class="gallery">
+  <section id="gallery" class="gallery" aria-labelledby="gallery-section">
+    <div id="gallery-section" hidden>Galeria zdjęć z naszego gospodarstwa</div>
     <!-- <h2 class="gallery_header header">Galeria</h2> -->  
     <div class="container gallery-wrapper">
       <picture class="gallery_bigImage"> 
@@ -237,8 +239,9 @@
     <!-- this background is not in section offer because of grid -->
   </section>
 
-  <section id="offer" class="offer container">    
-    <!-- <div class="container"> -->      
+  <section id="offer" class="offer container" aria-labelledby="offer-section">
+    <div id="offer-section" hidden>Oferta oraz informacje dla klientów</div>
+       
     <h2 class="offer_header header">Oferta</h2>
     <div class="offer_box">
       <div class="table-first tablescroll table" role="region" aria-labelledby="honey" tabindex="0">
@@ -342,7 +345,8 @@
     <!-- </div> -->
   </section>
 
-  <section id="contact" class="contact">  
+  <section id="contact" class="contact" aria-labelledby="contact-section">
+    <div id="contact-section" hidden >Formularz kontaktowy</div>  
       
       <div class="container">
     <div class="contact-left">
@@ -423,7 +427,8 @@
       </div>
   </section>
 
-  <section id="map" class="map">
+  <section id="map" class="map" aria-labelledby="map-section">
+    <div id="map-section" hidden>Mapa z naszą lokalizacją</div>
     <div class="container">
       <div class="map-box">
         <h2 class="map-header header">Zobacz <span>gdzie</span> jesteśmy</h2>
@@ -440,7 +445,8 @@
   </section>
 
  
-  <section id="footer" class="footer">
+  <section id="footer" class="footer" aria-labelledby="footer-section">
+    <div id="footer-section" hidden>Stopka strony z informacją opisową</div>
     <div class=" container footer-wrapper ">
       <ul class="footer-nav--left">
         <img src="img/logo-miodek4.svg" alt="logo" class="footer-logo" />
