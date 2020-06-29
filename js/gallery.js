@@ -1,7 +1,7 @@
 const gallery = [...document.querySelectorAll('.gallery_icons div a img')];
 let bigImg = document.querySelector('.gallery_bigImage img#image-chosen');
 let bigPic = document.getElementById('big-pic');
-let smallPic = document.getElementById('small-pic');
+
 
 
 const handleClick =(e)=> {
@@ -22,7 +22,8 @@ const handleClick =(e)=> {
     
   } else {
     bigImg.src = `/img/${selected}_small.jpg`;
-    smallPic.srcset = `/img/${selected}_small.jpg`;
+    bigPic.srcset = `/img/${selected}_small.jpg`;
+   
   
 }    
 const activeDot = gallery.findIndex(img=>img.classList.contains('active-icon'));
