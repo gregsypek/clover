@@ -22,7 +22,10 @@ const handleClick =(e)=> {
     
   } else {
     bigImg.src = `/img/${selected}_small.jpg`;
+<<<<<<< HEAD
     bigPic.srcset = `/img/${selected}_small.jpg`;
+=======
+>>>>>>> 3aabe5358ab76b6abf7bbd3e8c1c3fe115bdc756
    
   
 }    
