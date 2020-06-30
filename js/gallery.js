@@ -15,14 +15,14 @@ const handleClick =(e)=> {
   
     // index was taken from dataset attribut as a string and converted into number which reflect proper index in gallery array.
   
-    bigImg.src = `/img/${selected}.jpg`;
+    bigImg.src = `./img/${selected}.jpg`;
 
     // change default source picture in DOM
-    bigPic.srcset = `/img/${selected}.jpg`;
+    bigPic.srcset = `./img/${selected}.jpg`;
     
   } else {
-    bigImg.src = `/img/${selected}_small.jpg`;
-    bigPic.srcset = `/img/${selected}_small.jpg`;
+    bigImg.src = `./img/${selected}_small.jpg`;
+    bigPic.srcset = `./img/${selected}_small.jpg`;
 
    
   
