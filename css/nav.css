@@ -236,7 +236,8 @@ Note the href targets the main menu (both class and ID)
 
   /* desktop assumes a pointer display */
   .main-menu a {
-    color: var(--gray-coffe);
+    color: var(--gray-dark);
+    font-weight: lighten;
     font-size: var(--h4);
     border-bottom: none;
     display: inline-block;
@@ -249,7 +250,7 @@ Note the href targets the main menu (both class and ID)
   .main-menu a:hover,
   .main-menu a:focus {
     background: none;
-    color: var(--gray-dark);
+    color: var(--gray-black);
     text-decoration: none;
   }
 }
