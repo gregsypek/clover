@@ -229,23 +229,6 @@ Note the href targets the main menu (both class and ID)
 
   }
 
-  .main-menu span::before {
-    content: "";
-    position: absolute;
-    width: 2.5rem;
-    height: 2.875rem;
-    top: -24px;
-    left: -5px;
-    clip-path: var(--hexagon);
-    background: var(--white);
-    transform: rotate(-90deg);
-    transition: all .3s ease-out;
-  }
-
-  .main-menu span.orange::before {
-    background: var(--gold);
-  }
-
   /* undo off canvas style */
   .main-menu li:first-child a {
     border-top: none;
@@ -253,8 +236,8 @@ Note the href targets the main menu (both class and ID)
 
   /* desktop assumes a pointer display */
   .main-menu a {
-    color: var(--black);
-    font-size: var(--h3);
+    color: var(--gray-coffe);
+    font-size: var(--h4);
     border-bottom: none;
     display: inline-block;
     /* neccessary for positioning hexagon element to cover the same area of different text length size  */
