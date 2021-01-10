@@ -40,6 +40,10 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 section:not(.footer) {
   /* border: 1px  solid black; */
