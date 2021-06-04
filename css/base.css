@@ -60,7 +60,7 @@ section:not(.footer) {
 .btn {
   font-family: var(--font-first);
   /* font-weight: bold; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: var(--h5);
   /* width: 8rem; */
   /* height: 2.5rem;    */

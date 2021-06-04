@@ -218,23 +218,24 @@ Note the href targets the main menu (both class and ID)
 
   /* desktop assumes a pointer display */
   .main-menu a {
-    color: var(--gray-dark2);
-    /* font-family: var(--font-second); */
-    font-weight: 300;
-    font-weight: lighten;
-    font-size: var(--h4);
+    color: var(--gray-dark);
+    font-family: var(--font-second);
+    /* font-weight: 300; */
+    font-size: var(--h5);
     border-bottom: none;
     display: inline-block;
+    /* background-color: white; */
+    padding: 3px;
+    /* text-transform: uppercase; */
     /* neccessary for positioning hexagon element to cover the same area of different text length size  */
     text-align: left;
-    /* width: 13vw; */
   }
 
   /* Remove background from off-canvas styling, change colors */
   .main-menu a:hover,
   .main-menu a:focus {
     background: none;
-    color: var(--gray-black);
+    color: var(--gray-dark2);
     text-decoration: none;
   }
 }

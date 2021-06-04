@@ -18,54 +18,74 @@
   <link rel="stylesheet" href="css/map.css" />
   <link rel="stylesheet" href="css/footer.css" />
 
-  <script src="https://kit.fontawesome.com/fb7f6f30e4.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/fb7f6f30e4.js"></script> -->
   <!-- <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Patua+One&family=Sansita&display=swap"
     rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Sansita&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Sansita&display=swap"
+    rel="stylesheet">
 
   <title>Pasieka miodek</title>
 </head>
+
 <body>
   <div class="backgroundSvg">
-  <a href="#about" id="skip-link">Przejdź do opisu</a>
+    <a href="#about" id="skip-link">Przejdź do opisu</a>
 
-  <section id="home" class="home" aria-labelledby="home-id"> 
-    <div hidden id="home-id">Strona główna</div>  
-    <div class="container">     
-      <header>
-        <div class="row">
-          <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
-            <span class="sr-only">Open main menu</span>
-            <span class="fa fa-bars" aria-hidden="true"></span>
-          </a>
-          <div class="logo">
-            <image src="./img/logo-miodek4.svg" alt="logo"> </image>
+    <section id="home" class="home" aria-labelledby="home-id">
+      <div hidden id="home-id">Strona główna</div>
+      <div class="container">
+        <header>
+          <div class="row">
+            <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+              <span class="sr-only">Open main menu</span>
+              <span class="fa fa-bars" aria-hidden="true">
+                <svg width="27" height="21" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13H17M1 1H17H1ZM1 7H17H1Z" stroke="#4f4f4f" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+
+              </span>
+            </a>
+            <div class="logo">
+              <image src="./img/logo-miodek4.svg" alt="logo"> </image>
+            </div>
           </div>
-        </div>
-        <nav id="main-menu" class="main-menu" aria-label="Main menu">
-          <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
-            <span class="sr-only">Close main menu</span>
-            <span class="fa fa-close" aria-hidden="true"></span>
-          </a>
-          <ul>
-            <li>              
-              <a href="#about">O nas</a>
-            </li>
-            <li>
-             <a href="#tips">Porady</a></li>
-            <li>
-              <a href="#gallery">Galeria</a></li>
-            <li>
-              <a href="#offer">Oferta</a></li>
-            <li>
-              <a href="#contact">Kontakt</a></li>
-          </ul>
-        </nav>
-        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
-      </header>
-      <div class="bottom">
-        <!-- <aside>
+          <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+              <span class="sr-only">Close main menu</span>
+              <span class="fa fa-close" aria-hidden="true">
+                <svg width="21" height="21" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.72029 0.280712C1.53169 0.0985537 1.27908 -0.00224062 1.01689 3.78026e-05C0.75469 0.00231622 0.503878 0.107485 0.31847 0.292894C0.133061 0.478302 0.0278923 0.729114 0.0256139 0.991311C0.0233355 1.25351 0.12413 1.50611 0.306288 1.69471L6.08129 7.46971L0.305288 13.2447C0.209778 13.337 0.133595 13.4473 0.0811864 13.5693C0.0287774 13.6913 0.00119157 13.8225 3.77571e-05 13.9553C-0.00111606 14.0881 0.0241854 14.2198 0.0744663 14.3427C0.124747 14.4656 0.199 14.5772 0.292893 14.6711C0.386786 14.765 0.498438 14.8393 0.621334 14.8895C0.74423 14.9398 0.87591 14.9651 1.00869 14.964C1.14147 14.9628 1.27269 14.9352 1.39469 14.8828C1.5167 14.8304 1.62704 14.7542 1.71929 14.6587L7.49529 8.88371L13.2703 14.6587C13.4589 14.8409 13.7115 14.9417 13.9737 14.9394C14.2359 14.9371 14.4867 14.8319 14.6721 14.6465C14.8575 14.4611 14.9627 14.2103 14.965 13.9481C14.9672 13.6859 14.8664 13.4333 14.6843 13.2447L8.90929 7.46971L14.6843 1.69471C14.8664 1.50611 14.9672 1.25351 14.965 0.991311C14.9627 0.729114 14.8575 0.478302 14.6721 0.292894C14.4867 0.107485 14.2359 0.00231622 13.9737 3.78026e-05C13.7115 -0.00224062 13.4589 0.0985537 13.2703 0.280712L7.49529 6.05571L1.72029 0.279712V0.280712Z"
+                    fill="#f2f2f2"/>
+                </svg>
+
+
+              </span>
+            </a>
+            <ul>
+              <li>
+                <a href="#about">o nas</a>
+              </li>
+              <li>
+                <a href="#tips">porady</a>
+              </li>
+              <li>
+                <a href="#gallery">galeria</a>
+              </li>
+              <li>
+                <a href="#offer">oferta</a>
+              </li>
+              <li>
+                <a href="#contact">kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
+        </header>
+        <div class="bottom">
+          <!-- <aside>
           <img src="./img/honeycomb.png" alt="" />
           <div class="info" tabindex="-1">
             <p>Jan Pszczelarz </p>
@@ -75,290 +95,295 @@
 
           </div>
         </aside> -->
-        <main>
-          <h1>Miód z naszej pasieki</h1>
-          <div class="introduction">
-            <h4 tabindex="0">
-              Witam na stronie naszej pasieki położonej w miejscowości Łąki. Nasze gospodarstwo pszczelarskie
-              prowadzimy od lat w gronie rodzinnym.
-              <p>
-                Zapraszam do zapoznania się z naszą ofertą. Polecam miód wielokwiatowy oraz lipowy - miody z których
-                jesteśmy dumni.
+          <main>
+            <h1>Miód z naszej pasieki</h1>
+            <div class="introduction">
+              <h4 tabindex="0">
+                Witam na stronie naszej pasieki położonej w miejscowości Łąki. Nasze gospodarstwo pszczelarskie
+                prowadzimy od lat w gronie rodzinnym.
+                <p>
+                  Zapraszam do zapoznania się z naszą ofertą. Polecam miód wielokwiatowy oraz lipowy - miody z których
+                  jesteśmy dumni.
+                </p>
+                <p>Jan Pszczelarz</p>
+                </h3>
+                <div class="btns">
+                  <a href="#offer" class="btn btn-dark">kup teraz</a>
+                  <a href="#about" class="btn btn-orange">zapraszam</a>
+                </div>
+            </div>
+          </main>
+          <div class="home_container">
+            <img src="./img/new-bee.png" alt="small bee">
+            <div class="hexagon-small-1"></div>
+            <div class="hexagon-small-2"></div>
+            <div class="hexagon-small-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="section-about">
+      <div id="section-about" hidden>Co nas wyróźnia?</div>
+
+      <div class="container about_container">
+        <div class="hexagon hexagon-1">
+          <div class="inside_wrapper">
+            <svg width="100" height="125" viewBox="0 0 100 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M44.9394 27.1923C44.9394 26.1914 45.2362 25.213 45.7922 24.3808C46.3483 23.5486 47.1387 22.8999 48.0634 22.5169C48.988 22.1339 50.0056 22.0337 50.9872 22.2289C51.9689 22.4242 52.8706 22.9062 53.5783 23.6139C54.286 24.3216 54.768 25.2233 54.9633 26.205C55.1585 27.1866 55.0583 28.2042 54.6753 29.1288C54.2923 30.0535 53.6436 30.8439 52.8114 31.4C51.9792 31.956 51.0008 32.2528 49.9999 32.2528C49.3354 32.2528 48.6773 32.1219 48.0634 31.8676C47.4494 31.6133 46.8915 31.2405 46.4216 30.7706C45.9517 30.3007 45.5789 29.7428 45.3246 29.1289C45.0703 28.5149 44.9394 27.8568 44.9394 27.1923ZM55.0606 63.9442V43.3928C55.0606 35.3297 41.9031 40.064 34.6608 46.3729C43.9049 44 44.9394 43.404 44.9394 53.0527V73.6041C44.9394 81.6673 58.0969 76.9329 65.3392 70.6241C56.0951 72.9969 55.0606 73.593 55.0606 63.9442ZM95 50C95 58.9002 92.3608 67.6005 87.4161 75.0007C82.4715 82.4009 75.4434 88.1686 67.2208 91.5746C58.9981 94.9805 49.9501 95.8717 41.2209 94.1353C32.4918 92.399 24.4736 88.1132 18.1802 81.8198C11.8868 75.5264 7.601 67.5082 5.86466 58.7791C4.12833 50.0499 5.01948 41.0019 8.42542 32.7792C11.8314 24.5566 17.5991 17.5285 24.9993 12.5839C32.3996 7.6392 41.0998 5 50 5C61.9347 5 73.3807 9.74106 81.8198 18.1802C90.259 26.6193 95 38.0653 95 50ZM88 50C88 42.4843 85.7713 35.1374 81.5959 28.8883C77.4204 22.6393 71.4856 17.7687 64.542 14.8926C57.5984 12.0164 49.9578 11.2639 42.5866 12.7302C35.2153 14.1964 28.4443 17.8155 23.1299 23.1299C17.8155 28.4443 14.1964 35.2153 12.7302 42.5866C11.2639 49.9578 12.0164 57.5984 14.8926 64.542C17.7687 71.4856 22.6393 77.4204 28.8883 81.5958C35.1374 85.7713 42.4843 88 50 88C60.0747 87.9886 69.7336 83.9814 76.8575 76.8575C83.9814 69.7336 87.9886 60.0747 88 50Z"
+                fill="#F2994A" />
+            </svg>
+            <div class="text">
+
+              <h3 tabindex="0">Doświadczenie</h3>
+
+              <p tabindex="0">Mamy duże doświadczenie w hodowli pszczół. Nasz miód wyróżnia się wysoką jakością i
+                znajduje
+                spore
+                uznanie wsród klientów.
               </p>
-              <p>Jan Pszczelarz</p>
-              </h3>
-              <div class="btns">
-                <a href="#offer" class="btn btn-dark">kup teraz</a>
-                <a href="#about" class="btn btn-orange">zapraszam</a>
-              </div>
-          </div>
-        </main>
-        <div class="home_container">
-          <img src="./img/new-bee.png" alt="small bee">
-          <div class="hexagon-small-1"></div>
-          <div class="hexagon-small-2"></div>
-          <div class="hexagon-small-3"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="about" aria-labelledby="section-about">
- <div id="section-about" hidden>Co nas wyróźnia?</div>
-  
-    <div class="container about_container">
-      <div class="hexagon hexagon-1">
-        <div class="inside_wrapper">
-          <svg width="100" height="125" viewBox="0 0 100 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M44.9394 27.1923C44.9394 26.1914 45.2362 25.213 45.7922 24.3808C46.3483 23.5486 47.1387 22.8999 48.0634 22.5169C48.988 22.1339 50.0056 22.0337 50.9872 22.2289C51.9689 22.4242 52.8706 22.9062 53.5783 23.6139C54.286 24.3216 54.768 25.2233 54.9633 26.205C55.1585 27.1866 55.0583 28.2042 54.6753 29.1288C54.2923 30.0535 53.6436 30.8439 52.8114 31.4C51.9792 31.956 51.0008 32.2528 49.9999 32.2528C49.3354 32.2528 48.6773 32.1219 48.0634 31.8676C47.4494 31.6133 46.8915 31.2405 46.4216 30.7706C45.9517 30.3007 45.5789 29.7428 45.3246 29.1289C45.0703 28.5149 44.9394 27.8568 44.9394 27.1923ZM55.0606 63.9442V43.3928C55.0606 35.3297 41.9031 40.064 34.6608 46.3729C43.9049 44 44.9394 43.404 44.9394 53.0527V73.6041C44.9394 81.6673 58.0969 76.9329 65.3392 70.6241C56.0951 72.9969 55.0606 73.593 55.0606 63.9442ZM95 50C95 58.9002 92.3608 67.6005 87.4161 75.0007C82.4715 82.4009 75.4434 88.1686 67.2208 91.5746C58.9981 94.9805 49.9501 95.8717 41.2209 94.1353C32.4918 92.399 24.4736 88.1132 18.1802 81.8198C11.8868 75.5264 7.601 67.5082 5.86466 58.7791C4.12833 50.0499 5.01948 41.0019 8.42542 32.7792C11.8314 24.5566 17.5991 17.5285 24.9993 12.5839C32.3996 7.6392 41.0998 5 50 5C61.9347 5 73.3807 9.74106 81.8198 18.1802C90.259 26.6193 95 38.0653 95 50ZM88 50C88 42.4843 85.7713 35.1374 81.5959 28.8883C77.4204 22.6393 71.4856 17.7687 64.542 14.8926C57.5984 12.0164 49.9578 11.2639 42.5866 12.7302C35.2153 14.1964 28.4443 17.8155 23.1299 23.1299C17.8155 28.4443 14.1964 35.2153 12.7302 42.5866C11.2639 49.9578 12.0164 57.5984 14.8926 64.542C17.7687 71.4856 22.6393 77.4204 28.8883 81.5958C35.1374 85.7713 42.4843 88 50 88C60.0747 87.9886 69.7336 83.9814 76.8575 76.8575C83.9814 69.7336 87.9886 60.0747 88 50Z"
-              fill="#F2994A" />
-          </svg>
-          <div class="text">
-
-            <h3 tabindex="0">Doświadczenie</h3>
-
-            <p tabindex="0">Mamy duże doświadczenie w hodowli pszczół. Nasz miód wyróżnia się wysoką jakością i znajduje
-              spore
-              uznanie wsród klientów.
-            </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="hexagon hexagon-2">
-        <div class="inside_wrapper">
-          <svg width="101" height="126" viewBox="0 0 101 126" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0)">
+        <div class="hexagon hexagon-2">
+          <div class="inside_wrapper">
+            <svg width="101" height="126" viewBox="0 0 101 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M36.144 18.3343C16.258 18.3343 0.139977 34.4533 0.138977 54.3383C0.138977 64.2803 4.56198 72.9123 10.685 79.7983L36.144 108.425L61.603 79.7993C67.724 72.9123 72.148 64.2803 72.148 54.3413C72.148 34.4533 56.028 18.3343 36.144 18.3343ZM57.927 76.1223C52.109 81.9383 44.371 85.1433 36.144 85.1433C27.914 85.1433 20.179 81.9383 14.36 76.1223C8.54198 70.3033 5.33698 62.5683 5.33698 54.3383C5.33698 37.3533 19.157 23.5323 36.144 23.5323C53.129 23.5323 66.95 37.3533 66.95 54.3383C66.95 62.5663 63.747 70.3033 57.927 76.1223Z"
+                  fill="black" />
+                <path
+                  d="M36.143 25.2893C20.038 25.2893 6.935 38.3923 6.935 54.4973C6.935 62.2983 9.972 69.6333 15.489 75.1503C21.004 80.6683 28.339 83.7073 36.143 83.7073C43.947 83.7073 51.282 80.6683 56.796 75.1503C62.314 69.6363 65.352 62.3003 65.352 54.4973C65.351 38.3923 52.247 25.2893 36.143 25.2893ZM36.143 26.2893C51.697 26.2893 64.351 38.9433 64.352 54.4973C64.352 54.6233 64.344 54.7473 64.343 54.8733H7.944C7.942 54.7483 7.935 54.6233 7.935 54.4973C7.935 38.9433 20.589 26.2893 36.143 26.2893Z"
+                  fill="#EC1111" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect x="0.138977" y="0.33429" width="100" height="125" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <div class="text">
+              <h3 tabindex="0">Produkt polski</h3>
+              <p tabindex="0">Kupując u nas masz pewność, że miód pochodzi z naszych lokalnych, czystych terenów</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hexagon hexagon-3">
+          <div class="inside_wrapper">
+            <svg width="101" height="126" viewBox="0 0 101 126" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M36.144 18.3343C16.258 18.3343 0.139977 34.4533 0.138977 54.3383C0.138977 64.2803 4.56198 72.9123 10.685 79.7983L36.144 108.425L61.603 79.7993C67.724 72.9123 72.148 64.2803 72.148 54.3413C72.148 34.4533 56.028 18.3343 36.144 18.3343ZM57.927 76.1223C52.109 81.9383 44.371 85.1433 36.144 85.1433C27.914 85.1433 20.179 81.9383 14.36 76.1223C8.54198 70.3033 5.33698 62.5683 5.33698 54.3383C5.33698 37.3533 19.157 23.5323 36.144 23.5323C53.129 23.5323 66.95 37.3533 66.95 54.3383C66.95 62.5663 63.747 70.3033 57.927 76.1223Z"
-                fill="black" />
-              <path
-                d="M36.143 25.2893C20.038 25.2893 6.935 38.3923 6.935 54.4973C6.935 62.2983 9.972 69.6333 15.489 75.1503C21.004 80.6683 28.339 83.7073 36.143 83.7073C43.947 83.7073 51.282 80.6683 56.796 75.1503C62.314 69.6363 65.352 62.3003 65.352 54.4973C65.351 38.3923 52.247 25.2893 36.143 25.2893ZM36.143 26.2893C51.697 26.2893 64.351 38.9433 64.352 54.4973C64.352 54.6233 64.344 54.7473 64.343 54.8733H7.944C7.942 54.7483 7.935 54.6233 7.935 54.4973C7.935 38.9433 20.589 26.2893 36.143 26.2893Z"
-                fill="#EC1111" />
-            </g>
-            <defs>
-              <clipPath id="clip0">
-                <rect x="0.138977" y="0.33429" width="100" height="125" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <div class="text">
-            <h3 tabindex="0">Produkt polski</h3>
-            <p tabindex="0">Kupując u nas masz pewność, że miód pochodzi z naszych lokalnych, czystych terenów</p>
+                d="M74.6637 30.0687H70.0637C66.895 30.0771 63.7632 30.7487 60.8698 32.0404C57.9763 33.3321 55.3854 35.2153 53.2636 37.5687V26.7687C53.2372 20.7391 50.8234 14.9655 46.5504 10.7113C42.2775 6.45707 36.4933 4.06867 30.4636 4.06873H25.8636C25.068 4.06873 24.3049 4.3848 23.7423 4.94741C23.1797 5.51001 22.8636 6.27308 22.8636 7.06873V11.6687C22.8636 17.6984 25.252 23.4825 29.5062 27.7555C33.7604 32.0285 39.5341 34.4423 45.5636 34.4687H47.2636V59.4687C45.1443 57.1459 42.5656 55.2887 39.6908 54.0149C36.816 52.741 33.708 52.0783 30.5636 52.0687H25.8636C25.068 52.0687 24.3049 52.3848 23.7423 52.9474C23.1797 53.51 22.8636 54.2731 22.8636 55.0687V59.7687C22.8636 65.7984 25.252 71.5825 29.5062 75.8555C33.7604 80.1285 39.5341 82.5423 45.5636 82.5687H47.2636V91.3687H30.5636V97.3687H69.9636V91.3687H53.2636V60.4687H54.9636C60.976 60.4424 66.7345 58.0424 70.9859 53.791C75.2373 49.5396 77.6373 43.781 77.6637 37.7687V33.0687C77.6637 32.2731 77.3476 31.51 76.785 30.9474C76.2224 30.3848 75.4593 30.0687 74.6637 30.0687Z"
+                fill="#27AE60" fill-opacity="0.84" />
+            </svg>
+            <div class="text">
+              <h3 tabindex="0">Sama natura</h3>
+              <p tabindex="0">Nie słodzimy nie poprawiamy nie psujemy. Wszystko odbywa sie w naturalny sposób. Pszczoły
+                wiedzą co
+                dobre!</p>
+              <img src="./img/stain.png" alt="stain" class="stain">
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="hexagon hexagon-3">
-        <div class="inside_wrapper">
-          <svg width="101" height="126" viewBox="0 0 101 126" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M74.6637 30.0687H70.0637C66.895 30.0771 63.7632 30.7487 60.8698 32.0404C57.9763 33.3321 55.3854 35.2153 53.2636 37.5687V26.7687C53.2372 20.7391 50.8234 14.9655 46.5504 10.7113C42.2775 6.45707 36.4933 4.06867 30.4636 4.06873H25.8636C25.068 4.06873 24.3049 4.3848 23.7423 4.94741C23.1797 5.51001 22.8636 6.27308 22.8636 7.06873V11.6687C22.8636 17.6984 25.252 23.4825 29.5062 27.7555C33.7604 32.0285 39.5341 34.4423 45.5636 34.4687H47.2636V59.4687C45.1443 57.1459 42.5656 55.2887 39.6908 54.0149C36.816 52.741 33.708 52.0783 30.5636 52.0687H25.8636C25.068 52.0687 24.3049 52.3848 23.7423 52.9474C23.1797 53.51 22.8636 54.2731 22.8636 55.0687V59.7687C22.8636 65.7984 25.252 71.5825 29.5062 75.8555C33.7604 80.1285 39.5341 82.5423 45.5636 82.5687H47.2636V91.3687H30.5636V97.3687H69.9636V91.3687H53.2636V60.4687H54.9636C60.976 60.4424 66.7345 58.0424 70.9859 53.791C75.2373 49.5396 77.6373 43.781 77.6637 37.7687V33.0687C77.6637 32.2731 77.3476 31.51 76.785 30.9474C76.2224 30.3848 75.4593 30.0687 74.6637 30.0687Z"
-              fill="#27AE60" fill-opacity="0.84" />
-          </svg>
-          <div class="text">
-            <h3 tabindex="0">Sama natura</h3>
-            <p tabindex="0">Nie słodzimy nie poprawiamy nie psujemy. Wszystko odbywa sie w naturalny sposób. Pszczoły
-              wiedzą co
-              dobre!</p>
-            <img src="./img/stain.png" alt="stain" class="stain">
-          </div>
-        </div>
-      </div>
-    
-
-    </div>
-
-  </section>
-
-  <section id="tips" class="tips" aria-labelledby="tips-section">
-<div id="tips-section" hidden>Zalety i walory miodu</div>
-     
-    <div class="container">
-
-      <div class="tips_box">
-        <div class="beater"></div>
-        <h1 class="header" tabindex="0">
-          Warto wiedzieć
-        </h1>
-
-        <div class="slider" tabindex="0">
-          <div class="slide active-slide">
-            <p class="quote"> Miód wzmacnia serce, koi nerwy, ożywia mózg, goi rany. Ma właściwości antybakteryjne -
-              niektóre bakterie zwalcza lepiej niż antybiotyki.
-            </p>
-          </div>
-          <!--  https://www.poradnikzdrowie.pl/zdrowie/apteczka/miod-wartosc-odzywcza-i-wlasciwosci-lecznicze-miodu-aa-JStw-TBBJ-hYXV.html -->
-        </div>
-        <a href="https://poradnikzdrowie.pl" target="_blank">
-          <address>poradnikzdrowie.pl</address>
-        </a>
-
-        <div class="slide-dots" role="slider" aria-valuemin="0" aria-valuenow="0" aria-valuemax="5">
-          <button data-key="0" class="active-dot" tabindex="0"></button>
-          <button data-key="1" tabindex="0" role="option"></button>
-          <button data-key="2" tabindex="0" role="option"></button>
-          <button data-key="3" tabindex="0" role="option"></button>
-          <button data-key="4" tabindex="0" role="option"></button>
-          <button data-key="5" tabindex="0" role="option"></button>
-        </div>
 
       </div>
 
-    </div>
-  </section>
+    </section>
 
-  <section id="gallery" class="gallery" aria-labelledby="gallery-section">
-    <div id="gallery-section" hidden>Galeria zdjęć z naszego gospodarstwa</div> 
-    <div class="container gallery-wrapper">
-      <picture class="gallery_bigImage"> 
-        <source id="big-pic" srcset="./img/img1.jpg" alt="default image from gallery" media="(min-width: 768px)">        
-        <img id="image-chosen" src="./img/img1_small.jpg" alt="default image from gallery">
-        </picture>
-      <div class="gallery_icons">
-        <div class="gallery_icon " tabindex="0" role="option">
-          <a href="#img1">
-            <img id="img1" class="active-icon" src="./img/img1_small.jpg" data-pic="img1" alt="miniature-1">
-            <span class="overlay"></span>
-          </a>
-        </div>
-        <div class="gallery_icon" tabindex="0" role="option"><a href="#img2"><img src="./img/img2_small.jpg"
-              data-pic="img2" alt="miniature-2"></a></div>
-        <div class="gallery_icon"><a href="#img3"><img src="./img/img3_small.jpg" data-pic="img3" alt="miniature-3"></a>
-        </div>
-        <div class="gallery_icon"><a href="#img4"><img src="./img/img4_small.jpg" data-pic="img4" alt="miniature-4"></a>
-        </div>
-        <div class="gallery_icon"><a href="#img5"><img src="./img/img5_small.jpg" data-pic="img5" alt="miniature-5"></a>
-        </div>
-        <div class="gallery_icon"><a href="#img6"><img src="./img/img6_small.jpg" data-pic="img6" alt="miniature-6"></a>
-        </div>
-      </div>
-    </div>
-    <!-- this background is not in section offer because of grid -->
-  </section>
+    <section id="tips" class="tips" aria-labelledby="tips-section">
+      <div id="tips-section" hidden>Zalety i walory miodu</div>
 
-  <section id="offer" class="offer container" aria-labelledby="offer-section">
-    <div id="offer-section" hidden>Oferta oraz informacje dla klientów</div>
-       
-    <h2 class="offer_header header">Oferta</h2>
-    <div class="offer_box">
-      <div class="table-first tablescroll table" role="region" aria-labelledby="honey" tabindex="0">
-        <table id="table-first">
-          <caption id="honey">Miody</caption>
-          <thead>
-            <tr class="dark">
-              <th scope="col">Rodzaj</th>
-              <th scope="col">900 ml</th>
-              <th scope="col">720 ml</th>
-              <th scope="col">320 ml</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>M. rzepakowy</td>
-              <td>40zł</td>
-              <td>30zł</td>
-              <td>15zł</td>
-            </tr>
-            <tr>
-              <td>M. rzepakowy-kremowany</td>
-              <td>40zł</td>
-              <td>30zł</td>
-              <td>15zł</td>
-            </tr>
-            <tr>
-              <td>M. wielokwiatowy</td>
-              <td>40zł</td>
-              <td>30zł</td>
-              <td>15zł</td>
-            </tr>
-            <tr>
-              <td>M. malinowy</td>
-              <td>40zł</td>
-              <td>30zł</td>
-              <td>15zł</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="table-second tablescroll table" role="region" aria-labelledby="dispatch" tabindex="0">
-        <table id="table-second">
-          <caption id="dispatch">Wysyłka</caption>
-          <thead>
-            <tr class="dark">
-              <th scope="col">Waga</th>
-              <th scope="col">Ilość słoików</th>
-              <th scope="col">Ekonomiczna</th>
-              <th scope="col">Priorytet</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>do 2kg</td>
-              <td>1</td>
-              <td>15 zł</td>
-              <td>20 zł</td>
-            </tr>
-            <tr>
-              <td>do 5kg</td>
-              <td>2</td>
-              <td>20 zł</td>
-              <td>25 zł</td>
-            </tr>
-            <tr>
-              <td>do 10kg</td>
-              <td>3-5</td>
-              <td>26 zł</td>
-              <td>30 zł</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-
-      <div class="table-third tablescroll table" role="region" aria-labelledby="deposit-info" tabindex="0">
-        <table id="table-third">
-          <caption id="deposit-info">Wpłaty</caption>
-
-          <tr>
-            <th class="dark">Uwaga</th>
-            <td>Prosimy dokonywać wpłat po uprzednim kontakcie mailowym lub telefonicznym </td>
-          </tr>
-          <tr>
-            <th class="dark">Informacja</th>
-            <td>Towar wysyłamy w godzinach od 8 - 16</td>
-          </tr>
-          <tr>
-            <th class="dark">Nr konta</th>
-            <td>15154512135156464654151</td>
-          </tr>
-          <tr>
-            <th class="dark">Telefon</th>
-            <td>123456789</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <!-- </div> -->
-  </section>
-
-  <section id="contact" class="contact" aria-labelledby="contact-section">
-    <div id="contact-section" hidden >Formularz kontaktowy</div>  
-      
       <div class="container">
-    <div class="contact-left">
-      <div class="contact_container">
-        <div class="hexagon-small-4"></div>
-        <div class="hexagon-small-5"></div>
-        <div class="hexagon-small-6"></div>
+
+        <div class="tips_box">
+          <div class="beater"></div>
+          <h1 class="header" tabindex="0">
+            Warto wiedzieć
+          </h1>
+
+          <div class="slider" tabindex="0">
+            <div class="slide active-slide">
+              <p class="quote"> Miód wzmacnia serce, koi nerwy, ożywia mózg, goi rany. Ma właściwości antybakteryjne -
+                niektóre bakterie zwalcza lepiej niż antybiotyki.
+              </p>
+            </div>
+            <!--  https://www.poradnikzdrowie.pl/zdrowie/apteczka/miod-wartosc-odzywcza-i-wlasciwosci-lecznicze-miodu-aa-JStw-TBBJ-hYXV.html -->
+          </div>
+          <a href="https://poradnikzdrowie.pl" target="_blank">
+            <address>poradnikzdrowie.pl</address>
+          </a>
+
+          <div class="slide-dots" role="slider" aria-valuemin="0" aria-valuenow="0" aria-valuemax="5">
+            <button data-key="0" class="active-dot" tabindex="0"></button>
+            <button data-key="1" tabindex="0" role="option"></button>
+            <button data-key="2" tabindex="0" role="option"></button>
+            <button data-key="3" tabindex="0" role="option"></button>
+            <button data-key="4" tabindex="0" role="option"></button>
+            <button data-key="5" tabindex="0" role="option"></button>
+          </div>
+
+        </div>
+
       </div>
-      <!-- <h2 class="header">Kontakt</h2> -->
+    </section>
 
-      <h2 class="contact-header header">Napisz do nas <span>wiadomość</span> </h2>
-    </div>
+    <section id="gallery" class="gallery" aria-labelledby="gallery-section">
+      <div id="gallery-section" hidden>Galeria zdjęć z naszego gospodarstwa</div>
+      <div class="container gallery-wrapper">
+        <picture class="gallery_bigImage">
+          <source id="big-pic" srcset="./img/img1.jpg" alt="default image from gallery" media="(min-width: 768px)">
+          <img id="image-chosen" src="./img/img1_small.jpg" alt="default image from gallery">
+        </picture>
+        <div class="gallery_icons">
+          <div class="gallery_icon " tabindex="0" role="option">
+            <a href="#img1">
+              <img id="img1" class="active-icon" src="./img/img1_small.jpg" data-pic="img1" alt="miniature-1">
+              <span class="overlay"></span>
+            </a>
+          </div>
+          <div class="gallery_icon" tabindex="0" role="option"><a href="#img2"><img src="./img/img2_small.jpg"
+                data-pic="img2" alt="miniature-2"></a></div>
+          <div class="gallery_icon"><a href="#img3"><img src="./img/img3_small.jpg" data-pic="img3"
+                alt="miniature-3"></a>
+          </div>
+          <div class="gallery_icon"><a href="#img4"><img src="./img/img4_small.jpg" data-pic="img4"
+                alt="miniature-4"></a>
+          </div>
+          <div class="gallery_icon"><a href="#img5"><img src="./img/img5_small.jpg" data-pic="img5"
+                alt="miniature-5"></a>
+          </div>
+          <div class="gallery_icon"><a href="#img6"><img src="./img/img6_small.jpg" data-pic="img6"
+                alt="miniature-6"></a>
+          </div>
+        </div>
+      </div>
+      <!-- this background is not in section offer because of grid -->
+    </section>
 
-    <!-- <?php
+    <section id="offer" class="offer container" aria-labelledby="offer-section">
+      <div id="offer-section" hidden>Oferta oraz informacje dla klientów</div>
+
+      <h2 class="offer_header header">Oferta</h2>
+      <div class="offer_box">
+        <div class="table-first tablescroll table" role="region" aria-labelledby="honey" tabindex="0">
+          <table id="table-first">
+            <caption id="honey">Miody</caption>
+            <thead>
+              <tr class="dark">
+                <th scope="col">Rodzaj</th>
+                <th scope="col">900 ml</th>
+                <th scope="col">720 ml</th>
+                <th scope="col">320 ml</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>M. rzepakowy</td>
+                <td>40zł</td>
+                <td>30zł</td>
+                <td>15zł</td>
+              </tr>
+              <tr>
+                <td>M. rzepakowy-kremowany</td>
+                <td>40zł</td>
+                <td>30zł</td>
+                <td>15zł</td>
+              </tr>
+              <tr>
+                <td>M. wielokwiatowy</td>
+                <td>40zł</td>
+                <td>30zł</td>
+                <td>15zł</td>
+              </tr>
+              <tr>
+                <td>M. malinowy</td>
+                <td>40zł</td>
+                <td>30zł</td>
+                <td>15zł</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-second tablescroll table" role="region" aria-labelledby="dispatch" tabindex="0">
+          <table id="table-second">
+            <caption id="dispatch">Wysyłka</caption>
+            <thead>
+              <tr class="dark">
+                <th scope="col">Waga</th>
+                <th scope="col">Ilość słoików</th>
+                <th scope="col">Ekonomiczna</th>
+                <th scope="col">Priorytet</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>do 2kg</td>
+                <td>1</td>
+                <td>15 zł</td>
+                <td>20 zł</td>
+              </tr>
+              <tr>
+                <td>do 5kg</td>
+                <td>2</td>
+                <td>20 zł</td>
+                <td>25 zł</td>
+              </tr>
+              <tr>
+                <td>do 10kg</td>
+                <td>3-5</td>
+                <td>26 zł</td>
+                <td>30 zł</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="table-third tablescroll table" role="region" aria-labelledby="deposit-info" tabindex="0">
+          <table id="table-third">
+            <caption id="deposit-info">Wpłaty</caption>
+
+            <tr>
+              <th class="dark">Uwaga</th>
+              <td>Prosimy dokonywać wpłat po uprzednim kontakcie mailowym lub telefonicznym </td>
+            </tr>
+            <tr>
+              <th class="dark">Informacja</th>
+              <td>Towar wysyłamy w godzinach od 8 - 16</td>
+            </tr>
+            <tr>
+              <th class="dark">Nr konta</th>
+              <td>15154512135156464654151</td>
+            </tr>
+            <tr>
+              <th class="dark">Telefon</th>
+              <td>123456789</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-section">
+      <div id="contact-section" hidden>Formularz kontaktowy</div>
+
+      <div class="container">
+        <div class="contact-left">
+          <div class="contact_container">
+            <div class="hexagon-small-4"></div>
+            <div class="hexagon-small-5"></div>
+            <div class="hexagon-small-6"></div>
+          </div>
+          <!-- <h2 class="header">Kontakt</h2> -->
+
+          <h2 class="contact-header header">Napisz do nas <span>wiadomość</span> </h2>
+        </div>
+
+        <!-- <?php
                     if(isset($_POST['submit'])){
                         $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
                         // $subject = htmlspecialchars(stripslashes(trim($_POST['subject'])));
@@ -377,35 +402,35 @@
                     } 
                      ?> -->
 
-    <!-- <form class="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> -->
-      <div class="contact-right">
-    <form class="contact-form" action="index.html" method="POST">
-      <fieldset>
-        <legend>Masz pytanie?</legend>
-        <div class=" input-group">
-          <label for="name">Imię:</label>
-          <input type="text" name="name" id="name" required>
+        <!-- <form class="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> -->
+        <div class="contact-right">
+          <form class="contact-form" action="index.html" method="POST">
+            <fieldset>
+              <legend>Masz pytanie?</legend>
+              <div class=" input-group">
+                <label for="name">Imię:</label>
+                <input type="text" name="name" id="name" required>
 
-          <!-- <p><?php if(isset($name_error)) echo $name_error; ?></p> -->
+                <!-- <p><?php if(isset($name_error)) echo $name_error; ?></p> -->
 
-          <div class="input-group">
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" required>
-            <!-- <p><?php if(isset($email_error)) echo $email_error; ?></p> -->
-          </div>
-          <div class="input-group">
-            <label for="message">Treść wiadomości:</label>
-            <textarea rows="10" name="message" id="message"></textarea>
-            <!-- <p><?php if(isset($message_error)) echo $message_error; ?></p> -->
-          </div>
-          <div class="input-group">
-            <input type="submit" name="submit" class="btn-form btn" value="Wyślij">
+                <div class="input-group">
+                  <label for="email">Email:</label>
+                  <input type="text" name="email" id="email" required>
+                  <!-- <p><?php if(isset($email_error)) echo $email_error; ?></p> -->
+                </div>
+                <div class="input-group">
+                  <label for="message">Treść wiadomości:</label>
+                  <textarea rows="10" name="message" id="message"></textarea>
+                  <!-- <p><?php if(isset($message_error)) echo $message_error; ?></p> -->
+                </div>
+                <div class="input-group">
+                  <input type="submit" name="submit" class="btn-form btn" value="Wyślij">
 
-          </div>
-      </fieldset>
-    </form>
-  </div>
-    <!-- 
+                </div>
+            </fieldset>
+          </form>
+        </div>
+        <!-- 
                         <?php 
     
                             if(isset($_POST['submit']) && !isset($name_error) && !isset($email_error) && !isset($message_error)){
@@ -423,49 +448,49 @@
                         
                     ?> -->
       </div>
-  </section>
+    </section>
 
-  <section id="map" class="map" aria-labelledby="map-section">
-    <div id="map-section" hidden>Mapa z naszą lokalizacją</div>
-    <div class="container">
-      <div class="map-box">
-        <h2 class="map-header header">Zobacz <span>gdzie</span> jesteśmy</h2>
-        <div class="map-inside">
-          <img src="./img/bee_real.png" alt="bee" />
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36091.741337392035!2d19.969637754797713!3d50.06983901804432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716451be258d0e9%3A0x20dc010f89ef18eb!2zxYHEhWtpIE5vd29odWNraWU!5e0!3m2!1spl!2spl!4v1591547613375!5m2!1spl!2spl"
-          allowfullscreen="" aria-hidden="false" tabindex="0" class="map-google"></iframe>
-      </div>
-      <a class="btn-orange btn phone-btn" ref="tel:+48536230915">Zadzwoń
-      </a>
-    </div>
-    </div>
-  </section>
-
- 
-  <section id="footer" class="footer" aria-labelledby="footer-section">
-    <div id="footer-section" hidden>Stopka strony z informacją opisową</div>
-    <div class=" container footer-wrapper ">
-      <ul class="footer-nav--left">
-        <img src="img/logo-miodek4.svg" alt="logo" class="footer-logo" />
-        <div class="footer-address">
-          <p>Pasieka Miodek </p>
-          <p> 30-305 Miody </p>
-          <p>tel. +48 123456789</p>
+    <section id="map" class="map" aria-labelledby="map-section">
+      <div id="map-section" hidden>Mapa z naszą lokalizacją</div>
+      <div class="container">
+        <div class="map-box">
+          <h2 class="map-header header">Zobacz <span>gdzie</span> jesteśmy</h2>
+          <div class="map-inside">
+            <img src="./img/bee_real.png" alt="bee" />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36091.741337392035!2d19.969637754797713!3d50.06983901804432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716451be258d0e9%3A0x20dc010f89ef18eb!2zxYHEhWtpIE5vd29odWNraWU!5e0!3m2!1spl!2spl!4v1591547613375!5m2!1spl!2spl"
+              allowfullscreen="" aria-hidden="false" tabindex="0" class="map-google"></iframe>
+          </div>
+          <a class="btn-orange btn phone-btn" ref="tel:+48536230915">Zadzwoń
+          </a>
         </div>
+      </div>
+    </section>
 
-      </ul>
-      <ul class="footer-nav--right">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">OLX</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-        <!-- <li><a href="#">Strona główna</a></li> -->
-      </ul>
 
-      <p class="copy">Copyright &copy; 2020 by gregsypek</p>
-    </div>
-  </section>
-</div> 
+    <section id="footer" class="footer" aria-labelledby="footer-section">
+      <div id="footer-section" hidden>Stopka strony z informacją opisową</div>
+      <div class=" container footer-wrapper ">
+        <ul class="footer-nav--left">
+          <img src="img/logo-miodek4.svg" alt="logo" class="footer-logo" />
+          <div class="footer-address">
+            <p>Pasieka Miodek </p>
+            <p> 30-305 Miody </p>
+            <p>tel. +48 123456789</p>
+          </div>
+
+        </ul>
+        <ul class="footer-nav--right">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">OLX</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <!-- <li><a href="#">Strona główna</a></li> -->
+        </ul>
+
+        <p class="copy">Copyright &copy; 2020 by gregsypek</p>
+      </div>
+    </section>
+  </div>
   <script src="./js/tips.js"></script>
   <script src="./js/gallery.js"></script>
 
