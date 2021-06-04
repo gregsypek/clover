@@ -1,9 +1,8 @@
 section.tips {
   /* position: relative; */
-  display: flex;  
+  display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .tips_box {
   /* position for beater img */
@@ -14,25 +13,23 @@ section.tips {
   justify-content: space-between;
   width: 70vw;
   max-width: 800px;
-  height: 500px;  
+  height: 500px;
   padding: 3rem 0;
   background: var(--white);
-box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
+  box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
 .tips .container {
   display: flex;
   justify-content: center;
-
 }
 
 .tips_box .header {
   text-transform: uppercase;
-  font-family: var(--font-second);
+  font-family: var(--font-first);
   font-size: var(--h3);
   margin: 0;
-  
 }
 .tips_box a {
   text-decoration: none;
@@ -46,13 +43,11 @@ border-radius: 10px;
 }
 .slider .slide {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: space-between;
-  height: 100%;  
+  height: 100%;
 
   text-align: center;
-  
-
 }
 .slide .quote {
   font-size: var(--h4);
@@ -60,29 +55,27 @@ border-radius: 10px;
   font-family: var(--font-second);
 }
 .slide address {
-align-self: center;
+  align-self: center;
 }
 
- .slide-dots {
-   /* add position and z-index to go in front of the beater image */
-   position: relative;
-   z-index: 5;
+.slide-dots {
+  /* add position and z-index to go in front of the beater image */
+  position: relative;
+  z-index: 5;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
 }
 
-
-
 .slide-dots button {
   cursor: pointer;
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;   
+  border-radius: 50%;
   background-color: var(--gold);
-border: 2px solid var(--black);
-transition: all .3s ease-in-out;
+  border: 2px solid var(--black);
+  transition: all 0.3s ease-in-out;
 }
 
 .slide-dots button:hover,
@@ -97,86 +90,71 @@ transition: all .3s ease-in-out;
 }
 .slide-dots button {
   width: 2.5rem;
-height: 2.5rem;
-
+  height: 2.5rem;
 }
 
 .beater {
   position: absolute;
-    width: 303px;
-    height: 300px;
-    right: -5vw;
-    bottom: -10%;
-    background: url(../img/beater.png);
-    /* background-repeat: repeat; */
-    /* background-repeat: repeat; */
-    background-repeat: no-repeat;
-    transform: rotate(72deg);
-    opacity: 30%;
- 
+  width: 303px;
+  height: 300px;
+  right: -5vw;
+  bottom: -10%;
+  background: url(../img/beater.png);
+  /* background-repeat: repeat; */
+  /* background-repeat: repeat; */
+  background-repeat: no-repeat;
+  transform: rotate(72deg);
+  opacity: 30%;
 }
 
 @media (max-width: 1000px) {
-
   .beater {
     display: none;
   }
-  .slide .quote {   
+  .slide .quote {
     margin: 1rem 1rem;
     font-family: var(--font-second);
   }
 }
 
 @media (max-width: 768px) {
-  .tips_box {    
+  .tips_box {
     width: 80vw;
     height: 60vw;
     padding: 2rem 0;
-   
-}
-.slider {
-
-  padding: 0;
-}
-.slider .slide {
-  font-size: var(--text-sm);
-}
-}
-@media (max-width: 600px) {
-  .tips_box {    
-   
-    height: 90vw;  
-   
-}
-
-}
-@media (max-width: 480px) {
-
-  .tips_box {  
-  
-    padding: 1rem 0;
-   
-}
-
-
-.tips_box {
-  width: 95vw;
-  height: 100vw;
-}
-.slide-dots button {
-  width: 2rem;
-height: 2rem;
-
-}
-.slide-dots button:not(:last-of-type) {
-  margin-right: .5rem;
-}
-
-}@media (max-width: 320px) {
-  .tips_box {   
-
-    width: 95vw;
-    height: 120vw; 
+  }
+  .slider {
+    padding: 0;
+  }
+  .slider .slide {
+    font-size: var(--text-sm);
   }
 }
+@media (max-width: 600px) {
+  .tips_box {
+    height: 90vw;
+  }
+}
+@media (max-width: 480px) {
+  .tips_box {
+    padding: 1rem 0;
+  }
 
+  .tips_box {
+    width: 95vw;
+    height: 100vw;
+  }
+  .slide-dots button {
+    width: 2rem;
+    height: 2rem;
+  }
+  .slide-dots button:not(:last-of-type) {
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .tips_box {
+    width: 95vw;
+    height: 120vw;
+  }
+}

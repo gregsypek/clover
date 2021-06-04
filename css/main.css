@@ -20,7 +20,6 @@ body {
   overflow-x: hidden;
 }
 
-
 header,
 h1,
 h2,
@@ -28,13 +27,12 @@ h3,
 h4,
 h5,
 h6 {
-
   /* font-family: var(--font-first); */
-  font-family: var(--font-second);
+  font-family: var(--font-first);
   font-weight: 600;
 }
 
-section>h1 {
+section > h1 {
   color: var(--black);
 }
 
@@ -51,29 +49,28 @@ header {
 
 .container {
   margin-right: auto;
-margin-left: auto;
-padding-left: 15px;
-padding-right: 15px;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
 
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
 }
- }
 @media (min-width: 1000px) {
   .container {
     width: 970px;
+  }
 }
- }
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
 }
- }
 
- /* * {
+/* * {
   outline: 1px solid red;
 } */
 
